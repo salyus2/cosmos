@@ -1,59 +1,88 @@
-const express = require("express");
-const http = require("http");
-const socketIo = require("socket.io");
-const path = require("path");
-
-const { gameState, resetGame, advanceTurn, loadGameStateFromDB, loadFactionsFromDB, createTestPlayer } = require("./src/game_state");
-const gameMapModule = require("./src/game_map");
-const gameActions = require("./src/game_actions");
-const gameData = require("./src/game_data");
-const database = require("./src/database");
+const express = require('express');
+const http = require('http');
+const socketIo = require('socket.io');
+const path = require('path');
+const GameController = require('./src/game_controller');
+const gameData = require('./src/game_data'); // Importamos los datos estáticos
 
 const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static(path.join(__dirname, "public")));
-gameActions.setIoInstance(io);
+app.use(express.static(path.join(__dirname, 'public')));
 
-async function main() {
-  try {
-    await database.initializeDatabase();
-    await loadGameStateFromDB();
-    await loadFactionsFromDB();
+const gameController = new GameController();
 
-    if (gameState.turn === 0 && Object.keys(gameState.factions).length === 0) {
-      await resetGame();
+// --- Lógica de Socket.IO ---
+io.on('connection', (socket) => {
+    console.log('Un cliente se ha conectado');
+
+    // Enviar datos estáticos al cliente recién conectado
+    socket.emit('static-data', { factions: gameData.factions, sectors: gameData.sectors });
+
+    if (!gameController.isReady()) {
+        socket.emit('server-not-ready', 'El servidor se está inicializando, por favor espera...');
     } else {
-      await gameMapModule.loadGameMapFromDB();
-      await createTestPlayer();
+        socket.emit('server-ready');
     }
-  } catch (error) {
-    console.error("FATAL: Error durante la inicialización.", error);
-    process.exit(1);
-  }
 
-  io.on("connection", (socket) => {
-    socket.on("requestInitialData", () => {
-      socket.emit("initialDataResponse", {
-        gameMap: gameMapModule.getGameMap(),
-        gameState: gameState,
-        availableFactions: gameData.AVAILABLE_FACTIONS,
-      });
+    socket.on('admin-login', () => {
+        if (!gameController.isReady()) return;
+        socket.join('admin_room');
+        socket.emit('update-game-state', gameController.getFullState());
+    });
+
+    socket.on('player-login', (playerName) => {
+        if (!gameController.isReady()) return;
+        const playerView = gameController.getPlayerView(playerName);
+        if (playerView) {
+            socket.playerName = playerName; // Asociar socket con jugador
+            socket.emit('login-success', playerView);
+        } else {
+            socket.emit('login-fail');
+        }
+    });
+
+    socket.on('player-action', (actionData) => {
+        if (!gameController.isReady()) return;
+        
+        gameController.handlePlayerAction(actionData, (response) => {
+            socket.emit('action-response', response);
+            if (response.success) {
+                gameController.broadcastGameState(io);
+            }
+        });
+    });
+
+    socket.on('restart-game', () => {
+        console.log('Petición de reinicio recibida...');
+        gameController.handleRestart((err) => {
+            if (err) return console.error("Error al reiniciar:", err);
+            gameController.broadcastGameState(io);
+        });
     });
     
-    socket.on("adminAction", async (data) => {
-        if (data.action === "reset") await resetGame();
-        // ... (resto de acciones)
-        io.emit("gameStateUpdate", gameState);
-        io.emit("gameMapUpdate", gameMapModule.getGameMap());
+    socket.on('advance-turn', () => {
+        console.log('Petición de avanzar turno recibida...');
+        gameController.handleAdvanceTurn((err) => {
+            if (err) return console.error("Error al avanzar turno:", err);
+            gameController.broadcastGameState(io);
+        });
     });
-    
-    socket.on("playerOrder", (data) => gameActions.processPlayerOrder(data.playerName, data.order));
-  });
 
-  server.listen(PORT, () => console.log(`Servidor escuchando en http://localhost:${PORT}`));
-}
+    socket.on('disconnect', () => console.log('Un cliente se ha desconectado'));
+});
 
-main();
+// --- Arranque del Servidor ---
+server.listen(PORT, () => {
+    console.log(`Servidor escuchando en el puerto ${PORT}`);
+    gameController.initialize((err) => {
+        if (err) {
+            console.error("FATAL: No se pudo inicializar el controlador del juego.", err);
+            process.exit(1);
+        }
+        console.log("El juego está listo para aceptar conexiones y acciones.");
+        io.emit('server-ready'); 
+    });
+});

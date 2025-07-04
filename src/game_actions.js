@@ -1,277 +1,79 @@
-// src/game_actions.js
-const { gameState } = require("./game_state");
-const gameMapModule = require("./game_map");
-const gameData = require("./game_data");
-const database = require("./database");
+const GameMap = require('./game_map');
+const _ = require('lodash');
+// CORRECCIÓN: Ahora es seguro importar game_data en el nivel superior
+const gameData = require('./game_data');
 
-let io = null; // Instancia de Socket.IO para emitir mensajes
+/**
+ * Procesa un comando de acción del jugador.
+ * Esta es una función pura: no modifica el estado, devuelve uno nuevo.
+ * @param {object} currentState - El estado actual del juego { turn, factions }.
+ * @param {object} currentMap - El mapa actual del juego.
+ * @param {string} actionCommand - El comando completo, ej: 'construir "Destructor Alfa" "Blanco 1"'.
+ * @param {object} actingFaction - La facción que realiza la acción.
+ * @returns {object} Un objeto con { success, message, newState?, newMap? }.
+ */
+function processAction(currentState, currentMap, actionCommand, actingFaction) {
+    const parts = actionCommand.match(/"[^"]+"|\S+/g) || [];
+    const command = parts[0];
 
-function setIoInstance(socketIoInstance) {
-  io = socketIoInstance;
-}
+    // Clonamos el estado de forma segura para no mutar el original
+    const newState = _.cloneDeep(currentState);
+    const newMap = _.cloneDeep(currentMap);
+    const factionInNewState = newState.factions.find(f => f.factionId === actingFaction.factionId);
 
-// Función para enviar un mensaje a un jugador específico
-function sendPlayerMessage(playerName, message) {
-  if (
-    io &&
-    gameState.factions[playerName] &&
-    gameState.factions[playerName].socketId
-  ) {
-    io.to(gameState.factions[playerName].socketId).emit(
-      "playerMessage",
-      message
-    );
-  } else {
-    // Si no hay socket, lo mostramos en la consola del servidor
-    console.log(`Mensaje para ${playerName} (sin socket): ${message}`);
-  }
-}
+    if (!factionInNewState) {
+        return { success: false, message: "Error interno: No se encontró la facción en el nuevo estado." };
+    }
 
-// --- Lógica Principal de Acciones de Jugador ---
-
-async function processPlayerOrder(playerName, order) {
-  if (!gameState.factions[playerName]) {
-    return sendPlayerMessage(playerName, "Error: Tu facción no existe.");
-  }
-  if (gameState.playerOrdersThisTurn[playerName]) {
-    return sendPlayerMessage(
-      playerName,
-      "Error: Ya has enviado una orden este turno."
-    );
-  }
-
-  // Parsear la orden: acción "Parámetro 1" "Parámetro 2"
-  const parts = order.match(/"[^"]+"|\S+/g) || [];
-  const command = parts.length > 0 ? parts[0].toLowerCase() : "";
-  const params = parts.slice(1).map((p) => p.replace(/"/g, ""));
-
-  try {
-    let success = false;
     switch (command) {
-      case "construir":
-        if (params.length === 2) {
-          success = await handleBuild(playerName, params[0], params[1]);
-        } else {
-          sendPlayerMessage(
-            playerName,
-            'Formato incorrecto. Usa: construir "NombreUnidad" "Sistema"'
-          );
-        }
-        break;
-      case "recolectar":
-        if (params.length === 1) {
-          success = await handleCollect(playerName, params[0]);
-        } else {
-          sendPlayerMessage(
-            playerName,
-            'Formato incorrecto. Usa: recolectar "Sistema"'
-          );
-        }
-        break;
-      case "mover":
-        if (params.length === 2) {
-          success = await handleMove(playerName, params[0], params[1]);
-        } else {
-          sendPlayerMessage(
-            playerName,
-            'Formato incorrecto. Usa: mover "NombreNave" "SistemaDestino"'
-          );
-        }
-        break;
-      default:
-        sendPlayerMessage(
-          playerName,
-          `Error: Comando desconocido "${command}".`
-        );
-        return; // No marcar como orden válida si el comando es desconocido
+        case 'construir':
+            return build(parts, newState, newMap, factionInNewState);
+        
+        // Aquí añadiremos 'mover', 'recolectar', etc.
+        
+        default:
+            return { success: false, message: `Comando "${command}" desconocido.` };
+    }
+}
+
+function build(parts, state, map, faction) {
+    if (parts.length < 3) {
+        return { success: false, message: 'Formato: construir "Unidad" "Sistema"' };
+    }
+    const unitName = parts[1].replace(/"/g, '');
+    const systemKey = parts[2].replace(/"/g, '');
+
+    const unitData = gameData.units.find(u => u.name === unitName);
+    if (!unitData) {
+        return { success: false, message: `Unidad "${unitName}" desconocida.` };
     }
 
-    // Solo marcamos la orden como usada si la acción fue procesada con éxito.
-    if (success) {
-      gameState.playerOrdersThisTurn[playerName] = true;
+    const system = map[systemKey];
+    if (!system || system.owner !== faction.factionId) {
+        return { success: false, message: "No puedes construir en este sistema." };
     }
-  } catch (error) {
-    console.error(`Error procesando la orden para ${playerName}:`, error);
-    sendPlayerMessage(
-      playerName,
-      "Error interno del servidor al procesar tu orden."
-    );
-  }
-}
 
-async function handleBuild(playerName, unitName, systemName) {
-  const faction = gameState.factions[playerName];
-  const unitData = gameData.AVAILABLE_UNITS[unitName];
-  const system = gameMapModule.getSystemByName(systemName);
+    if (faction.resources < unitData.cost) {
+        return { success: false, message: "Recursos insuficientes." };
+    }
 
-  if (!unitData) {
-    sendPlayerMessage(playerName, `Error: La unidad "${unitName}" no existe.`);
-    return false;
-  }
-  if (!system) {
-    sendPlayerMessage(
-      playerName,
-      `Error: El sistema "${systemName}" no existe.`
-    );
-    return false;
-  }
-  if (faction.baseLocation !== systemName) {
-    sendPlayerMessage(
-      playerName,
-      `Error: Solo puedes construir en tu base (${faction.baseLocation}).`
-    );
-    return false;
-  }
-  if (faction.resources < unitData.cost) {
-    sendPlayerMessage(
-      playerName,
-      `Error: No tienes suficientes recursos. Necesitas ${unitData.cost}R, tienes ${faction.resources}R.`
-    );
-    return false;
-  }
+    // Modificar el estado clonado
+    faction.resources -= unitData.cost;
+    let unitInSystem = system.units.find(u => u.name === unitName);
+    if (unitInSystem) {
+        unitInSystem.quantity += 1;
+    } else {
+        system.units.push({ name: unitName, quantity: 1, owner: faction.factionId });
+    }
 
-  // Actualizar estado en memoria
-  faction.resources -= unitData.cost;
-  faction.units[unitName] = (faction.units[unitName] || 0) + 1;
-  system.units[unitName] = (system.units[unitName] || 0) + 1;
-
-  // Actualizar base de datos
-  await database.addFactionDB(faction);
-  await database.updateSystemDB(system.name, { units: system.units });
-
-  sendPlayerMessage(
-    playerName,
-    `Construcción exitosa: 1x ${unitName} en ${systemName}. Recursos restantes: ${faction.resources}R.`
-  );
-  io.emit("gameStateUpdate", gameState);
-  io.emit("gameMapUpdate", gameMapModule.getGameMap());
-  return true;
-}
-
-async function handleCollect(playerName, systemName) {
-  const faction = gameState.factions[playerName];
-  const system = gameMapModule.getSystemByName(systemName);
-
-  if (!system) {
-    sendPlayerMessage(
-      playerName,
-      `Error: El sistema "${systemName}" no existe.`
-    );
-    return false;
-  }
-  if (faction.baseLocation !== systemName) {
-    sendPlayerMessage(
-      playerName,
-      `Error: Solo puedes recolectar en tu base (${faction.baseLocation}).`
-    );
-    return false;
-  }
-  if (system.wasCollectedThisTurn) {
-    sendPlayerMessage(
-      playerName,
-      `Error: Ya se han recolectado recursos en ${systemName} este turno.`
-    );
-    return false;
-  }
-  if (
-    !faction.units["Soldado Genérico"] ||
-    faction.units["Soldado Genérico"] === 0
-  ) {
-    sendPlayerMessage(
-      playerName,
-      `Error: Necesitas al menos un "Soldado Genérico" para recolectar.`
-    );
-    return false;
-  }
-
-  const resourcesToCollect = Math.min(
-    faction.units["Soldado Genérico"] * 10,
-    system.resources.maxProduction
-  );
-
-  // Actualizar estado en memoria
-  faction.resources += resourcesToCollect;
-  system.wasCollectedThisTurn = true;
-  gameState.systemsCollectedThisTurn.push(systemName);
-
-  // Actualizar base de datos
-  await database.addFactionDB(faction);
-  await database.updateSystemDB(system.name, { wasCollectedThisTurn: true });
-
-  sendPlayerMessage(
-    playerName,
-    `Recolectaste ${resourcesToCollect}R en ${systemName}. Total: ${faction.resources}R.`
-  );
-  io.emit("gameStateUpdate", gameState);
-  io.emit("gameMapUpdate", gameMapModule.getGameMap());
-  return true;
-}
-
-async function handleMove(playerName, unitName, destinationSystemName) {
-  const faction = gameState.factions[playerName];
-  const sourceSystemName = faction.baseLocation;
-  const sourceSystem = gameMapModule.getSystemByName(sourceSystemName);
-  const destinationSystem = gameMapModule.getSystemByName(
-    destinationSystemName
-  );
-
-  if (unitName !== "Nave de Transporte Básico") {
-    sendPlayerMessage(
-      playerName,
-      `Error: Por ahora solo puedes mover "Nave de Transporte Básico".`
-    );
-    return false;
-  }
-  if (!sourceSystem || !destinationSystem) {
-    sendPlayerMessage(
-      playerName,
-      "Error: Sistema de origen o destino no válido."
-    );
-    return false;
-  }
-  if (!sourceSystem.units[unitName] || sourceSystem.units[unitName] < 1) {
-    sendPlayerMessage(
-      playerName,
-      `Error: No tienes un "${unitName}" en ${sourceSystemName} para mover.`
-    );
-    return false;
-  }
-
-  const distance = gameMapModule.getDistance(
-    sourceSystemName,
-    destinationSystemName
-  );
-  const unitMovement = gameData.AVAILABLE_UNITS[unitName].movement;
-  if (distance > unitMovement) {
-    sendPlayerMessage(
-      playerName,
-      `Error: ${destinationSystemName} está demasiado lejos (distancia ${distance}, movimiento ${unitMovement}).`
-    );
-    return false;
-  }
-
-  // Actualizar estado en memoria
-  sourceSystem.units[unitName]--;
-  destinationSystem.units[unitName] =
-    (destinationSystem.units[unitName] || 0) + 1;
-
-  // Actualizar base de datos
-  await database.updateSystemDB(sourceSystem.name, {
-    units: sourceSystem.units,
-  });
-  await database.updateSystemDB(destinationSystem.name, {
-    units: destinationSystem.units,
-  });
-
-  sendPlayerMessage(
-    playerName,
-    `Moviste 1x ${unitName} de ${sourceSystemName} a ${destinationSystemName}.`
-  );
-  io.emit("gameMapUpdate", gameMapModule.getGameMap());
-  return true;
+    return { 
+        success: true, 
+        message: `${unitName} construido en ${systemKey}.`,
+        newState: state,
+        newMap: map,
+     };
 }
 
 module.exports = {
-  setIoInstance,
-  processPlayerOrder,
+    processAction,
 };

@@ -1,60 +1,109 @@
-const gameMapModule = require("./game_map");
-const database = require("./database");
-const gameData = require("./game_data");
+const db = require('./database');
+const GameMap = require('./game_map');
 
-let gameState = { turn: 0, factions: {}, gameStarted: false, systemsCollectedThisTurn: [], playerOrdersThisTurn: {} };
+class GameState {
+    constructor() {
+        this._isReady = false;
+        this._turn = 1;
+        this._factions = [];
+        this._map = {};
+    }
 
-async function createTestPlayer() {
-    if (!gameState.factions["Xisco"]) {
-      const initialSystemName = "Blanco 1";
-      const initialSystem = gameMapModule.getSystemByName(initialSystemName);
-      if (initialSystem) {
-        const testFaction = {
-            playerName: "Xisco", id: "European", name: "European", resources: 500, hero: "Ares", 
-            baseUnits: "Cuartel General", baseLocation: initialSystemName, 
-            location: initialSystemName, units: { "Nave de Transporte Básico": 1, "Soldado Genérico": 1 }
-        };
-        gameState.factions["Xisco"] = testFaction;
-        initialSystem.occupiedBy = "Xisco";
-        initialSystem.units = { ...testFaction.units };
-        await database.addFactionDB(testFaction);
-        await database.updateSystemDB(initialSystem.name, { occupiedBy: "Xisco", units: initialSystem.units });
-        console.log("-> Jugador de prueba 'Xisco' creado y guardado.");
-      }
+    // --- Getters ---
+    isReady() { return this._isReady; }
+    getTurn() { return this._turn; }
+    getFactions() { return this._factions; }
+    getMap() { return this._map; }
+    getFactionByPlayerName(name) { return this._factions.find(f => f.playerName === name); }
+    getFactionById(id) { return this._factions.find(f => f.factionId === id); }
+
+    // --- State Management ---
+    updateState(newState, newMap) {
+        this._factions = newState.factions;
+        this._turn = newState.turn;
+        this._map = newMap;
+    }
+
+    // --- Database Interaction ---
+    load(callback) {
+        db.initializeDatabase(err => {
+            if (err) return callback(err);
+
+            const turnQuery = "SELECT turn FROM game_state LIMIT 1";
+            db.get(turnQuery, [], (err, turnRow) => {
+                if (err) return callback(err);
+                this._turn = turnRow ? turnRow.turn : 1;
+
+                db.all("SELECT * FROM factions", [], (err, factionRows) => {
+                    if (err) return callback(err);
+                    this._factions = factionRows.map(r => ({ ...r, units: JSON.parse(r.units) }));
+
+                    GameMap.loadFromDB((err, loadedMap) => {
+                        if (err) return callback(err);
+                        this._map = loadedMap;
+                        this._isReady = true;
+                        callback(null);
+                    });
+                });
+            });
+        });
+    }
+
+    save(callback) {
+        const turnQuery = "UPDATE game_state SET turn = ?";
+        db.run(turnQuery, [this._turn]);
+
+        this._factions.forEach(faction => {
+            const query = `
+                UPDATE factions 
+                SET resources = ?, units = ? 
+                WHERE playerName = ?
+            `;
+            db.run(query, [faction.resources, JSON.stringify(faction.units), faction.playerName]);
+        });
+        
+        Object.entries(this._map).forEach(([id, system]) => {
+            const query = `
+                UPDATE systems 
+                SET owner = ?, units = ?, buildings = ?
+                WHERE id = ?
+            `;
+            db.run(query, [system.owner, JSON.stringify(system.units), JSON.stringify(system.buildings), id]);
+        });
+        
+        console.log("Game state saved.");
+        callback(null);
+    }
+
+    restart(callback) {
+        this._isReady = false;
+        db.run("DELETE FROM factions", []);
+        db.run("DELETE FROM systems", []);
+        db.run("UPDATE game_state SET turn = 1", [], () => {
+            db.run(
+                "INSERT INTO factions (playerName, factionId, resources, units) VALUES ('Xisco', 'European', 500, '[]')"
+            );
+            const newMap = GameMap.createInitial();
+            newMap['Blanco 1'].owner = 'European';
+            newMap['Blanco 1'].units.push({ name: 'Destructor Alfa', quantity: 5, owner: 'European' });
+
+            const systemPromises = Object.entries(newMap).map(([id, system]) => {
+                return new Promise((resolve, reject) => {
+                    db.run(
+                        "INSERT INTO systems (id, owner, units, buildings) VALUES (?, ?, ?, ?)",
+                        [id, system.owner, JSON.stringify(system.units), JSON.stringify(system.buildings)],
+                        (err) => err ? reject(err) : resolve()
+                    );
+                });
+            });
+            Promise.all(systemPromises).then(() => this.load(callback)).catch(callback);
+        });
+    }
+
+    advanceTurn(callback) {
+        this._turn += 1;
+        this.save(callback);
     }
 }
 
-async function resetGame() {
-  await database.resetGameStateDB();
-  await database.run("DELETE FROM factions");
-  await gameMapModule.resetSystemsState();
-  await loadGameStateFromDB();
-  await loadFactionsFromDB();
-  await createTestPlayer();
-  gameState.systemsCollectedThisTurn = [];
-  gameState.playerOrdersThisTurn = {};
-  console.log("Juego reiniciado a estado inicial.");
-}
-
-async function loadGameStateFromDB() {
-  const state = await database.getGameStateDB();
-  if (state) {
-    gameState.turn = state.turn;
-    gameState.gameStarted = !!state.gameStarted;
-  }
-}
-
-// CORRECCIÓN: La función de la DB ahora devuelve un objeto, por lo que la carga es directa.
-async function loadFactionsFromDB() {
-  gameState.factions = await database.getAllFactionsDB();
-  console.log(`-> ${Object.keys(gameState.factions).length} facciones cargadas desde DB.`);
-}
-
-module.exports = {
-  gameState,
-  resetGame,
-  advanceTurn: async () => { /* Lógica de avance de turno */ },
-  loadGameStateFromDB,
-  loadFactionsFromDB,
-  createTestPlayer,
-};
+module.exports = GameState;

@@ -1,52 +1,71 @@
+<!-- FILENAME: public/player.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COSMOS - Panel de Jugador</title>
+    <title>Panel de Jugador - COSMOS</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="player-theme">
-    <div class="container">
-        <h1>COSMOS - Tu Panel de Facción</h1>
-
-        <div id="player-login-section">
-            <p>Introduce tu nombre de jugador para acceder:</p>
-            <input type="text" id="player-id-input" placeholder="Tu Nombre de Jugador">
-            <button id="access-faction-btn">Acceder</button>
-        </div>
-
-        <div id="player-info-section" class="hidden">
-            <p>Turno Actual: <strong id="current-turn-player">0</strong></p>
-            <h2>Faccion: <span id="faction-name-display"></span></h2>
-            <p>Recursos: <strong id="player-resources-display">0</strong> R</p>
-            
-            <div class="player-units">
-                <h3>Tus Unidades:</h3>
-                <ul id="player-unit-list"></ul>
+<body>
+    <div id="player-container" class="container">
+        <header>
+            <h1>Panel de Jugador: <span id="player-faction-name"></span></h1>
+            <div class="player-stats">
+                <span>Recursos: <span id="player-resources"></span></span>
+                <span>Turno: <span id="player-turn-counter"></span></span>
             </div>
+        </header>
 
-            <div class="player-orders">
-                <h3>Enviar Orden</h3>
-                <p class="instruction">Ej: <code>construir "Soldado Genérico" "Blanco 1"</code></p>
-                <input type="text" id="order-input" placeholder="Escribe tu orden aquí">
-                <button id="send-order-btn">Enviar Orden</button>
-                <div id="player-messages"></div>
-            </div>
-            
-            <div class="map-info">
-                <h2>Mapa del Cuadrante Avalon</h2>
-                <select id="sector-display-select-player"></select>
-                <div id="game-map-display-player"></div>
-            </div>
+        <main class="player-main">
+            <div class="player-sidebar">
+                <div id="player-units-container">
+                    <h3>Tus Unidades</h3>
+                    <p>Cargando unidades...</p>
+                </div>
+                <div id="player-actions">
+                    <h3>Enviar Órdenes</h3>
+                    <div id="action-feedback"></div>
+                    <form id="action-form">
+                        <!-- Acción Construir -->
+                        <div class="action-group">
+                            <label for="build-unit-select">Construir:</label>
+                            <select id="build-unit-select">
+                                <option value="Destructor Alfa">Destructor Alfa (40R)</option>
+                                <option value="Artista Marcial">Artista Marcial (1R)</option>
+                            </select>
+                            <input type="text" id="build-system-input" placeholder="Sistema (ej: Blanco 1)">
+                            <button type="button" data-action="construir">Construir</button>
+                        </div>
+                        
+                        <!-- Acción Recolectar -->
+                        <div class="action-group">
+                             <label for="collect-system-input">Recolectar:</label>
+                             <input type="text" id="collect-system-input" placeholder="Sistema (ej: Blanco 1)">
+                             <button type="button" data-action="recolectar">Recolectar</button>
+                        </div>
 
-            <button id="logout-btn">Cerrar Sesión</button>
-        </div>
+                        <!-- Acción Mover -->
+                        <div class="action-group">
+                            <label for="move-unit-input">Mover:</label>
+                            <input type="text" id="move-unit-input" placeholder="Nombre Unidad">
+                            <input type="text" id="move-from-input" placeholder="Sistema Origen">
+                            <input type="text" id="move-to-input" placeholder="Sistema Destino">
+                            <button type="button" data-action="mover">Mover</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="player-map-area">
+                <h2>Mapa Galáctico</h2>
+                <div id="player-map-container">
+                    <p>Cargando mapa...</p>
+                </div>
+            </div>
+        </main>
     </div>
+
     <script src="/socket.io/socket.io.js"></script>
     <script src="app.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => initClient('player'));
-    </script>
 </body>
 </html>

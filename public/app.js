@@ -1,258 +1,226 @@
 const socket = io();
+let currentPlayer = null;
+let visiblePlayerMap = {};
 
-let currentPage = "";
-let currentPlayerName = "";
-let currentFullGameMap = {};
-let currentGameState = {};
-
-function initClient(type) {
-  currentPage = type;
-  console.log(`[CLIENT] Cliente inicializado como: ${currentPage}`);
-  
-  if (currentPage === "admin") {
-    setupAdminListeners();
-    socket.emit("requestInitialData");
-  } else if (currentPage === "player") {
-    setupPlayerListeners();
-    const storedPlayerName = localStorage.getItem("currentPlayerName");
-    if (storedPlayerName) {
-      handlePlayerLogin(storedPlayerName);
-    }
-  }
-}
-
-// --- SOCKET.IO LISTENERS ---
-socket.on("initialDataResponse", (data) => {
-  console.log("[CLIENT] Datos iniciales recibidos:", data);
-  currentGameState = data.gameState || {};
-  currentFullGameMap = data.gameMap || {};
-  const allSectorNames = Object.keys(currentFullGameMap);
-  
-  if (currentPage === "admin") {
-    const sectorSelect = document.getElementById("sector-display-select");
-    populateFactionSelect(document.getElementById("faction-select"), data.availableFactions);
-    populateSectorSelect(sectorSelect, allSectorNames);
-    updateAdminView(currentGameState);
-  } else if (currentPage === "player") {
-    const sectorSelectPlayer = document.getElementById("sector-display-select-player");
-    populateSectorSelect(sectorSelectPlayer, allSectorNames);
-    if (currentGameState.factions[currentPlayerName]) {
-        updatePlayerView(currentGameState);
-    }
-  }
-});
-
-socket.on("gameStateUpdate", (gameState) => {
-  console.log("[CLIENT] Actualización de gameState recibida.");
-  currentGameState = gameState;
-  if (currentPage === "admin") updateAdminView(gameState);
-  else updatePlayerView(gameState);
-});
-
-socket.on("gameMapUpdate", (gameMapData) => {
-  console.log("[CLIENT] Actualización de gameMap recibida.");
-  currentFullGameMap = gameMapData;
-  if (currentPage === "admin") {
-      renderGameMap(currentFullGameMap, document.getElementById("sector-display-select").value);
-  } else {
-      // En el jugador, es mejor actualizar toda la vista para recalcular las listas de unidades
-      updatePlayerView(currentGameState);
-  }
-});
-
-// --- ADMIN ---
-function setupAdminListeners() {
-  document.getElementById("advance-turn-btn").addEventListener("click", () => socket.emit("adminAction", { action: "advanceTurn" }));
-  document.getElementById("reset-game-btn").addEventListener("click", () => {
-    if (confirm("¿Seguro que quieres reiniciar la partida?")) socket.emit("adminAction", { action: "reset" });
-  });
-  document.getElementById("add-faction-btn").addEventListener("click", () => {
-    const playerName = document.getElementById("player-name-input").value.trim();
-    const factionId = document.getElementById("faction-select").value;
-    if (playerName && factionId) socket.emit("adminAction", { action: "addFaction", playerName, factionId });
-  });
-  document.getElementById("sector-display-select").addEventListener("change", (e) => renderGameMap(currentFullGameMap, e.target.value));
-}
-
-function updateAdminView(gameState) {
-  document.getElementById("current-turn").textContent = gameState.turn;
-  renderFactionsList(gameState.factions);
-  renderGameMap(currentFullGameMap, document.getElementById("sector-display-select").value);
-}
-
-function renderFactionsList(factions) {
-    const list = document.getElementById("factions-list");
-    list.innerHTML = "";
-    if (!factions || Object.keys(factions).length === 0) {
-        list.innerHTML = "<li>No hay facciones asignadas.</li>";
-        return;
-    }
-    for (const playerName in factions) {
-        const faction = factions[playerName];
-        const li = document.createElement("li");
-        li.innerHTML = `<div><strong>${playerName}</strong> (${faction.name})</div> <div>Base: <strong>${faction.baseLocation}</strong></div>`;
-        list.appendChild(li);
-    }
-}
-
-// --- PLAYER ---
-function setupPlayerListeners() {
-  document.getElementById("access-faction-btn").addEventListener("click", () => {
-    const name = document.getElementById("player-id-input").value.trim();
-    if (name) handlePlayerLogin(name);
-  });
-  document.getElementById("logout-btn").addEventListener("click", () => {
-    currentPlayerName = "";
-    localStorage.removeItem("currentPlayerName");
-    document.getElementById("player-login-section").classList.remove("hidden");
-    document.getElementById("player-info-section").classList.add("hidden");
-  });
-  document.getElementById("send-order-btn").addEventListener("click", () => {
-    const orderInput = document.getElementById("order-input");
-    if (orderInput.value.trim() && currentPlayerName) {
-      socket.emit("playerOrder", { playerName: currentPlayerName, order: orderInput.value.trim() });
-      orderInput.value = "";
-    }
-  });
-  document.getElementById("sector-display-select-player").addEventListener("change", (e) => renderGameMapPlayer(currentFullGameMap, e.target.value));
-}
-
-function handlePlayerLogin(name) {
-  currentPlayerName = name;
-  localStorage.setItem("currentPlayerName", name);
-  socket.emit("requestInitialData");
-}
-
-function updatePlayerView(gameState) {
-  if (currentPage !== 'player' || !currentPlayerName || !gameState.factions[currentPlayerName]) {
-    return;
-  }
-  
-  document.getElementById("player-login-section").classList.add("hidden");
-  document.getElementById("player-info-section").classList.remove("hidden");
-
-  const faction = gameState.factions[currentPlayerName];
-  document.getElementById("current-turn-player").textContent = gameState.turn;
-  document.getElementById("faction-name-display").textContent = faction.name;
-  document.getElementById("player-resources-display").textContent = faction.resources;
-  
-  renderPlayerUnitsBySystem(currentFullGameMap, currentPlayerName);
-  renderGameMapPlayer(currentFullGameMap, document.getElementById("sector-display-select-player").value);
-}
-
-// MEJORA: Muestra las unidades agrupadas por sistema.
-function renderPlayerUnitsBySystem(gameMap, playerName) {
-    const listContainer = document.getElementById("player-unit-list");
-    listContainer.innerHTML = "";
-
-    const systemsWithUnits = [];
-    for (const sector in gameMap) {
-        gameMap[sector].forEach(system => {
-            if (system.occupiedBy === playerName) {
-                const playerUnits = Object.entries(system.units || {}).filter(([, count]) => count > 0);
-                if (playerUnits.length > 0) {
-                    systemsWithUnits.push({
-                        name: system.name,
-                        units: playerUnits
-                    });
+// --- Event Listeners ---
+document.addEventListener('DOMContentLoaded', () => {
+    const loginButton = document.getElementById('login-btn');
+    if (loginButton) {
+        loginButton.addEventListener('click', () => {
+            const playerName = document.getElementById('player-name-input').value.trim();
+            if (playerName) {
+                if (playerName === 'admin') {
+                    document.getElementById('login-container').style.display = 'none';
+                    document.getElementById('admin-container').style.display = 'block';
+                    socket.emit('admin-login');
+                } else {
+                    socket.emit('player-login', playerName);
                 }
             }
         });
     }
 
-    if (systemsWithUnits.length === 0) {
-        listContainer.innerHTML = "<li>No tienes unidades desplegadas.</li>";
-        return;
-    }
-
-    systemsWithUnits.forEach(system => {
-        const systemLi = document.createElement("li");
-        systemLi.className = "system-unit-group";
-        
-        let unitsHtml = "";
-        system.units.forEach(([unitName, count]) => {
-            unitsHtml += `<li>${unitName}: ${count}</li>`;
+    const actionForm = document.getElementById('action-form');
+    if (actionForm) {
+        actionForm.addEventListener('click', (e) => {
+            if (e.target.tagName !== 'BUTTON') return;
+            e.preventDefault();
+            // Lógica de acciones (se implementará más adelante)
         });
+    }
 
-        systemLi.innerHTML = `
-            <div class="system-unit-header">${system.name}</div>
-            <ul class="unit-sublist">${unitsHtml}</ul>
-        `;
-        listContainer.appendChild(systemLi);
+    const restartButton = document.getElementById('restart-btn');
+    if (restartButton) {
+        restartButton.addEventListener('click', () => socket.emit('restart-game'));
+    }
+
+    const advanceTurnButton = document.getElementById('advance-turn-btn');
+    if (advanceTurnButton) {
+        advanceTurnButton.addEventListener('click', () => socket.emit('advance-turn'));
+    }
+});
+
+// --- Socket Handlers ---
+socket.on('static-data', (data) => {
+    console.log("Datos estáticos recibidos:", data);
+    populateFactionSelect(data.factions);
+    populateSectorSelect(data.sectors);
+});
+
+socket.on('update-game-state', (state) => {
+    console.log("Estado del juego recibido (admin):", state);
+    const adminTurnCounter = document.getElementById('admin-turn-counter');
+    if (adminTurnCounter) adminTurnCounter.textContent = state.turn;
+    renderGameMapAdmin(state.map);
+});
+
+socket.on('login-success', (data) => {
+    console.log('Login exitoso:', data);
+    document.getElementById('login-container').style.display = 'none';
+    document.getElementById('player-container').style.display = 'block';
+    
+    currentPlayer = data.faction;
+    visiblePlayerMap = data.map;
+    
+    renderPlayerInfo(data.faction);
+    renderPlayerUnitsBySystem(data.faction.factionId, data.map);
+    renderGameMapPlayer(data.map);
+});
+
+socket.on('update-player-view', (data) => {
+    if (currentPlayer && currentPlayer.playerName === data.faction.playerName) {
+        console.log("Vista del jugador actualizada:", data);
+        currentPlayer = data.faction;
+        visiblePlayerMap = data.map;
+        renderPlayerInfo(data.faction);
+        renderPlayerUnitsBySystem(data.faction.factionId, data.map);
+        renderGameMapPlayer(data.map);
+    }
+});
+
+// --- Funciones de Renderizado ---
+
+function populateFactionSelect(factions) {
+    const select = document.getElementById('faction-select');
+    if (!select || select.options.length > 1) return;
+    factions.forEach(faction => {
+        const option = document.createElement('option');
+        option.value = faction.id;
+        option.textContent = faction.name;
+        select.appendChild(option);
     });
 }
 
-// --- MAP & UI HELPERS ---
-function renderGameMap(gameMap, selectedSector) {
-    const container = document.getElementById("game-map-display");
-    container.innerHTML = "";
-    if (!selectedSector || !gameMap[selectedSector]) {
-        container.innerHTML = "<p>Selecciona un sector.</p>";
-        return;
-    }
-    const systems = gameMap[selectedSector];
-    const ul = document.createElement("ul");
-    ul.className = "systems-list";
-    systems.forEach(system => {
-        const li = document.createElement("li");
-        li.className = "system-item";
-        let content = `<strong>${system.name}</strong>`;
-        if (system.occupiedBy) content += ` - Ocupado por: <em>${system.occupiedBy}</em>`;
-        const unitsInSystem = Object.entries(system.units || {}).map(([unit, count]) => count > 0 ? `${unit}: ${count}` : null).filter(Boolean).join(", ");
-        if (unitsInSystem) content += `<br><small>Unidades: ${unitsInSystem}</small>`;
-        li.innerHTML = content;
-        ul.appendChild(li);
+function populateSectorSelect(sectors) {
+    const select = document.getElementById('sector-select');
+    if (!select || select.options.length > 1) return;
+    sectors.forEach(sector => {
+        const option = document.createElement('option');
+        option.value = sector.color;
+        option.textContent = `Sector ${sector.color}`;
+        select.appendChild(option);
     });
-    container.appendChild(ul);
 }
 
-// MEJORA: Muestra las unidades detalladas en el mapa del jugador.
-function renderGameMapPlayer(gameMap, selectedSector) {
-    const container = document.getElementById("game-map-display-player");
-    container.innerHTML = "";
-    if (!selectedSector || !gameMap[selectedSector]) {
-        container.innerHTML = "<p>Selecciona un sector.</p>";
+function renderPlayerInfo(faction) {
+    document.getElementById('player-faction-name').textContent = faction.factionId;
+    document.getElementById('player-resources').textContent = faction.resources;
+    document.getElementById('player-turn-counter').textContent = gameState.getState().turn; // Asumiendo que el turno viene del estado global
+}
+
+function renderGameMapAdmin(fullMap) {
+    const mapContainer = document.getElementById('game-map-container');
+    if (!mapContainer || !fullMap) return;
+    mapContainer.innerHTML = '';
+
+    const sectorSelect = document.getElementById('sector-select');
+    const selectedColor = sectorSelect.value;
+
+    Object.entries(fullMap).forEach(([key, system]) => {
+        if (key.startsWith(selectedColor)) {
+            const systemDiv = document.createElement('div');
+            systemDiv.className = 'map-system';
+            systemDiv.innerHTML = `<strong>${key}</strong>`;
+            if (system.owner) {
+                systemDiv.innerHTML += `<br>Ocupado: ${system.owner}`;
+            }
+            if (system.units.length > 0) {
+                const unitsList = document.createElement('ul');
+                system.units.forEach(unit => {
+                    const li = document.createElement('li');
+                    li.textContent = `${unit.name}: ${unit.quantity}`;
+                    unitsList.appendChild(li);
+                });
+                systemDiv.appendChild(unitsList);
+            }
+            mapContainer.appendChild(systemDiv);
+        }
+    });
+}
+
+// El resto de funciones de renderizado (renderPlayerUnitsBySystem, renderGameMapPlayer) se mantienen como estaban.
+function renderPlayerUnitsBySystem(factionId, playerMap) {
+    const container = document.getElementById('player-units-container');
+    if (!container) return;
+    container.innerHTML = '<h3>Tus Unidades</h3>';
+
+    const systemsWithUnits = {};
+    for (const systemKey in playerMap) {
+        const system = playerMap[systemKey];
+        if (system.owner === factionId && system.units.length > 0) {
+            systemsWithUnits[systemKey] = system.units;
+        }
+    }
+
+    if (Object.keys(systemsWithUnits).length === 0) {
+        container.innerHTML += '<p>No tienes unidades desplegadas.</p>';
         return;
     }
-    const systems = gameMap[selectedSector];
-    const ul = document.createElement("ul");
-    ul.className = "systems-list";
-    systems.forEach(system => {
-        const li = document.createElement("li");
-        li.className = "system-item";
-        let content = `<strong>${system.name}</strong>`;
-        if (system.occupiedBy) {
-            const unitsInSystem = Object.entries(system.units || {}).map(([unit, count]) => count > 0 ? `${unit}: ${count}` : null).filter(Boolean).join(", ");
-            if (system.occupiedBy === currentPlayerName) {
-                content += ` - <span style="color: var(--secondary-accent);">Tus Unidades</span>`;
-                if (unitsInSystem) {
-                    content += `<br><small>${unitsInSystem}</small>`;
+
+    const list = document.createElement('ul');
+    for (const systemKey in systemsWithUnits) {
+        const systemLi = document.createElement('li');
+        systemLi.innerHTML = `<strong>${systemKey}</strong>`;
+        const unitsUl = document.createElement('ul');
+        systemsWithUnits[systemKey].forEach(unit => {
+            const unitLi = document.createElement('li');
+            unitLi.textContent = `${unit.name}: ${unit.quantity}`;
+            unitsUl.appendChild(unitLi);
+        });
+        systemLi.appendChild(unitsUl);
+        list.appendChild(systemLi);
+    }
+    container.appendChild(list);
+}
+
+function renderGameMapPlayer(playerMap) {
+    const mapContainer = document.getElementById('player-map-container');
+    if (!mapContainer) return;
+    mapContainer.innerHTML = '';
+
+    const sectors = [ // Esto debería venir de gameData, pero lo hardcodeamos por ahora
+        { color: 'Violeta', systems: 60 }, { color: 'Marrón', systems: 55 }, 
+        { color: 'Amarillo', systems: 50 }, { color: 'Rojo', systems: 45 }, 
+        { color: 'Verde', systems: 40 }, { color: 'Azul', systems: 35 }, 
+        { color: 'Naranja', systems: 30 }, { color: 'Blanco', systems: 25 }
+    ];
+
+    sectors.forEach(sector => {
+        const sectorDiv = document.createElement('div');
+        sectorDiv.className = 'map-sector';
+        sectorDiv.innerHTML = `<h4>Sector ${sector.color}</h4>`;
+        const systemsGrid = document.createElement('div');
+        systemsGrid.className = 'systems-grid';
+
+        for (let i = 1; i <= sector.systems; i++) {
+            const systemKey = `${sector.color} ${i}`;
+            const systemDiv = document.createElement('div');
+            systemDiv.className = 'map-system';
+            const systemData = playerMap[systemKey];
+            if (systemData) {
+                systemDiv.innerHTML = `<strong>${systemKey}</strong>`;
+                if (systemData.owner) {
+                     systemDiv.innerHTML += `<br><span class="owner-faction-${systemData.owner.toLowerCase()}">Ocupado por: ${systemData.owner}</span>`;
+                     if (currentPlayer && systemData.owner === currentPlayer.factionId) {
+                         systemDiv.classList.add('owned-by-player');
+                     }
+                }
+                if (systemData.units && systemData.units.length > 0) {
+                    const unitsList = document.createElement('ul');
+                    systemData.units.forEach(unit => {
+                        const li = document.createElement('li');
+                        li.textContent = `${unit.name}: ${unit.quantity}`;
+                        unitsList.appendChild(li);
+                    });
+                    systemDiv.appendChild(unitsList);
                 }
             } else {
-                content += ` - <span style="color: var(--danger-accent);">Presencia Detectada</span>`;
+                systemDiv.innerHTML = `<strong>${systemKey}</strong>`;
+                systemDiv.classList.add('fog-of-war');
             }
+            systemsGrid.appendChild(systemDiv);
         }
-        li.innerHTML = content;
-        ul.appendChild(li);
+        sectorDiv.appendChild(systemsGrid);
+        mapContainer.appendChild(sectorDiv);
     });
-    container.appendChild(ul);
-}
-
-function populateSectorSelect(select, sectors) {
-    const orderedSectors = ["Violeta", "Marrón", "Amarillo", "Rojo", "Verde", "Azul", "Naranja", "Blanco", "Negro", "Ciudadela"];
-    select.innerHTML = "";
-    if (!sectors || sectors.length === 0) return;
-    orderedSectors.forEach(sectorName => {
-        if (sectors.includes(sectorName)) {
-            select.innerHTML += `<option value="${sectorName}">${sectorName}</option>`;
-        }
-    });
-    select.dispatchEvent(new Event('change'));
-}
-
-function populateFactionSelect(select, factions) {
-    select.innerHTML = '<option value="">Selecciona una facción</option>';
-    for (const id in factions) {
-        select.innerHTML += `<option value="${id}">${factions[id].name}</option>`;
-    }
 }
