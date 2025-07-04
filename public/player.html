@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSMOS - Panel de Jugador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="player-theme">
+    <div class="container">
+        <h1>COSMOS - Tu Panel de Facción</h1>
+
+        <div id="player-login-section">
+            <p>Introduce tu nombre de jugador para acceder:</p>
+            <input type="text" id="player-id-input" placeholder="Tu Nombre de Jugador">
+            <button id="access-faction-btn">Acceder</button>
+        </div>
+
+        <div id="player-info-section" class="hidden">
+            <p>Turno Actual: <strong id="current-turn-player">0</strong></p>
+            <h2>Faccion: <span id="faction-name-display"></span></h2>
+            <p>Recursos: <strong id="player-resources-display">0</strong> R</p>
+            
+            <div class="player-units">
+                <h3>Tus Unidades:</h3>
+                <ul id="player-unit-list"></ul>
+            </div>
+
+            <div class="player-orders">
+                <h3>Enviar Orden</h3>
+                <p class="instruction">Ej: <code>construir "Soldado Genérico" "Blanco 1"</code></p>
+                <input type="text" id="order-input" placeholder="Escribe tu orden aquí">
+                <button id="send-order-btn">Enviar Orden</button>
+                <div id="player-messages"></div>
+            </div>
+            
+            <div class="map-info">
+                <h2>Mapa del Cuadrante Avalon</h2>
+                <select id="sector-display-select-player"></select>
+                <div id="game-map-display-player"></div>
+            </div>
+
+            <button id="logout-btn">Cerrar Sesión</button>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => initClient('player'));
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+:root {
+    --primary-font: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+    --background-dark: #0a0e1a;
+    --surface-dark: #161b29;
+    --text-light: #e2e8f0;
+    --text-muted: #94a3b8;
+    --border-color: #334155;
+    --danger-accent: #ef4444;
+}
+body.admin-theme { --primary-accent: #f59e0b; --secondary-accent: #f97316; }
+body.player-theme { --primary-accent: #3b82f6; --secondary-accent: #10b981; }
+
+body { font-family: var(--primary-font); background-color: var(--background-dark); color: var(--text-light); margin: 0; padding: 20px; }
+.container { width: 100%; max-width: 1200px; margin: auto; background-color: var(--surface-dark); border-radius: 12px; padding: 2rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); border: 1px solid var(--border-color); }
+h1, h2, h3 { border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-top: 0; }
+h1 { font-size: 2.5rem; text-align: center; margin-bottom: 1.5rem; color: var(--primary-accent); }
+h2 { font-size: 1.8rem; margin-top: 2rem; color: var(--secondary-accent); }
+h3 { font-size: 1.4rem; }
+button { background-color: var(--primary-accent); color: white; border: none; padding: 12px 20px; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; margin: 5px; }
+button:hover { filter: brightness(1.1); }
+button.remove-faction-btn, #reset-game-btn { background-color: var(--danger-accent); }
+input[type="text"], select { background-color: var(--background-dark); color: var(--text-light); border: 1px solid var(--border-color); padding: 12px; border-radius: 8px; font-size: 1rem; width: calc(100% - 26px); margin-bottom: 10px; }
+.controls, .faction-management, .map-preview, .player-orders, .player-units, .map-info { background-color: rgba(0,0,0,0.1); padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; border: 1px solid var(--border-color); }
+#factions-list, .systems-list { list-style: none; padding: 0; }
+#factions-list li { background-color: #1e293b; padding: 15px; border-radius: 8px; margin-bottom: 10px; border-left: 4px solid var(--secondary-accent); display: flex; justify-content: space-between; align-items: center; }
+.systems-list .system-item { background-color: #1e293b; padding: 12px; border-radius: 6px; margin-bottom: 8px; font-family: 'Courier New', Courier, monospace; }
+.systems-list .system-item strong { color: var(--secondary-accent); }
+.systems-list .system-item em { color: var(--primary-accent); font-style: normal; }
+.hidden { display: none; }
+#player-messages { margin-top: 15px; padding: 12px; border-radius: 8px; background-color: #1e293b; color: var(--secondary-accent); font-weight: 600; min-height: 20px; text-align: center; }
+
+/* NUEVOS ESTILOS PARA LA LISTA DE UNIDADES DEL JUGADOR */
+#player-unit-list {
+    list-style: none;
+    padding: 0;
+}
+.system-unit-group {
+    background-color: #1e293b;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 4px solid var(--primary-accent);
+}
+.system-unit-header {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--text-light);
+    margin-bottom: 8px;
+}
+.unit-sublist {
+    list-style: disc;
+    padding-left: 25px;
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}

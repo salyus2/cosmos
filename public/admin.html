@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSMOS - Panel de Administrador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-theme">
+    <div class="container">
+        <h1>COSMOS - Panel de Control del Gestor</h1>
+        <div class="controls">
+            <p>Estado del Juego: <strong id="game-status">No Iniciado</strong></p>
+            <p>Turno Actual: <strong id="current-turn">0</strong></p>
+            <!-- BOTÓN RESTAURADO -->
+            <button id="advance-turn-btn">Avanzar Turno / Iniciar Juego</button>
+            <button id="reset-game-btn">Reiniciar Partida Completa</button>
+        </div>
+        <div class="faction-management">
+            <h2>Gestión de Facciones</h2>
+            <div class="add-faction">
+                <input type="text" id="player-name-input" placeholder="Nombre del Jugador">
+                <select id="faction-select"></select>
+                <button id="add-faction-btn">Asignar Facción</button>
+            </div>
+            <h3>Facciones en Juego:</h3>
+            <ul id="factions-list"></ul>
+        </div>
+        <div class="map-preview">
+            <h2>Mapa del Cuadrante Avalon</h2>
+            <select id="sector-display-select"></select>
+            <div id="game-map-display"></div>
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => initClient('admin'));
+    </script>
+</body>
+</html>

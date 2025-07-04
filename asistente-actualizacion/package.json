@@ -1,0 +1,48 @@
+{
+  "name": "asistente-actualizacion",
+  "displayName": "Asistente de Actualización",
+  "description": "Actualiza archivos desde el portapapeles.",
+  "version": "0.0.1",
+  "engines": {
+      "vscode": "^1.10.0"
+  },
+  "categories": [
+      "Other"
+  ],
+  "activationEvents": [
+      "onCommand:asistente-actualizacion.updateFileFromClipboard"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+      "commands": [
+          {
+              "command": "asistente-actualizacion.updateFileFromClipboard",
+              "title": "Asistente: Actualizar archivo desde el portapapeles"
+          }
+      ],
+      "keybindings": [
+          {
+              "command": "asistente-actualizacion.updateFileFromClipboard",
+              "key": "ctrl+alt+u",
+              "mac": "cmd+alt+u",
+              "when": "editorTextFocus"
+          }
+      ]
+  },
+  "scripts": {
+      "lint": "eslint .",
+      "pretest": "npm run lint",
+      "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+      "@types/vscode": "^1.80.0",
+      "@types/glob": "^8.1.0",
+      "@types/mocha": "^10.0.1",
+      "@types/node": "20.2.5",
+      "eslint": "^8.41.0",
+      "glob": "^8.1.0",
+      "mocha": "^10.2.0",
+      "typescript": "^5.1.3",
+      "@vscode/test-electron": "^2.3.2"
+  }
+}
