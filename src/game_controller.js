@@ -3,8 +3,10 @@ const GameActions = require('./game_actions');
 const GameMap = require('./game_map');
 
 class GameController {
-    constructor() {
-        this.gameState = new GameState();
+    constructor(gameData) {
+        // Principio 2: El controlador recibe las dependencias estáticas
+        this.gameData = gameData;
+        this.gameState = new GameState(gameData); // Y se las pasa al estado
     }
 
     initialize(callback) {
@@ -28,7 +30,8 @@ class GameController {
         if (!faction) return null;
 
         const fullMap = this.gameState.getMap();
-        const visibleMap = GameMap.getVisibleMapForPlayer(faction.factionId, fullMap);
+        // Principio 2: Pasamos gameData a la función que lo necesita
+        const visibleMap = GameMap.getVisibleMapForPlayer(this.gameData, faction.factionId, fullMap);
         
         return { faction, map: visibleMap };
     }
@@ -42,13 +45,12 @@ class GameController {
             return callback({ success: false, message: "Facción no encontrada." });
         }
 
-        const result = GameActions.processAction(currentState, action, faction);
+        const result = GameActions.processAction(this.gameData, currentState, currentState.map, action, faction);
 
         if (!result.success) {
-            return callback(result); // Devuelve el error de la acción
+            return callback(result);
         }
 
-        // Si la acción fue exitosa, actualiza el estado y guárdalo
         this.gameState.updateState(result.newState, result.newMap);
         this.gameState.save((err) => {
             if (err) {

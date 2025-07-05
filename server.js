@@ -2,8 +2,10 @@ const express = require('express');
 const http = require('http');
 const socketIo = require('socket.io');
 const path = require('path');
+
+// Principio 1: Carga Centralizada. Cargamos los datos estáticos primero.
+const gameData = require('./src/game_data'); 
 const GameController = require('./src/game_controller');
-const gameData = require('./src/game_data'); // Importamos los datos estáticos
 
 const app = express();
 const server = http.createServer(app);
@@ -12,13 +14,13 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-const gameController = new GameController();
+// Principio 2: Inyección de Dependencias. Pasamos los datos al controlador.
+const gameController = new GameController(gameData);
 
 // --- Lógica de Socket.IO ---
 io.on('connection', (socket) => {
     console.log('Un cliente se ha conectado');
 
-    // Enviar datos estáticos al cliente recién conectado
     socket.emit('static-data', { factions: gameData.factions, sectors: gameData.sectors });
 
     if (!gameController.isReady()) {
@@ -37,7 +39,7 @@ io.on('connection', (socket) => {
         if (!gameController.isReady()) return;
         const playerView = gameController.getPlayerView(playerName);
         if (playerView) {
-            socket.playerName = playerName; // Asociar socket con jugador
+            socket.playerName = playerName;
             socket.emit('login-success', playerView);
         } else {
             socket.emit('login-fail');
@@ -46,7 +48,6 @@ io.on('connection', (socket) => {
 
     socket.on('player-action', (actionData) => {
         if (!gameController.isReady()) return;
-        
         gameController.handlePlayerAction(actionData, (response) => {
             socket.emit('action-response', response);
             if (response.success) {
@@ -83,6 +84,6 @@ server.listen(PORT, () => {
             process.exit(1);
         }
         console.log("El juego está listo para aceptar conexiones y acciones.");
-        io.emit('server-ready'); 
+        io.emit('server-ready');
     });
 });

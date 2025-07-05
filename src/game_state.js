@@ -1,8 +1,11 @@
 const db = require('./database');
 const GameMap = require('./game_map');
+// Ya no necesita gameData, se lo pasa el controlador
 
 class GameState {
-    constructor() {
+    constructor(gameData) {
+        // Principio 2: Recibe la dependencia
+        this.gameData = gameData;
         this._isReady = false;
         this._turn = 1;
         this._factions = [];
@@ -38,7 +41,8 @@ class GameState {
                     if (err) return callback(err);
                     this._factions = factionRows.map(r => ({ ...r, units: JSON.parse(r.units) }));
 
-                    GameMap.loadFromDB((err, loadedMap) => {
+                    // Principio 2: Pasamos gameData a la función que lo necesita
+                    GameMap.loadFromDB(this.gameData, (err, loadedMap) => {
                         if (err) return callback(err);
                         this._map = loadedMap;
                         this._isReady = true;
@@ -54,20 +58,12 @@ class GameState {
         db.run(turnQuery, [this._turn]);
 
         this._factions.forEach(faction => {
-            const query = `
-                UPDATE factions 
-                SET resources = ?, units = ? 
-                WHERE playerName = ?
-            `;
+            const query = `UPDATE factions SET resources = ?, units = ? WHERE playerName = ?`;
             db.run(query, [faction.resources, JSON.stringify(faction.units), faction.playerName]);
         });
         
         Object.entries(this._map).forEach(([id, system]) => {
-            const query = `
-                UPDATE systems 
-                SET owner = ?, units = ?, buildings = ?
-                WHERE id = ?
-            `;
+            const query = `UPDATE systems SET owner = ?, units = ?, buildings = ? WHERE id = ?`;
             db.run(query, [system.owner, JSON.stringify(system.units), JSON.stringify(system.buildings), id]);
         });
         
@@ -83,7 +79,8 @@ class GameState {
             db.run(
                 "INSERT INTO factions (playerName, factionId, resources, units) VALUES ('Xisco', 'European', 500, '[]')"
             );
-            const newMap = GameMap.createInitial();
+            
+            const newMap = GameMap.createInitial(this.gameData);
             newMap['Blanco 1'].owner = 'European';
             newMap['Blanco 1'].units.push({ name: 'Destructor Alfa', quantity: 5, owner: 'European' });
 

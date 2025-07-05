@@ -9,10 +9,6 @@ const db = require('./database');
 function createInitial() {
     const gameData = require('./game_data');
     const map = {};
-    if (!gameData || !gameData.sectors) {
-        console.error("game_data o game_data.sectors no está definido en createInitial");
-        return {}; // Devuelve un mapa vacío para evitar el crash
-    }
     gameData.sectors.forEach(sector => {
         for (let i = 1; i <= sector.systems; i++) {
             const systemKey = `${sector.color} ${i}`;
