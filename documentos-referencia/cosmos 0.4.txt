@@ -1,0 +1,805 @@
+COSMOS - La Ciudadela Perdida 0.4.
+
+
+1. Introducción
+
+La Ciudadela Perdida es un juego de estrategia en entorno espacial basado en la ambientación de COSMOS durante la llamada Era de la Hechicería tras el descubrimiento de un nuevo cuadrante en la galaxia denominado como Cuadrante Avalon.
+
+“Tras el fracaso del Foro Galáctico el caos envuelve la galaxia, los grandes imperios hegemónicos se debilitan y la aparición de la hechicería pone en tela de juicio todos los paradigmas galácticos”.
+
+Con el descubrimiento del lejano planeta de los hechiceros cubierto por un halo de energía negativa se ha abierto un sector de la galaxia hasta ahora inaccesible para las altas culturas galácticas, pero poblado por distintas razas en un estado tecnológico bastante obsoleto. Sin embargo por todo el cuadrante denominado “Avalon” proliferan restos de tecnología completamente ajena al nivel de progreso de las culturas que pueblan el sector. Además corren los rumores de que las ruinas del hogar de aquellos que crearon esa tecnología sigue existiendo en un lugar oculto del cuadrante.
+
+Grandes y pequeñas potencias, deslumbradas por las posibilidades de nuevos descubrimientos han enviado naves y recursos al sector con la esperanza de descubrir toda esa tecnología hasta ahora oculta y encontrar en primer lugar la Ciudadela Perdida de Ark-Battariu y descubrir sus enigmas y grandezas.
+
+
+2. Descripción del sistema
+
+El juego permite a 10 jugadores gestionar la construcción de naves, entrenar tropas, buscar recursos, entrar en conflicto con otros jugadores tanto por tierra como en el espacio y buscar tecnología perdida para poder cumplir el objetivo de victoria de la facción que elija para luchar.
+
+Cosmos ofrece 14 facciones con las que jugar, cada una de ellas tiene sus propios recursos bélicos, naves y capacidades especiales que les ayudarán a conseguir la victoria. Cada una de las facciones tiene unas motivaciones distintas y por lo tanto sus condiciones de victoria pueden distar mucho de una facción a otra.
+
+Se juega por turnos, cada jugador enviará un turno en el periodo de tiempo establecido por el gestor de la partida, en cada uno de esos turnos tendrá la oportunidad de dar un número determinado de órdenes a su facción. Una vez los turnos hayan sido corregidos por el gestor, este enviará a cada jugador un tablero con la situación resultante de la resolución de ese turno, y en caso de ser necesario, adjuntará información adicional.
+
+
+
+
+
+3. Tablero de Juego 
+
+El tablero de juego tiene 388 casillas sobre las que jugar, divididas en 8 sectores indicados por diferentes colores formando círculos alrededor del centro del cuadrante espacial y un sector no representado directamente en el tablero, cada sector común está dividido en una serie de sistemas que se encuentran numerados, de tal manera que la manera de referirse a un sistema es indicando primero el color del sector seguido del número de ese sistema. El sector negro es un espacio que se encuentra más allá del tablero y que dispone de 100 casillas con sus propias normas a la hora de interactuar con el que trataremos más adelante.
+
+La casilla central, que sería la casilla cero, está bloqueada desde el principio de la partida, y solo podrá ser usada en el momento en el que se consiga desbloquearla.
+
+Cada jugador dispondrá de su propio tablero con la información exclusiva de su facción. Tendrá además en ese mismo archivo una hoja secundaria donde serán indicados los logros y mejoras de los que dispone y que va consiguiendo a lo largo de la partida.
+
+	3.1	Para denominar los diferentes lugares del tablero y poder referirse a ellos correctamente se establece la siguiente distinción: 
+
+Cuadrante: Se denomina así al espacio representado por todo el tablero.
+Sector: Cada una de las franjas de espacio en las que se divide el cuadrante, son representadas por colores.
+Sistema: Cada una de las casillas que componen un sector, su referencia se hará por su número seguido del color del sector en el que están situados. Cada sistema tiene dos áreas, una orbital y una terrestre, la posibilidad o no de poder hacer acciones en cada una de estas áreas depende de la presencia o no en el sistema de una o más facciones.
+
+
+3.2	La situación de una facción con respecto a un sistema podrá tener tres variantes. 
+
+Sin Presencia: No tienes presencia en el sistema lo que supone que no podrás ver lo que en él ocurre y no podrás hacer acciones sobre él, excepto la de terminar un movimiento desde otro sistema o realizar acciones que específicamente indiquen que no se requiere presencia para ser efectuadas.
+Presencia: Tienes unidades o visión en el sistema, lo que te permite tener visión sobre él y hacer acciones que no requieren Dominar un área pero si disponer de presencia.
+Dominación: Dominas un área (Orbital o Terrestre); tienes dominada un área cuando comienzas un turno con presencia visible en una de ellas y no hay presencia visible de otras facciones en esa área. Si dominas un área y no hay presencia de ninguna otra facción en la otra extenderás tu dominio a esa área también. Si existen construcciones especiales o la base de otra facción en un lugar que finalmente es dominado por otro jugador esos edificios o bases serán destruidos irremediablemente. Además una vez dominas un sistema desbloqueas la visión en el mismo de manera de manera continuada a no ser que sea interrumpida por alguna acción propia o de otro jugador como por ejemplo una bomba nova que destruya el sistema.
+
+
+
+
+
+3.3	Sistemas Especiales;
+
+Planetas Especiales; Existen 20 planetas especiales repartidos entre los sectores naranja y verde. Estos sistemas tendrán edificios especiales, o concederán a aquel que los domine habilidades o capacidades únicas.
+
+3.4	Sector Negro; El sector negro corresponde al espacio profundo que separa el cuadrante del resto de la galaxia y rodea todo “Avalon”. Para acceder a él una nave debe iniciar su turno en el sector blanco y realizar una acción de “Misión de Exploración”, o en caso de disponer de acceso a algún sistema dentro del Sector, una acción completa de movimiento. Para poder acceder a un sistema concreto del Sector hay dos condiciones, la primera es que se debe conocer su código de localización y la segunda que este debe de ser un sector habitable.
+
+4. Turno	
+
+Un turno representa una fracción de partida en la cual cada jugador durante el tiempo establecido por el gestor de la partida envía una serie de órdenes a su facción y termina cuando el gestor introduce en los tableros el resultado general de esas órdenes, lo que da comienzo al siguiente turno.
+
+Existirá un número máximo de órdenes que se podrán dar a la facción que controles durante cada turno, por defecto será 6, algunas razas pueden empezar con más o menos acciones y ciertos descubrimientos tecnológicos podrían aumentar ese número para tu facción. Cada 10 turnos de juego todas las facciones mejorarán su reserva de acciones en 1 hasta un máximo de  mejoras tras la resolución del turno 30.
+
+Orientativamente, en términos de juego un turno corresponde a 3 meses de vida dentro del universo “Cosmos”, por lo que cada cuatro turnos habría pasado un año dentro de este universo.
+
+
+4.1.	Orden de resolución del Turno
+
+Ejecución de Acciones.
+Resolución de eventos y conflictos.
+Se resuelven eventos que suceden antes del combate.
+Batallas Estelares y Terrestres
+Bombardeos Orbitales
+Se resuelven eventos que suceden después de los combates. 
+Se asignan las dominaciones para el turno siguiente.
+Fase de Mantenimiento
+Cobro por ingresos automáticos
+Pago de deudas y cuotas
+
+
+
+
+4.2.	Acciones, Tipos de acciones
+
+
+Las acciones son un recurso importante, podrás organizarlas como quieras, y se resolverán en el orden estricto en el que se indiquen y su resolución será automática acción a acción, pudiendo afectar las primeras a la lógica de las segundas. Como restricción no podrás realizar acciones en un sistema en el que no tuvieras presencia al terminar el turno anterior. Comenzarás el juego con 6 acciones, y ganarás una a mayores cada vez que pasen 10 turnos. Podrás ganar acciones de diferentes maneras que se describen a lo largo del manual.
+
+El recurso “Acción” se divide en tres clases;
+
+Acciones Permanentes; Se trata de acciones que ganas y que es imposible que dejes de poseer, normalmente las acciones básicas y las obtenidas por la carta de tecnología descrita a continuación “Holo Red de Gestión de Flotas”
+
+Acciones Temporales; Estas acciones pueden ser obtenidas de tal manera que las poseas durante una cantidad indeterminada de turnos de manera pasiva, pero que pueden existir factores que te hagan perderlas. Algunos ejemplos que se describen en el manual pueden ser la acción ganada por poseer el “Foro Galáctico” o la habilidad de algunas facciones llamada “El Poder de la Burocracia”.
+
+Acciones Puntuales; Engloba las acciones adicionales que ganas de manera puntual que duran tan solo un turno y que no tienen permanencia en el tiempo. Algunos ejemplos descritos más adelante son las acciones de “Incentivos a la Burocracia Rauk” o las obtenidas mediante la “Sanguijuela Cósmica”.
+
+Para poder distinguir unas acciones de otras se puede aplicar la siguiente lógica;
+
+
+	Obtienes una acción ¿Ese beneficio dura más de un turno? 
+
+Si, Es temporal o Permanente.
+          			¿La puedes volver a perder?
+             				 Si; Es temporal
+              				No; Es permanente
+No; Es puntual
+
+
+Se distinguen también las acciones llevadas a cabo de manera general por la facción/jugador a aquellas que requieren una unidad para ser ejecutadas. Las unidades, salvo los casos específicos que se diga lo contrario solo pueden llevar a cabo una acción por turno a no ser que la propia acción llevada a cabo diga lo contrario o sea complementaria a una segunda. Mientras aquellas en las que no intervienen unidades no tienen esa limitación.
+
+Movimiento
+
+Un movimiento es un cambio definitivo y hasta nuevo movimiento de una nave, una flota
+o de un grupo de soldados a pie.
+
+Un grupo de soldados podrá moverse desde una nave a un planeta o a una base Orbital o Terrestre o entre ellas. Como excepción un soldado o grupo de soldados no podrá efectuar movimientos desde la órbita a la zona terrestre de un sistema si hay unidades enemigas en esa misma órbita desde la resolución del turno anterior.
+
+Una flota podrá moverse tantas casillas en su tablero cada turno como puntuación en movimiento tenga la nave más lenta de la flota que mueves con esa orden.
+
+Una flota que comience su turno en un sistema dotado de un portal estelar, podrá declarar una acción de movimiento para moverse hasta cualquier otro portal del cuadrante cuya posición conozca, esto se considera una acción de movimiento completo y no dependerá del valor de movimiento de la flota en cuestión.
+
+Sector Negro; Si dispones de acceso a una casilla habitable del sector negro, una unidad con capacidad de moverse por el espacio puede llegar a ella haciendo una acción que le consume todo su movimiento desde cualquier sistema del Sector Blanco.
+	
+Movimiento Especial; Acceso a la Ciudadela;
+
+Para acceder a la Ciudadela una flota debe comenzar su turno en un sistema dotado de un portal estelar del color de su sector nacido del descubrimiento de una de las 8 llaves, y efectuar una acción de movimiento entre ese portal y la casilla de la ciudadela. El resto de portales no pueden dar un acceso directo a la ciudadela a no ser que tengan alguna norma especial que lo especifique.
+
+
+Recolectar
+
+Puedes ordenar recolectar a una nave, a un grupo de naves, a una tropa o a un grupo de tropas que tengan dominado un sistema en el área terrestre. Podrán añadir a tu contador de recursos tanto material como la suma de sus capacidades de recolección hasta un máximo de la capacidad de extracción del planeta en cada turno como se representa en la siguiente tabla:
+
+
+
+
+
+Maximo materiales por turno
+Reclutamiento Turno
+Sector Violeta
+
+
+60
+40
+Sector Marrón
+
+
+55
+35
+Sector Amarillo
+
+
+50
+30
+Sector Rojo
+
+
+45
+30
+Sector Verde
+
+
+40
+25
+Sector Azul
+
+
+35
+20
+Sector Naranja
+
+
+30
+20
+Sector Blanco
+
+
+25
+10
+Sector Negro
+
+
+0
+0
+
+
+
+Especial: En el caso de las bases de facción únicas y fijas se establece que su capacidad de recolección sea de base la misma que en el sector Violeta (60R) sea cual sea el sector donde estén situadas mientras estas estén activas y funcionando como tales.
+
+
+Buscar Tecnología Perdida
+
+Puedes ordenar buscar tecnología perdida a una tropa, a un grupo de tropas, o a una nave que busquen en el planeta en el que se encuentren en ese momento restos de tecnología o conocimientos tecnológicos que se puedan encontrar entre las gentes o las ruinas del planeta. Para poder dar esta orden hará falta tener dominada el área terrestre del sistema. Recibirá una carta de tecnología que pueden ser mejoras para sus naves o tropas, naves especiales, habilidades especiales o incluso habilidades consumibles. La tecnología será recibida al comienzo de la fase de resolución.
+
+Esta orden será instantánea en todo el cuadrante excepto en el sector violeta que durará cuatro turnos aunque solo gastará acción en el momento en el que se da la primera orden. El turno que se da la orden será el primer turno de investigación, En el cuarto turno la facción recibirá los beneficios de esa investigación. Las unidades que están investigando son especialmente vulnerables, por lo que, en caso de conflicto o ataque enemigo serán los primeros objetivos en ser abatidos. En caso de haber varias unidades del mismo tipo realizando la investigación, con que una sobreviva hasta el final del tiempo de investigación esta se llevará a cabo.
+
+Cada planeta solo puede ser investigado con éxito una vez durante el juego, una vez sea “saqueado” será indicado en la casilla para que cualquiera que la explore sepa que el planeta ya ha sido consumido en este aspecto. (Tecnología Saqueada) o (TS).
+
+En caso de que dos investigaciones concluyan a la vez en el mismo sistema, tendrá preferencia aquella realizada por tropas.
+
+La calidad y poder de las tecnologías perdidas tiende a aumentar en los sectores más centrales del cuadrante, especialmente el sector violeta donde están escondidas grandes maravillas esperando ser descubiertas.
+
+
+
+Nombre
+Efecto
+Método de Empleo
+Usos
+Astillero Avanzado
+El sistema tiene un Astillero instalado con tecnología muy avanzada que reduce el coste de cualquier construcción en 2 R (mínimo 1R)
+Refleja
+-
+Astillero Orbital Battariu
+Obtienes un Astillero Orbital Battariu sin capacidad bélica, con movimiento 3 que permite crear Cruzado Battariu (Ataque 6, Escudo 5, Casco 5, Movimiento 5, Recolección 25, Coste 50, Tropas 50. El Cruzado Battariu Pueden usar una acción de movimiento para hacer un salto directo hacia cualquier portal estelar conocido en el cuadrante incluyendo la Ciudadela de estar esta abierta.) El Astillero se mostrará en la Casilla donde sea descubierto y no podrá ser destruído o atacado de ninguna forma durante la resolución del turno en el que aparece.
+Refleja
+-
+Diseños Avanzados de Guerra Battariu
+Suma 2 bonos a ataque, escudo, casco y movimiento de toda tu flota.
+Refleja
+-
+Holo Red de Gestión de Flotas
+Aumenta en uno el número máximo de acciones por turno que puedes jugar de manera permanente.
+Refleja
+-
+Super Holo Red de Gestión de Flotas
+Aumenta en uno el número de acciones por turno que puedes jugar de manera permanente. Además por cada 5 turnos que pasen desde que la obtienes te otorga una acción adicional.
+Refleja
+-
+Llaves
+Se descubre un portal marcado con el color de la llave en el lugar donde se investiga. Los Portales Estelares de acceso a la ciudadela disponen de una base de datos Battariu, que permite al primero que haga una acción especial de “Investigar Portal Estelar” elegir una tecnología del sector en el que se encuentra y crear una copia. (Exceptuando la Holo Red de Gestión de Flotas)
+Refleja
+-
+Llave Violeta
+Sigue las mismas normas del resto de llaves excepto que impide copiar tecnologías del sector Violeta, en su lugar puede copiar tres tecnologías de cualquier otro/s sector/es del juego. (Exceptuando Holo Red de Gestión de Flotas)
+Refleja
+-
+Potenciar Armamento
+Suma 1 múltiplo al ataque de todas tus naves
+Refleja
+-
+Potenciar Casco
+Suma 1 múltiplo al casco de todas tus naves
+Refleja
+-
+Potenciar Defensas
+Suma 1 al ataque, casco y al escudo de todas tus unidades defensivas
+Refleja
+-
+Potenciar Escudos
+Suma 1 múltiplo al escudo de todas tus naves
+Refleja
+-
+Potenciar Hiperimpulso
+Suma 1 múltiplo al valor de movimiento de todas tus naves.
+Refleja
+-
+Sistema de Gestión de Carga
+Suma 10 a la capacidad de recolección de todas tus naves.
+Refleja
+1
+Sistema de Gestión de Tropas
+Suma 10 a la capacidad de transporte de tropas de todas tus naves.
+Refleja
+-
+Ampliar Capacidad Minera
+Aumenta los R máximos de un sistema en +15/turno, permanente. Requiere dominar el área terrestre del sistema para ser usada.
+Simple
+1
+Ampliar Capacidad Minera II
+Aumenta los R máximos de un sistema en +20/turno, permanentemente. Requiere dominar el área terrestre del sistema para ser usada.
+Simple
+1
+Ampliar Capacidad Minera III
+Aumenta los R máximos de un sistema en +30/turno, permanentemente. Requiere dominar el área terrestre del sistema para ser usada.
+Simple
+1
+Astillero de Reciclaje
+Permite dar a un Astillero la habilidad especial de construir recicladores; Ataque 0, Escudo 0, Casco 1, Movimiento 3, Coste 5. Recicla hasta 15 R/batalla (máximo mitad del coste total de las unidades enemigas destruidas),
+Simple
+1
+Bloqueo de Comunicación
+Permite bloquear una casilla, de manera que nadie pueda ver lo que hay en ella desde el momento de la resolución del turno en el que se usa. Si una facción tiene unidades dentro, le llegará un mensaje tipo "Has perdido contacto". La única manera de romper el bloqueo es entrar con unidades desde fuera de la casilla, teniendo ya unidades dentro, si se da este supuesto, el jugador recuperará sus unidades y el Bloqueo se romperá definitivamente. Con un bloqueo de comunicaciones no dominas la casilla, no obtienes los beneficios de ganar cualquier batalla, no puedes hacer acciones y no recibes ningún tipo de informe de posible batalla. Es necesario tener una nave espacial a un máximo de 2 casillas de distancia para ser usada.
+Simple
+1
+Bomba Nova
+Provoca una explosión que hace 500.000 de daño en un sistema. Destruye el planeta haciéndolo inhabitable y la órbita impracticable. La casilla deja de ser accesible. No funciona sobre la propia ciudadela o bases de facción fijas. Si la casilla tenía un portal estelar se podrá acceder y salir de la casilla solamente por el portal.  Es necesario tener una nave espacial a un máximo de 2 casillas de distancia para ser usada.
+Simple
+1
+Campo de Invisibilidad
+Podrás elegir una Nave Espacial, la cual será invisible permanentemente a los ojos del enemigo. Puedes usar una acción de preparar flota para obligarla a entrar en combate, lo que hace que pierda permanentemente su camuflaje. Puede transportar tropas y desembarcarlas en sistemas pese a estar defendidos por órbita.
+Simple
+1
+Campo de Minas
+Plaga un sistema de minas que funcionarán a partir del final del turno que se usan. Causarán hasta 500 de daño (ignorando escudos) a cualquier flota que entre en el sistema hasta que se consuma su poder de ataque. Requiere dominar la órbita del sistema para ser usada. Afecta a naves Invisibles.
+Simple
+1
+Cúpula de Energía
+Fabrica automáticamente una Cúpula de energía. Se trata de una construcción especial que protege a la superficie del planeta de cualquier Bombardeo Orbital, esta no es penetrable mediante “Misiles de Penetración” y los desembarcos dinámicos fallan automáticamente. Se requiere dominar el área terrestre del sistema para ser usada.
+Simple
+1
+Dilatador Temporal
+Puedes jugar un turno doble, lo que significa que duplica el número de acciones que tendrías disponibles para jugar ese turno y además permite que cada unidad pueda hacer 2 acciones en lugar de solo una. Solo se puede hacer un uso por turno del dilatador.
+Simple
+3
+Drones Kamikaze
+Permite preparar la flota para que lleve a cabo una acción de Bombardeo Dinámico tras la batalla en el sistema estelar en el que se preparen para moverse.
+Suplementaria preparar flota
+2
+Alto Mando Battariu
+Encuentras la mayor arma de guerra de la civilización Battariu . Se trata de una Base Móvil que se unirá a tu flota y que funcionará como tal para la facción que la descubra. El Alto Mando tiene unos valores de 50/150/50 y un movimiento de 4. Tiene capacidad para transportar 500 tropas y realizar una recolección de 150. Además dispone de un portal integrado que permite a cualquier flota propia usar cualquier portal para llegar hasta donde esté el Alto Mando Battariu o saltar desde este a cualquier portal de la red excepto a la ciudadela.
+Refleja
+-
+Espía Cuántico
+Permite gastar una acción para obtener información de un sistema.
+Simple
+1 por turno
+Portal Estelar
+Permite instalar un portal estelar en cualquier sistema en el que tengas presencia que estará unido al resto de portales estelares del cuadrante.Requiere dominar la órbita del sistema para ser usada.
+Simple
+1
+Pulso Electromagnético
+Anula la capacidad de atacar, defenderse y moverse a todas las naves de un sistema durante 1 turno, se activa al finalizar el turno en el que se usa y anula todas las acciones del turno siguiente. Es necesario tener una nave espacial a un máximo de 2 casillas de distancia para ser usada.
+Simple
+1
+Sonda Minera
+Genera 20 R por turno en el planeta en el que se instale hasta que sea destruído. Requiere dominar el área terrestre del sistema para ser usada.
+Simple
+1
+Trampa Gravitacional
+Instala una trampa en el planeta que atrapa todas las naves que entren en órbita y les impide salir del sistema. Aquel que tenga tropas en tierra podrá activar y desactivar la trampa gastando una acción. Requiere dominar el área terrestre del sistema para ser usada.
+Simple
+1
+Troyano Cuántico
+Un avanzado sistema de espionaje te permite gastar una acción por turno para conocer 3 de las acciones de una facción de ese mismo turno. Al usar la acción se deben indicar las acciones que se quieren espiar tomando por referencia el número de la acción.
+Simple
+1 por turno
+Droga de Aumento de la Productividad
+Hasta la resolución del turno todas las construcciones verán su coste reducido en 1 R (mínimo 1R)
+Suplementaria
+1
+Droga de Aumento de la Productividad II
+Hasta la resolución del turno todas las construcciones verán su coste reducido en 2 R (mínimo 1R)
+Suplementaria
+1
+Droga de Aumento de la Productividad III
+Hasta la resolución del turno todas las construcciones verán su coste reducido en 3 R (mínimo 1R)
+Suplementaria
+1
+Escáneres de Profundidad
+Ganas un rango de previsión en todas las batallas en las que participes el resto del turno.
+Suplementaria
+1
+Refuerzo de Hiperimpulso
+Toda tu flota tiene +2 Movimiento durante este turno
+Suplementaria
+1
+Cápsula de Desembarco
+Permite preparar una flota para efectuar un Desembarco Dinámico, es decir desembarcar las tropas nada más moverse al sistema objetivo, ignorando unidades orbitales enemigas.
+Suplementaria Preparar Flota
+1
+Código de Reajuste Anti-Plagas
+Cuando preparas la flota contra la Mente Colmena, tu flota adquiere la capacidad de provocar doble daño contra esta facción y la mitad contra cualquier otro objetivo.
+Suplementaria Preparar Flota
+1 por turno
+Dispositivo de Refuerzo Defensivo
+Toda tu flota tiene +2 Escudo durante este turno
+Suplementaria Preparar Flota
+2
+Dispositivo de Refuerzo Ofensivo
+Toda tu flota tiene +2 Ataque durante este turno
+Suplementaria Preparar Flota
+2
+Dispositivo Mayor de Refuerzo Defensivo
+Toda tu flota tiene +4 Escudo durante este turno
+Suplementaria Preparar Flota
+2
+Dispositivo Mayor de Refuerzo Ofensivo
+Toda tu flota tiene +4 Ataque durante este turno
+Suplementaria Preparar Flota
+2
+Gema de refuerzo de Escudos
+Cuando preparas la flota para un combate puedes instalar esta gema que hará que tus escudos duren durante todo el enfrentamiento.
+Suplementaria Preparar Flota
+1
+Disruptor Iónico
+El primer ataque de tu flota ignora los escudos protectores de la flota defensora.
+Suplementaria Preparar Flota
+1
+Onda Iónica
+Genera una onda que causa 100 de daño a los escudos el primer turno de batalla
+Suplementaria Preparar Flota
+3
+
+
+
+Existen tres tipos de cartas que marcan la manera de usarlas:
+
+Reflejas: su efecto se hace patente nada más ser descubiertas, no requieren de gasto de acción, típicamente modifican o dan capacidades a las naves o a la facción nada más ser descubiertas.
+
+Simples: Son tecnologías que requieren el gasto de una acción concreta para ser usadas.
+
+Suplementarias: Se trata de cartas que pueden usarse como parte de una acción relacionada con la dinámica de la carta o directamente con un tipo de acción indicada en la propia tabla.
+
+Limitaciones: Existen dos limitaciones al uso de estas cartas, la primera es que no se puede usar una carta (o dos cartas con exactamente el mismo nombre) varias veces en el mismo turno. La segunda es para aquellas cartas que tienen un número máximo de usos, lo que indica la cantidad de veces que podrás hacer uso de esta carta hasta que quede totalmente inútil.
+
+El 50% de las tecnologías del cuadrante Ávalon están repartidas entre las cinco opciones de potenciación (ataque, escudos, casco, movimiento, defensas). Estando el 50% restante repartido entre el resto de cartas de tecnología. Cada juego tendrá un reparto diferente de cartas excepto las 8 cartas del sector violeta que serán siempre las mismas y están indicadas en la tabla por el susodicho color.
+
+Construir
+
+Cada raza tiene unas características especiales, y esto influye a la hora de poder construir. A continuación se enumeran los distintos tipos de construcciones que se pueden ordenar. Puedes ordenar construir algo que puedas pagar y por tu facción puedas hacer en cualquier sistema que domines. Necesitarás dominar el área donde se haga la construcción para poder llevarla a cabo.
+
+Como regla especial los edificios o unidades con capacidad de fabricar, construir o reclutar unidades no podrán hacerlo en el turno en el que han sido fabricados.
+
+Existen una serie de unidades con capacidad de combate, o de movimiento, estas vendrán especificadas en cada una de las facciones y tendrán una serie de características. Estas características o atributos tendrán un valor básico, que será el valor por referencia para aplicar mejoras y para calcular el valor real.
+
+El valor inicial será para ataque, escudo y casco cinco veces el valor básico, para el resto de características será igual al valor básico. 
+
+Las cartas de mejora de ataque, escudo y casco aumentarán el valor real del atributo en una cantidad igual al valor básico de la unidad.
+
+En el caso de las cartas de movimiento, cada bonificador aumenta un tercio su velocidad base, redondeando a la baja, por lo que cada tres cartas de movimiento se duplicará el movimiento básico de la unidad.
+
+Ningún modificador a las estadísticas de una unidad hace variar un valor originario de 0 a no ser que el modificador especifique lo contrario.
+
+Ataque: Poder destructivo de la unidad, en una batalla se calcula el poder destructivo de la flota por la suma de ataque de todas sus unidades.
+
+Escudo: Se trata del sistema de defensa de las unidades basado en crear barreras de energía para protegerse de los ataques enemigos. Los escudos de todas las unidades de una facción trabajan en conjunto para defender la flota. Sin embargo los escudos no duran eternamente y se pueden ver desgastados en combates de larga duración o ser anulados por el poder destructivo del enemigo.
+
+Casco: Es un valor que representa el aguante estructural de una unidad al daño y también da una imagen aproximada del tamaño de una nave y de la calidad de los materiales o la ingeniería usada en su construcción. Cuando una unidad recibe tanto daño como su Casco es destruída.
+
+Movimiento: Una parte de las unidades de guerra tienen la capacidad de moverse a través del cuadrante mediante motores hiperespaciales. El valor de movimiento indica su velocidad y se traduce en la cantidad de sistemas que puede atravesar en un turno con una acción de movimiento. Si la unidad no tiene un valor de movimiento significa que carece de la capacidad de cambiar de sistema.
+
+Carga: Es un valor que indica la cantidad de recursos que puede transportar una unidad. Esto sirve para calcular su poder de recolección. La carga indica cuánto recurso [R] es capaz de extraer de un sistema esta unidad con una acción de recolección.
+
+Coste: Indica la cantidad de recurso [R] que habría que gastar para poder construir esta unidad. En ciertas ocasiones el coste puede ser en otro tipo de material o recurso, en cuyo caso vendrá indicado en la propia facción poseedora de esa singularidad.
+
+Tropa: Este valor indica la posibilidad de una unidad de almacenar soldados en su interior. La capacidad de mover tropas es directamente proporcional al casco básico de la nave. Si la unidad es destruida los soldados en su interior caerán con ella sin poder hacer nada. Si la unidad no tiene valor de tropas significa que no tiene capacidad de albergar este tipo de unidad.
+
+En ocasiones el precio final de una construcción puede verse reducido por cartas de tecnología, habilidades especiales o astilleros avanzados. En cualquiera de los casos varias habilidades son acumulables, aunque ninguna construcción puede ver reducido su coste por debajo de la mitad. A la hora de contabilizar este coste reducido la facción lo registrará como un ingreso extra.
+
+
+Unidades Construidas por Bloques 
+
+Existen cierto tipo de unidades que tienen un gran tamaño, lo que supone que tienen grandes cascos, potentes escudos y un gran potencial de ataque. Estas naves están construidas por bloques o secciones, que dividen el potencial básico de la nave en varias partes lo que les permite minimizar las pérdidas en combate. 
+
+Las puntuaciones de ataque, escudo y casco estarán divididas entre los distintos bloques que componen la unidad. Cuando la unidad recibe daño igual o superior a uno o más de sus bloques estos son inutilizados, por lo que no aportarán ataque y escudo durante el resto del combate. Si al menos uno de los bloques sobrevive al combate, la unidad volverá a estar totalmente operativa desde ese momento, si todos los bloques son destruidos la unidad será destruida definitivamente.
+
+Las unidades por bloques cuentan como un enjambre de tantas naves como bloques existan ante posibles efectos relacionados con el número de naves como por ejemplo la ganancia de honor de la facción European. 
+
+
+Únicas por facción
+
+		-Naves; cada raza tiene sus propias naves, pueden moverse por el sector, transportar tropas y recursos, entrar en combate y atacar desde la órbita si no hay defensas en el planeta. Algunas tienen habilidades especiales que vendrán descritas en la propia nave.
+		-Tropas; Las tropas sirven para ocupar planetas, recolectar, luchar contra otras tropas, buscar tecnología en los planetas y en ocasiones para mantener el control de un planeta o sector.
+		-Sistemas de Defensa Orbital; Se trata de construcciones que orbitan un planeta y que defenderán el mismo de cualquier nave que se acerque a la órbita donde están situados.
+			-Satélites; puedes tener tantos como puedas crear y pagar en la órbita y pueden ser desmantelados por la mitad de su coste inicial con una acción en cualquier momento. Atacarán a las naves que entren en el sistema. 
+
+			-Estación orbital; Solo puede haber una por sistema, tiene sistemas de defensa y ataque, puede albergar tropas en órbita.
+
+	Edificios de Control; Solo puede existir uno por planeta, y desaparecerá si otra facción domina por tierra el sistema. Algunos ejemplos son;
+
+	-Gobierno Civil (Asian); Permite reclutar, construir naves y recibir impuestos
+	-Base Militar (European); Mantiene un crucero y sus tropas genera recursos.
+	-Alto Mando (Imperio Dorado) ; Recursos, astillero y base de reclutamiento.
+	-Panal (Enjambre Aeshnid); Recursos, astillero y base de reclutamiento.
+
+
+	Construcciones Comunes
+
+		-Sistemas de Defensa Terrestre; Se trata de construcciones que se instalan en el planeta y permiten a las tropas refugiarse o beneficiarse de defensas o armas adicionales mientras están allí situadas.
+			-Fortificación Subterránea; La construcción de un sistema de fortificaciones subterráneas salvará a tus tropas de los efectos de cualquier bombardeo orbital, pero serán igual de vulnerables a un ataque por tierra. La dificultad y el tiempo invertido para ser efectivos son elevadas por lo que no entrarán en funcionamiento hasta pasados dos turnos de haber sido construído.(50R) 
+
+		-Bases de Tropas
+			-Orbital; Permite almacenar tropas en la órbita de un sistema por medio de una pequeña base espacial. (100R) Las tropas en órbita no dominarán ese sistema si hay unidades enemigas en esa área. Las Bases de Tropas Orbitales no pueden ser destruidas ni Bombardeadas por lo que para tomarlas se debe hacer un ataque con tropas propias. El descenso a tierra desde la Base Orbtial de Tropas sigue las mismas normas que el descenso desde cualquier Nave.
+			-Terrestre; Permite reclutar y formar tropas nuevas en ese sistema respetando los máximos que este soporte. (15R)
+
+		-Astillero; Construcción terrestre que permite construir naves, satélites y estaciones espaciales invirtiendo recursos. Es necesaria una base de tropas terrestre. (100R)
+
+		-Estación de Escáner; Construcción Orbital que elimina la ventaja de invisible de cualquier nave que entre en el sistema mientras se encuentre en él. La facción que domina la órbita del sistema no ve la invisibilidad de sus naves anulada. (150R)
+
+Otras Unidades
+
+	Base de Facción; Algunas facciones tienen una base fija en un sistema, otras pueden tener bases móviles en forma de grandes naves o incluso pueden llegar a tener bases dispersas, es decir que más de un sistema se considera su base. La base de una facción está siempre especialmente protegida, por ello todas las unidades de esa facción que luchen en la base dispondrán de la habilidad de Previsión y su ataque base y escudos base tendrán un +1 durante toda la batalla. Las bases de facción móviles no reciben su propio bono a ataque y escudos pero si disponen de un grado de previsión. Todas las bases disponen de un Astillero.
+
+	
+Misión de Exploración
+
+Una unidad o grupo de unidades con capacidad de moverse a través del Espacio pueden intentar explorar el sector negro. Para ello deben iniciar su turno en un Sistema del Sector blanco y realizar esta acción. Con ella accederás a un Sistema del Sector Negro aleatorio que no haya sido consumido previamente. En algunas ocasiones, explorar ciertos sistemas del sector negro te permitirá volver a ellos de manera directa pues con el descubrimiento del mismo también obtendrás un código de viaje. Cualquier facción que conozca un código de viaje a un sistema del sector negro puede indicar en cualquier acción de misión de exploración que utiliza ese código de viaje para moverse directamente a esa casilla del sector y no a otra.
+
+En cada sistema del sector Negro existe un elemento de interacción, desde depósitos de Recursos, hasta enemigos escondidos. Cada una de estas casillas tiene un requisito para considerarse consumida. En algunos casos el simple hecho de explorarla ya otorga una serie de beneficios al primero que cumpla la misión de exploración, en otros casos puede ser necesario mandar una flota para destruir a un enemigo allí escondido.
+
+Tipos de Sistemas en el Sector Negro;
+
+Depósito de Recursos; Son sistemas que disponen de una cantidad de Recursos almacenada y desprotegida. Si llegas hasta esa casilla obtendrás los recursos y la casilla dejará de ser accesible. La flota de exploración terminará el turno en la casilla desde la que inició la acción.
+
+Laboratorio Secreto; Son sistemas en los que la antigua raza Battariu escondía sus laboratorios de investigación, si una flota llega hasta el laboratorio obtendrá una carta de tecnología y la casilla dejará de ser accesible. La flota de exploración terminará el turno en la casilla desde la que inició la acción.
+
+Flota Oculta; Son sistemas en los cuales una flota enemiga se encuentra escondida y guarnecida. Cualquier unidad de exploración que llegué allí entrará directamente en combate con la flota enemiga y su propietario obtendrá un informe de la casilla sea cual sea el resultado. Si la flota enemiga es destruída la casilla dejará de ser accesible y la flota vencedora volverá a la casilla donde comenzó el turno. En caso contrario la facción que haya descubierto esta casilla obtendrá un código de viaje y visión sobre la misma hasta que la flota sea derrotada.
+
+Planeta Oculto; Alguno de los sistemas del sector negro puede contener un planeta especial. Esto permite que las naves que lleguen al sistema puedan quedar en él como si fuera una casilla de otro sector. Dispondrá de un código de viaje que permitirá a aquel que lo conozca viajar hasta él desde el sector blanco. 
+
+Bases de Facción; Algunas facciones disponen de una base fija de intervención en el cuadrante, oculta en el sector negro. Serán para muchos el punto de salida del juego. A efectos de funcionamiento tienen las mismas normas que el tipo de Casilla “Planeta Oculto” excepto por el hecho de que una facción comienza con acceso y presencia en la misma.
+
+Destruir Infraestructuras
+
+Permite a una facción que domina un área de un sistema destruir aquellas construcciones neutrales que se encuentren en el área que controle. Con una sola acción se podrán destruir tantos edificios como se deseen siempre que se encuentren en áreas controladas de un mismo sistema.
+
+Establecer Pacto de Colaboración
+
+La diplomacia permite a dos facciones establecer lazos puntuales de colaboración. Para ellos dos facciones deben anunciar una acción en el mismo turno en la que acepten un Pacto de Colaboración con otra facción indicando el turno en el que comienza (que debe ser el mismo en el que se hace la acción) y hasta que turno dura. Ambas acciones deben coincidir en todos los datos. Si se confirma el pacto estas facciones no entrarán en combate como si ambas tuviesen permanentemente preparada la acción de Preparar Flota para no combatir entre ellas. El coste es que mientras dure el pacto ambas facciones jugarán con una acción menos para mantener el esfuerzo diplomático de este pacto. Este pacto no se puede romper de ninguna manera.
+
+
+Desmantelar
+
+	Puedes usar una acción para desmantelar todas las unidades con la habilidad “Desmantelar” de un sistema. Puede elegir aquellas que quieres hacer objetivo. Desmantelar una unidad te otorga la mitad de los recursos originales que te costó construirla.
+
+Preparativos de la Flota
+La única excepción al límite de hacer una acción por turno cada unidad es la posibilidad de realizar preparativos de la flota. Esta acción dirigida a una flota reunida en un punto permite dos opciones:
+
+1-Guerra: preparar a esa flota para entrar en batalla en un lugar conocido contra una facción conocida, de esa manera se prepararán los sistemas para luchar concretamente contra esa flota en ese lugar.	Para poder hacer esta acción debes indicar la flota que quieres preparar, a qué lugar van a moverse en ese mismo turno y contra qué facción van a luchar. Si se cumple la presencia de esa facción en ese lugar tu flota gana un nivel de Previsión contra esa facción, pero prepararse contra una flota enemiga concreta bajará tu previsión en un nivel contra cualquier otra facción enemiga contra la que se enfrente tu flota. Puedes preparar flota contra más de un enemigo, gastarás una acción por cada facción que quieras implicar. Sin embargo si una facción contra la que no has preparado tu flota lucha contra ti gana tantos niveles de previsión como preparativos contra otras flotas hayas hecho.
+	Como opción adicional mediante una acción de preparativos de guerra una facción podría ordenar a su flota no atacar a una determinada facción que se encuentre en sistema concreto durante la finalización de ese turno. En caso de solicitar la no beligerancia a una facción pero no ser recíproca, la flota será atacada sin poder defenderse de sus enemigos.
+	
+2-Exploración: Puedes designar a tu flota la misión de explorar. Debes indicar en esta acción las naves implicadas y el sector a donde se moverán. Una vez allí, la flota ganará la capacidad de enviar información del sector aun siendo destruída. Para poder hacer esto la flota tiene que estar vulnerable lo que provoca que el enemigo gane automáticamente un nivel de previsión en contra de tu flota exploradora.
+
+La acción de preparativos de flota no podrá hacerse nunca después de realizar una acción de movimiento.
+
+
+Defender Sistema
+	
+	Si dispones de una estación espacial instalada en un sistema al principio del turno, podrás ordenarle que prepare sus defensas para fortalecerse ante un ataque enemigo. La orden de defender sistema debe incluir la casilla donde se realiza y la facción contra la que se va a preparar, al igual que la orden de preparar flota. Las ventajas de la orden de defender sistema serán las siguiente:
+		-Bloquea Acciones Dinámicas; evita que se lleven a cabo acciones de desembarco dinámico o bombardeo dinámico así como acciones que te permiten saltarte las reglas de presencia en una casilla para ser llevadas a cabo.
+		-Previsión; Resta un rango de previsión a la facción contra la que te prepares, pero regala un rango de previsión a cualquier otra facción enemiga que ataque.
+		-El refuerzo defensivo aumentará la base de los escudos de tu flota en 1 contra la facción elegida, con el consiguiente aumento de la duración de los mismos durante ese combate.
+
+
+Pedir Préstamo al Banco Estelar
+
+	Cualquier facción puede gastar una de sus acciones por turno para solicitar un crédito al banco estelar. El Banco Estelar tendrá al principio de cada turno una cantidad de Recursos que cualquier jugador puede solicitar en forma de crédito con unos intereses del 20% anual.  Los préstamos se pueden pedir a 1 año (4 pagos), 5 años (20 pagos) o 10 años (40 pagos). Cada turno se pagará una mensualidad igual al % del préstamo que toque devolver más una cuarta parte de los intereses de ese año. En cualquier momento un jugador con deudas puede pagar un crédito concreto gastando una acción, pero en ese caso deberá abonar la totalidad de los intereses que le hubiese tocado pagar por el contrato de crédito original.
+	
+	La facción American tiene grandes tratos con el Banco Estelar, son sus guardianes y gestores, por ello el Banco les dará crédito a un interés de tan solo el 5%. Si esta facción lo desea puede ofrecerse como intermediadora entre otras facciones y el Banco Estelar usando la diferencia de interés que el Banco les ofrece a ellos. Si el interés de este crédito con intermediario es superior al 5%, la diferencia irá a parar a las arcas de la facción American.
+
+	En caso de que haya más demanda de crédito que dinero tenga disponible el Banco Estelar, el banco prioriza siempre la solicitud de financiación de las facciones menos endeudadas, de no ser un criterio concluyente el banco valorará la solicitud en la que intermedie el American. Si no se cumplen estos criterios valorará el crédito con interés más alto. Si ninguna se cumple dividirá sus reservas a partes iguales entre los solicitantes.
+	
+	El pago del crédito se hace al principio de cada turno, si no tienes R disponible para pagar la mensualidad ese turno el Banco Estelar te embarga toda tu flota y propiedades en el cuadrante y tu facción quedará fuera de la partida. Si el crédito tenía al jugador American de intermediario el Banco Estelar le abonará todos los beneficios que hubiesen ganado de haberse efectuado todos los pagos.
+
+El fondo monetario del banco estelar para este cuadrante comenzará con una bolsa de 1000R y aumentará en otros 1000R tras cada resolución de un turno. La bolsa dejará de aumentar el turno en el que se abra la cuarta llave de acceso a la ciudadela. Estas cantidades son acumulativas. Cuando alguien devuelve dinero al banco estelar, este dinero así como los intereses aumentan este fondo.
+
+En la resolución el turno en el que se abra la ciudadela el banco dejará de financiar abiertamente el proyecto y dejará de dar crédito a todos.
+Ninguna facción podrá obtener la victoria debiéndole dinero al banco estelar.
+
+			-Adelantar cuotas; Con esta opción una facción con deudas con el banco podrá gastar una acción indicando el turno en el que comenzó un crédito para pagar todas las cuotas pendientes del mismo y dejar cerrada esa deuda definitivamente.
+
+Acciones de Tropas
+Las tropas tienen sus propias acciones. Pero se dividen en dos tipos.Acciones comunes y parciales:
+
+Comunes; gastan su acción de manera normal, lo que impide a la unidad hacer nada más durante ese turno, y son: Recolectar, Buscar tecnología Perdida, Ser Reclutadas.
+
+Parciales; por las características de las tropas, en ocasiones van atadas a otro tipo de unidad o que no suponen una acción completa y que no consumirá acción y cada tropa podrá realizar dos por turno. Estas acciones son básicamente las que incluyan el movimiento de tropas desde distintas, puedes gastar una acción normal en hacerla o indicarlo como parte de otra acción que incluya una unidad de origen o de destino de estas tropas. En el turno en el que se construye una tropa esta no puede llevar a cabo acciones parciales.
+Por ejemplo: Podrías subir tropas a una nave y en la misma acción mover esa nave a otro sistema. O mover las tropas desde una nave a un bunker que acabas de construir con la propia acción de construcción del bunker. 
+
+Como excepción no podrás desplegar tropas en el planeta si hay defensas orbitales instaladas desde el turno anterior que no has superado.
+
+
+Contraespionaje
+
+Cualquier facción que domine el sector terrestre de un sistema puede utilizar esta acción para eliminar la visión sobre el sistema de cualquier otra facción que no disponga ya de presencia en el mismo.
+
+
+
+4.3-Batalla Estelar
+
+1	Previsión (Golpear primero): Si una flota dispone de un nivel de previsión mayor que la flota enemiga se considerará que tiene la capacidad de atacar antes de que el enemigo tenga la posibilidad de hacerlo. La flota consciente del ataque tendrá un turno de fuego contra la flota enemiga. (La duración de las defensas del que ataca en este turno no empieza a bajar, en cambio las defensas del afectado por este ataque comienzan su cuenta atrás).
+
+2 	Intercambio de Fuego:
+
+• Calcular la suma del ataque de los dos bandos
+• Calcular la suma de defensa de los dos bandos
+• Calcular la suma de Casco (integridad) de los dos bandos
+
+• Se resta la defensa al ataque entre bandos, y la diferencia es el daño
+causado al bando contrario. Cada nave tiene X integridad, así que si
+dividimos la diferencia entre ataque y defensa de un bando entre X,
+tenemos la cantidad de naves destruidas de cada bando. Al final del
+turno, si la nave no es destruida siempre tendrá su integridad completa.
+
+En caso de haber varios tipos de naves siempre resultarán afectadas primero aquellas con más Casco en caso de compartir casco resultarán afectadas las que tengan más ataque, en caso de empate el escudo marcará la diferencia. En caso de tener todos estos stats iguales se dividirán las pérdidas.
+
+Las defensas (escudos) de cada bando durarán activas tantos turnos de
+intercambio de fuego como su valor más 1. Tras en el siguiente turno a este
+valor la defensa de ese bando pasará a ser 0.
+
+
+-Batalla contra varios bandos; En caso de haber varias facciones enfrentándose en una misma batalla se resolverá dividiendo el daño de cada facción en cantidades iguales que afectarán a cada una de las facciones enemigas. El resto del combate se resuelve igual que en una batalla a dos bandos.
+
+
+Habilidades de Batalla;
+
+	Previsión; Se trata de una habilidad adquirida o permanente que permite a una flota estar prevenido para una batalla inminente. Gracias a esta habilidad dispondrán de un turno de “fuego rápido”. Es posible acumular más de un nivel de previsión de distintas fuentes. Si dos facciones se encuentran en una situación de previsión, se anulan mutuamente y se realiza el combate normal, pero si una de ellas tiene más niveles de previsión acumulados dispondrá de un turno de fuego rápido. Aunque se acumulen varios niveles de previsión de diferencia solo habrá un turno de fuego rápido por batalla.
+
+
+4.3 -Batalla Terrestre;
+Cuando en un planeta hay dos contingentes de tropas están se enfrentarán directamente. Un combate terrestre es muy simple, las tropas se destruyen mutuamente, cada tropa de un bando destruirá una tropa del bando contrario, aquel con más tropas gana la batalla, y la diferencia entre el de mayor número y el de menor número serán las tropas restantes.  
+
+4.4-Bombardeo Orbital;
+Una nave o un grupo de naves, puede recibir la orden de bombardear a las tropas que están desprotegidas en un planeta. Destruirán un número de tropas igual a la suma de la puntuación de ataque de cada nave implicada. Esta acción se hará en la fase de resolución después de resolverse los combates estelares. Para poder dar la orden de Bombardeo Orbital es necesario dominar la órbita de un sistema, y para que el Bombardeo Orbital se produzca finalmente no puede haber ninguna flota enemiga en el sistema en el momento de resolverse esta acción.
+
+5-	Condiciones de Victoria
+
+-Las 9 Llaves; Cada vez que se busca tecnología existe la posibilidad de que se encienda una de las 8 llaves de posición que desbloquean el acceso a la Ciudadela Ark-Battariu, la mayor fuente de tecnología y poder de todo el cuadrante. Cada uno de los sectores separados por colores tiene una llave escondida entre sus planetas que podrá ser encontrada con la acción de buscar tecnología.	Cada vez que una llave es desbloqueada un pulso de energía en toda el cuadrante alertará que esto ha sucedido y en qué sector ha pasado, cuando las 9 llaves hayan sido descubiertas la casilla central estará accesible y protegida por los sistemas de defensa de la Ciudadela Ark-Battariu.
+	
+-La Ciudadela Ark-Battariu; Cualquier flota que se interne en el sistema central del cuadrante tendrá que vérselas con las defensas de la Ciudadela Ark Battariu que estarán compuestas por una serie de naves, satélites de defensa y la estación espacial propiamente dicha. Para poder hacer acciones dentro del sistema una flota tendrá que llegar allí y enfrentarse a estas defensas, desde ese momento las defensas quedan desactivadas estará disponible el asalto terrestre, deberás desembarcar tropas para combatir y destruir las tropas de élite que protegen los puntos sensibles de la ciudadela, desde ese momento la fortaleza pasa a estar bajo las órdenes de la facción que consiguió tomarla. La fortaleza dará una serie de ventajas a la facción que la tenga controlada, pero será la flota de esa facción la encargada de proteger la susodicha estación. 
+
+En todo caso la fase del asalto a la ciudadela sigue las normas habituales de dominación y permite el uso de acciones especiales de forma normal.
+
+-Misión de cada Raza; Cada raza tiene una misión que cumplir para ganar la partida, esta será posible una vez se desbloquee la casilla central del juego, antes de eso ninguna facción podrá alzarse con la victoria (excepto si viene así explícitamente indicado en la información de la raza.)
+
+
+
+
+
+6	Recursos Iniciales 
+
+Todas las facciones comenzarán la partida con 500 unidades de recurso acumulado, un héroe a elegir entre los 3 de facción que comenzará en su base y además en función de la facción los recursos listados a continuación.
+
+
+
+European
+
+Cuartel General (Santuario de Guerra, 20 Cañones Orbitales, 9 Destructores Alfa 180 Artista Marcial, 10 Destructores Beta 200 Artista Marcial), 2 Gobiernos Militares.
+
+American
+
+Sede Banco Estelar (Sucursal 30 Satélites de Telecos, 500 Mercenarios, 5 Escoltas Federales, 35 Cargueros), +500 R (Crédito al 5% a 20 turnos a pagar a partir del turno 4)
+ 
+Asian
+
+3 Gobiernos Civiles (Cada uno defendido con una Estación de Combate y 10 Unidades de Defensa Orbital), 6 Acorazados 120 Soldados Mancomunados.
+ 
+Oceanus
+
+Atlantis (15 Cruceros 150 Drones de Batalla)
+ 
+Imperio Dorado
+
+            	Ciudadela Dorada (Estación Pacificadora 15 Monolitos solares 2 Fragatas 60 Sectarios)
+2 Alto Mando (5 Monolitos y 1 Fragata con 30 Sectarios en cada uno)
+ 
+República Raukiana
+
+CERR (1 Estación de Armamento, 30 Satélites de Guerra, 15 Naves Nodrizas 450 Soldados Republicanos)
+ 
+Mente Colmena
+
+Mente Maestra (7 Foresta Espacial 900 Monstruo planta)
+ 
+Fantasma
+
+Valle de las Gemas (Cenotafio 40 Poltergeist Orbital, 15 Corbeta 300 Poseídos.)
+ 
+Liga Pirata
+
+            	Acorazado del Rey, 15 Corsarios 450 Piratas)
+ 
+Enjambre Aeshnid
+
+Panal Génesis (Panal Orbital 20 Nube de Ácido, 3 Transporte Crysa 300 Cresa, 5 Aguijones)
+ 
+Asimiladores
+
+            	3 Nave Nexo, 15 Decomisadores 300 Confiscadores
+ 
+Consorcio Minero
+
+            	Almacén Central (Base de Operaciones 30 Centinelas 15 Unidades de Astro minería 300 Mineros 10 Capataces 300 Mineros)
+ 
+ASTANO
+
+            	Taller Orbital (5 Lanzas 5 Égidas 5 Corazas 400 Cyborg 1 Bólido)
+ 
+Federación Naxor
+
+	Puesto Avanzado Dimensional, 1 Lanzadera Nax 20 Estrellas de Combate 400 Nax W
+            
+
+
+
+7	Planetas Especiales
+
+
+-Existen 8 planetas especiales repartidos por el sector verde a una distancia de 5 casillas unos de otros situados en los sistemas numerados con múltiplos de 5. Estos sistemas tendrán edificios especiales, o condederán a aquel que los domine habilidades únicas 
+
+-Fábrica de Misiles; El Planeta dispondrá de un edificio especial llamado “Fábrica de Misiles”. La facción que domine este sistema podrá gastar un máximo de una acción por turno para construir una unidad de la carta de tecnología “Misiles Penetrante” a un coste de 150R. Misil Penetrante; Al ser usada como una acción suplementaria de un Bombardeo Orbital este tendrá la capacidad de ignorar la protección de cualquier Fortaleza Subterránea funcionando en el sistema.
+
+-Plataforma de Hipersalto; En la órbita de este sistema existe un Punto de Hipersalto que permite hacer saltar una flota por turno a cualquier parte del mapa excepto a la ciudadela o a cualquier base fuera del cuadrante.
+
+-Foro Galáctico, El Foro Galáctico es un sistema en el cual el área terrestre estará bloqueada, y aquel que domine la órbita será considerado como protector del foro y ganará cada turno que termine dominando el sistema 1 acción adicional para su siguiente turno y 100 unidades de Recurso. El espacio del Foro Galáctico será inmune a las tecnologías de Bomba Nova, Bloqueo de Comunicación y Pulso Electromagnético, además será imposible instalar un Portal Estelar en él (excepto si se encuentra una llave en la casilla que el portal se activará igualmente). 
+
+-Cadena de Montaje de Droides; El sistema dispondrá de este edificio especial que permitirá construir la tropa “Droide” que funcionará como una tropa de combate que no se verá afectada por ninguna habilidad o tecnología que genere beneficio de su destrucción; por ejemplo no aportarán Biomasa a la Mente Colmena ni podrán ser reclutados por la Liga Pirata con la habilidad “La Ley Pirata o la Vida”, cada bloque de 10 Droides tendrá un coste de 10R. La cadena no tiene límite de fabricación por turno.
+
+-Sanguijuela Cósmica; El sistema dispone de un edificio secreto de los servicios de inteligencia Battariu que tiene la capacidad de expandir sus tentáculos por el cuadrante y usurpar los flujos energéticos y recursos tecnológicos a su favor. Aquel que domine el espacio terrestre podrá utilizar la acción de “Usurpar Recursos”, que restará una acción a cada una de las facciones activas en el cuadrante durante el siguiente turno, el usuario conseguirá una acción adicional por cada una restada a sus adversarios. Esta acción sobrecargará el sistema e impedirá que vuelva a ser usado en 4 turnos.
+
+-Laboratorio de Clonación; El sistema dispone de un laboratorio en el cual los Battariu investigaban sobre técnicas de clonación. Gracias a él la facción que domine el área terrestre puede gastar una acción con un coste de 500R para “clonar” un héroe caído o en caso de disponer aún de un héroe te permite crear una copia de otro de los héroes de tu facción. El laboratorio consume gran cantidad de energía y recursos del sistema, esto supone que usar esta acción impide volver a usar este laboratorio durante los próximos 10 turnos.
+
+-Taller de Desarrollo; Grandes cantidades de teorías de mejora en tecnología aeroespacial permiten a la facción que domine el área terrestre de este sistema podrá iniciar investigaciones para obtener mejoras a sus naves y defensas orbitales. Los desarrollos varían en función del atributo que se quiera mejorar. Para obtener una carta de bono a casco tardará solamente un turno, dos para las mejoras de ataque, tres para las de escudo y cuatro para una tecnología de movimiento. Obtener una mejora para las defensas llevará 3 turnos. Para llevar a cabo la investigación se ha de dominar el área terrestre desde el comienzo hasta el final del desarrollo. Además no se podrán desarrollar la misma tecnología dos veces seguidas, deberá existir una alternancia. Por ejemplo no podrás desarrollar dos veces seguidas una tecnología de casco, pero sí que podrías desarrollar una tecnología de casco, seguida de una de ataque, para luego hacer una segunda de casco.
+
+-Centro de Inteligencia Battariu; El sistema está dotado de una base en órbita que permite a cualquiera que domine ese área utilizar una acción por turno para espiar a otra facción. En la acción deberá indicarse la facción a la que se quiera espiar y elegir entre una de las siguientes opciones de espionaje; tecnológico (verás las tecnologías consumibles), crediticio (obtendrás información sobre los posibles créditos de esa facción con el banco estelar) o un informe financiero (verás el recurso obtenido, gastado y acumulado por esa facción hasta ese momento).
+
+
+
+8	Asalto a la Ciudadela
+
+En el momento en el que sea descubierta la tecnología que abra la última llave de las 8 que protegen la ciudadela, se mostrará en el centro del tablero el sistema de la ciudadela que será desde ese momento visible para todas las facciones.
+
+La ciudadela estará protegida por sus propias unidades, y su potencia y número aumenta en función del turno en el que se abra la última llave. La ciudadela dispondrá de una cantidad de 2000R que aumentará en 150 por cada turno que se tarde en abrir las 8 llaves. Estos recursos se repartirán de manera equilibrada entre naves, defensas orbitales y unidades terrestres [Guardia de Honor Battariu].
+
+
+
+Nombre
+Unidad
+
+Ataque
+Escudo
+Casco
+Movimiento
+Ciudadela
+Estación Espacial
+50
+50
+110
+0
+Baterías Defensivas
+Satélite
+4
+2
+1
+0
+Cruzado Battariu
+Nave Espacial
+6
+5
+5
+5
+
+
+
+
+	
+Conquistar la Ciudadela; Aquel que obtenga un dominio sobre el área terrestre de la ciudadela será considerado su conquistador. 
+
+La primera vez que tu facción conquista la ciudadela gana permanentemente una serie de ventajas; Obtendrá dos cartas de tecnologías para mejorar cada uno de los atributos de ataque, defensa y casco de sus naves, y dos cartas de tecnología de potencial defensivo. Obtendrá además 10 cartas de tecnología aleatoria que no incluirán cartas de bonos de guerra normales y que incluirán una tecnología violeta.
+
+Además, mientras mantenga el control de la ciudadela obtendrá una serie de ventajas que perderá si es expulsado;
+
+-Obtendrá visión de todo el cuadrante.
+-Podrá gastar una Acción por turno para usar una Tecnología Suprema:
+	-Bomba Nova; Provoca una explosión que hace 500.000 de daño en un sistema. Destruye el planeta haciéndolo inhabitable y la órbita impracticable. La casilla deja de ser accesible. No funciona sobre la propia ciudadela o bases de facción fijas. Si la casilla tenía un portal estelar se podrá acceder y salir de la casilla solamente por el portal.  Es necesario tener una nave espacial a un máximo de 2 casillas de distancia de la ciudadela para ser usada.
+-Troyano Cuántico Mejorado; Un avanzado sistema de espionaje te permite conocer todas las acciones de una facción de ese mismo turno. 
+	-Dispositivo mayor de guerra;  Toda tu flota ganará hasta el final del turno un +4 a ataque y escudo.
+-Astillero Avanzado; La Ciudadela dispone de un Astillero que permite reducir en 3 R el coste de todas las unidades construidas en ella.
+-Ganará 100R por turno que termine dominando la ciudadela.
+-La Ciudadela será considerada una Base de Facción a efectos de previsión y bonos de guerra.
+-La Ciudadela tiene una capacidad de recolección y de reclutamiento de cero.
+-No se podrá instalar ningún sistema que proteja la superficie terrestre en este sistema.
+-Los informes de las batallas que suceden en la Ciudadela serán públicos para todas las facciones.
+
+	
+9	Derrota
+
+Cosmos online no es un juego en el que sea habitual que una facción sea derrotada antes del final de la partida, sin embargo existen algunas situaciones que podrían llegar a provocar esta situación. Existen algunas facciones que tienen unas condiciones de derrota muy concretas como por ejemplo los Fantasmas y su dependencia de su base. 
+
+Condición de derrota común:
+	-Banco Estelar;  Si una facción no puede afrontar el pago de una cuota del banco estelar la facción será intervenida por lo que  todos sus recursos serán bloqueados  y sus propiedades embargadas. La facción es expulsada de la partida en el momento de la resolución del turno en el que no puede afrontar el pago.
+
+10	FAQ
+
+
+
+-Aclaración sobre Victoria;
+	-En caso de que dos facciones cumplan a la vez su objetivo de victoria tendrá preferencia de victoria aquella que domine la ciudadela al final del turno. 
+	-La opción no presencial de los american nunca tendrá preferencia en caso de un conflicto de victoria.
+
+-Dilatador Temporal; 
+	¿Se puede recolectar dos veces en el mismo sistema? Si
+	¿Se puede usar dos veces la acción de Tecnología Suprema de la Ciudadela? Si
+	
+-Consorcio Minero;
+	¿Pueden recolectar en la ciudadela? Solo con el espacio extra de las Und. de Astro minería
+	La recolección automática de la ciudadela cuenta para el objetivo de 
+
+
+-Los ocean pueden mover la estación si no dominas orbita? 
+
+No, para efectuar el movimiento de la Ciudadela deben dominar la órbita del sistema desde el que se quieren mover.
+
+-¿Si se usa un Desembarco dinámico las tropas se verán afectadas por la habilidad La ley pirata o la vida de la Liga Pirata?
+
+No, las tropas no están en las naves cuando se desenvuelve la batalla ergo no podrán ser “reclutadas”
+
+-¿Si se usa un Desembarco dinámico en el mismo turno que un Rauk usa su habilidad de Bombardeo Dinámico, las tropas morirán en el planeta?
+
+-Si, la acción de desembarco dinámico se produce antes que el de un bombardeo, ergo las tropas sufrirán las consecuencias de esta acción.
+
+-¿El Acorazado del Rey hace perder a los piratas al ser destruído?
+	No, perder la base no es condición de derrota a no ser que tu facción lo especifique concretamente.
+
+-¿El bloqueo de portales del Foro Galáctico incluye las naves Naxor?
+	El foro bloquea la habilidad de anclar un portal permanente de la Lanzadera Naxor, pero no la habilidad de Portal Móvil que le permite funcionar como portal durante un turno.
+	

@@ -1,0 +1,1474 @@
+6-	Facciones en Liza
+
+
+
+6.1. 	European
+
+Denominados por muchos como los mejores guerreros de la galaxia los llamados Europeos tienen la flota más preparada para la batalla. Su sociedad está dirigida por una casta de guerreros en la que el honor, la gloria y la victoria son los valores más apreciados.
+
+Jugabilidad; [Expansiva, Cazadora]; Esta facción destaca por disponer permanentemente de una flota con un tamaño proporcional al de su imperio. Destaca también por sus tropas, fáciles de obtener y con un poder superior al del resto de facciones. Son una raza tremendamente agresiva ya que son los que  tienen la mayor capacidad de recuperación independiente.
+
+Cuartel General (Base Principal) ;  El Cuartel General European funciona como base de operaciones de la misión en el cuadrante asignado, es vital para el funcionamiento de toda la flota y de su estructura militar. Mientras el Cuartel General exista, los European podrán tener asegurada la existencia de varios Destructores Alfa (mirar Gobierno Militar). En cualquier momento de la misión el Cuartel General puede ser movido a cualquier Gobierno Militar controlado por la facción, para ello ha de gastar 6 acciones consecutivas con la orden de “Cambio de Base” de esa manera el Gobierno Militar pasará a ser considerado el Cuartel General, y el antiguo Cuartel General quedará como un Gobierno Militar más.
+
+Artista Marcial (Tropa); Los soldados de la facción European son los más temidos de la galaxia, toda su cultura gira alrededor de la guerra y las artes de la guerra. Cuando un Destructora Alfa es fletado en un Gobierno Militar incluirá 20 expertos guerreros en sus barracones. 
+
+Destructor Alfa (Nave) Principal nave de batalla de la flota European, estos destructores tienen la particularidad de estar respaldados por los Gobiernos Militares. No se puede pagar recursos para construirlas y su existencia estará ligada a los susodichos gobiernos. (Mirar Gobierno Militar)
+Destructor Beta (Nave) De la misma potencia y características que los Destructores Alfa, estos pueden construirse pagando su coste en recurso en la base principal o en cualquier Gobierno Militar.
+
+Superdestructor (Nave Espacial) Nave de gran potencia y tamaño, estas naves sólo son construidas por el gobierno principal de la facción, y son cedidos a aquellas misiones en las que se demuestre gran coraje, valor, y se obtengan victorias. Por ello, cada vez que una flota European destruye una nave enemiga ganará un punto de Honor, si acumula diez puntos de honor podrá gastar una acción para solicitar la cesión de uno o varios Superdestructores en caso de tener suficiente honor que aparecerá inmediatamente en el Cuartel General.
+Habilidad; Impacto Múltiple; El superdestructor, además de ser un arma temible tiene la habilidad y el entrenamiento de ser especialmente efectivo cuando lucha contra varias flotas enemigas a la vez. Por ello cada Superdestructor aumentará un 5% el daño a cada una de las flotas enemigas en caso de que su potencial de fuego sea dividido en una batalla de más de dos bandos. El daño total del impacto a cada bando no podrá superar el 100% original en ningún caso. 
+Habilidad; Último Objetivo: En una batalla estelar los superdestructores serán protegidos por la flota siendo siempre los últimos en ser alcanzados.
+
+
+
+Cañones Orbitales (Satélite de Defensa) ; Principal sistema de defensa de los Gobiernos Militares European, se trata de enormes cañones que orbitan alrededor del planeta o luna que haya que proteger. 
+
+Santuario de Guerra (Estación Espacial); De aspecto ceremonial y monolítico, los Santuarios de Guerra European han demostrado ser unos enclaves que infunden respeto a todos los enemigos de la raza. Recuerdan vagamente a los antiguos templos de la antigüedad clásica de la humanidad. Pero su poder de batalla y sus escudos están a la altura de cualquier contingencia.
+
+
+Nombre
+Unidad
+Ataque
+
+Escudo
+
+Casco
+Movimiento
+
+Carga
+Coste
+
+Tropa
+Destructor
+Nave Espacial
+5
+5
+3
+3
+20
+40r
+30
+Superdestructor
+Nave Espacial
+9
+9
+3
+3
+
+
+10 Honor
+30
+Cañón Orbital
+Satélite Defensa
+3
+1
+1
+
+
+
+
+10
+
+
+Santuario de Guerra
+Estación Espacial
+25
+50
+20
+
+
+
+
+220
+200
+
+
+
+	Gobierno Militar (Edificio de Control)(50R); Los european tienen la capacidad de construir un gobierno militar que ponga un sistema bajo su control. Los planetas dominados tienen la misión de mantener una flota y un ejército para apoyar a la causa. Por ello cada gobierno militar generará dos puntos de recurso “Destructor Alfa” lo que permitirá tener una flota siempre disponible mientras el dominio militar se mantenga.
+
+Regla Especial; Los edificios de este tipo construidos en el sector Violeta cuentan como si fuesen tres edificios a la hora de dar ventajas por sus habilidades.
+
+Habilidad: El poder de la Burocracia; Controlar un alto número de estos edificios dará a la facción acciones adicionales. Para conseguir una acción adicional necesitarás incrementar tu número de edificios de control en diez más el número de acciones adicionales ya obtenidas. Por ejemplo: para obtener tu segunda acción extra, necesitas conseguir 10+1 edificios adicionales haciendo un total de 21.
+	Habilidad; Plan de Infraestructuras y Defensa; En la misma acción de construir este edificio se podrá declarar la construcción de cualquier estructura terrestre en el sistema así como el reclutamiento de tropas con los máximos habituales de reclutamiento, pagando los precios adecuados para cada construcción.
+Flota de Destructores Alfa; Cada Gobierno militar mantendrá dos puntos de este recurso y mientras la base siga en manos de la facción mantendrá a su vez 5 puntos de este recurso. Con este recurso la facción podrá fabricar en cualquier Astillero un Destructor Alfa con toda la dotación de tropa por cada punto que invierta. 
+En todo momento habrá tantos puntos invertidos como destructores Alfa en juego. Si un destructor Alfa es destruído se recuperará el punto invertido volviendo a estar disponible para volver a comprar un destructor nuevo. 
+Si la destrucción de Gobiernos Militares reduce el número de puntos totales disponibles por debajo de los destructores alfa en juego estos no se perderán, pero no se podrán fabricar más destructores Alfa hasta que disponga de puntos disponibles por la construcción de Gobiernos Militares o la pérdida e destructores Alfa.
+	
+Habilidades Especiales;
+
+-Trofeo de Victoria; Por cada nave destruida los European ganan 1 punto de honor, pueden usar estos puntos de honor para obtener Superdestructores. Cada heroe enemigo y base enemiga que destruyan les proporciona 50 puntos de honor.
+-Lucha en Equipo; Las tropas European obtienen la ventaja por la lucha en equipo, por ello por cada 10 tropas que luchen juntas en un combate ganarán un punto de daño y reducirán uno el daño recibido.
+-Reclutamiento Forzoso; la facción European tiene la capacidad de hacer cumplir una orden de reclutamiento a lo largo de su imperio lo que le permitirá juntar en su base principal un gran contingente de tropas acorde a la extensión de sus territorios. La facción pagará 10 R por cada uno de sus sistemas para financiar la compra, y recibirá 15 Artistas Marciales por cada Gobierno Militar que controle, en su Cuartel General listos para la guerra. Esta acción consumirá la capacidad de recolección de todos los sistemas que aportan tropas al reclutamiento.
+
+
+Heroes
+
+1	Ares		-Almirante Condecorado; Duplica la ganancia de honor en batallas en las que participe y obtenga la victoria.
+
+2	Athenea	-Apuesta Táctica; Todo o nada; Puede preparar su flota para no usar escudos el primer turno y duplicar su valor de ataque. Cuenta como turno de escudo usado igualmente.
+
+3	Morpheo	-Camaleón; El héroe puede gastar una acción para hacer que la nave en la que se encuentre se vuelva invisible. Aplicará las normas de invisibilidad como si de la tecnología especial se tratara. Si el Camaleón sale de esa nave, esta perderá la invisibilidad.
+
+
+Condiciones de Victoria;
+	-Control geoestratégico ; Los European necesitan tener bases militares repartidas de tal manera que tengan capacidad de movimiento y de gestión de tropas y flotas. Para obtener la victoria, el jugador European necesita terminar un turno controlando al menos una base militar en cada sector y una base militar en la propia ciudadela.
+
+
+
+6.2. 	American
+
+Principales accionistas de Banco Estelar, los American son comerciantes y financieros de la política galáctica. En su filosofía priman los valores de la libertad individual, el valor del trabajo y las libertades económicas. Creen en la paz y la estabilidad para que florezcan los negocios. Aunque carecen de flota de guerra, hasta el último de sus cargueros luchará contra cualquier facción que intente obstaculizar su expansión comercial.
+
+Jugabilidad [Comerciante] [Dificil]
+
+	Sede del Banco Estelar (Base Principal); El Banco Estelar es una megacorporación que ofrece sus servicios financieros a todas las facciones civilizadas de la Galaxia. Los American se han comprometido a defender y ayudar a gestionar la Sede que el Banco Estelar abre en cada uno de los cuadrantes. Solo los American tienen el permiso del Banco Estelar para proteger y gestionar la Sede. Mientras el jugador American mantenga bajo su control la Sede del Banco Estelar mantendrá sus habilidades de “Banqueros”.También pueden construir naves, defensas y reclutar en la Sede pues esta dispone de sus propios astilleros y bases de contratación de mercenarios.
+
+	Mercenario; Los mejores y más ambiciosos mercenarios de la galaxia son buenos conocedores del dinero de los Banqueros, por ello acudirán a la sede del banco estelar y podrán ser pagados para que trabajen para la facción a un coste de 2R cada soldado, sin límite de reclutamiento en cada acción, pero siempre deben de ser reclutados en la sede. En caso de perder la Sede no podrán reclutar mercenarios sin límite, y tendrá que adecuarse al límite del sistema donde tenga una Base de Tropas o una Base Estelar propia.
+
+	Carguero; Los American no son un pueblo guerrero, pero saben hacer negocios, por ello todos sus cargueros están preparados para viajar con grandes cargas a costes mínimos. 
+	Habilidad; Aeronave Pacífica: Los cargueros no están equipados con armamento de batalla ni de escudos protectores, lo que les supone además no poder aprovechar las mejoras tecnologías de ataque y escudos en estas naves.
+
+Nave Comercial; Los American no son un pueblo guerrero, pero saben hacer  negocios, por ello han diseñado una nave capaz de extender su actividad mercantil allá donde vaya.
+Habilidad; Aeronave Pacífica: Las naves Comerciales American no están equipados con armamento de batalla ni de escudos protectores, lo que les supone además no poder aprovechar las mejoras tecnologías de ataque y escudos en estas naves.
+Habilidad; Pase Diplomático: Las naves comerciales no serán atacadas por el resto de facciones de manera automática. Solo una flota con órdenes específicas para atacar a un jugador American atacará estas naves, para ello la facción enemiga deberá hacer una acción de Preparar flota.
+Habilidad; Establecer Ruta Comercial; Una nave comercial puede anclarse a la órbita de un sistema para establecer una ruta comercial con la base American o en su defecto la sucursal bancaria más cercana. Cada Nave instalada de esta manera otorgará 10R a la base american hasta un máximo de la producción máxima de ese sistema. El american puede tener un máximo de rutas comerciales igual a su máximo fijo de acciones. 
+Si establece una ruta comercial con sistema dominado por un edificio de control de otra facción el máximo de recolección se duplicará. En caso de que la ruta se establezca sobre un Gobierno Civil Asian se triplicará el máximo del sistema. En caso de establecer una ruta comercial con una base fija, el máximo de ingreso para la ruta se cuadruplicará. 
+Cualquier facción que tenga instalada una ruta comercial en un lugar controlado por su edificio de control o su misma base, podrá gastar una acción para unirse a la ruta y disfrutar de los mismos beneficios del american mientras estas se mantiene activa. 
+Cualquiera de las dos facciones puede hacer una acción para anular una ruta comercial en cualquier momento. Si la realiza el American simplemente se detendrá, en caso de que sea el anfitrión el que decida terminar con la ruta también eliminará las Naves Comerciales ancladas.
+
+	Escolta Federal;  Las naves comerciales American tremendamente vulnerables a cualquier tipo de ataque son protegidas por las naves de la Federación Bancaria, auténticas naves de guerra que aseguran una respuesta militar contundente a cualquier intento de atacar a estas pacíficas Aeronaves. Son garantes de inversiones y rutas comerciales, y aunque sus sobrecostes son conocidos en toda la galaxia también lo es su gran capacidad de combate.
+	Habilidad; Proteger Ruta Comercial; Los escoltas están preparados para acudir raudos a la protección de cualquier enclave comercial que se vea amenazado. Por ello su movimiento base aumenta en uno en caso de que comience o termine su movimiento en un sistema en el que exista una ruta comercial.
+
+
+	Satélite de Telecomunicaciones; Los American instalan en aquellos lugares que quieren defender una red de satélites de telecomunicaciones armados, que ayudan a coordinar la información en todo el sistema al mismo tiempo que pueden atacar a cualquier flota hostil que entre en su radio de acción.
+	Sucursal; Se trata de estaciones espaciales, que además de cumplir una función defensiva sirven también de sucursales del Banco Estelar, en ellas los American pueden al igual que en la Sede (y mientras esta esté funcionando) reclutar mercenarios. Están defendidas por el mejor armamento que el Banco Estelar es capaz de comprar con dinero.
+
+
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste
+Tropa
+Carguero
+Nave Espacial
+0
+0
+2
+2
+10
+5
+20
+Nave Comercial
+Nave Espacial
+0
+0
+2
+2
+0
+15
+0
+Escolta Federal
+Nave Espacial
+5
+5
+3
+2
+0
+36
+30
+Satélite de Telecos
+Satélite
+1
+0
+1
+
+
+
+
+3
+
+
+Sucursal
+Estación Espacial
+50
+10
+20
+
+
+
+
+150
+200
+
+
+
+
+Habilidades Especiales;
+
+	Diplomacia del Libre Mercado; Cuando un jugador American hace un Pacto de Colaboración de al menos 5 turnos con otra facción, ninguna de las dos facciones gastará acciones para el mantenimiento del pacto pero deberá pagar a la facción american una cantidad de recursos negociable entre 50r y 250r por turno de mantenimiento del pacto si quieren ahorrarse las acciones. El pago se hace en el momento en el que se cierra el acuerdo.
+
+Recolección de Oportunidades; Cuando un American ordena a una flota recolectar, puede decidir que la totalidad de los recursos de esa recolección se inviertan directamente en obtener Cargueros, Naves Comerciales o Escoltas Federales como si hubiesen sido construidos en ese lugar. Los recursos sobrantes se añadirán a la reserva de recursos de la facción.
+
+Banquero; mientras la Sede del Banco Estelar esté protegida por los american, éstos en compensación tienen una serie de ventajas crediticias. Si su base es destruida o conquistada pierden estas prerrogativas.
+
+	-Crédito a coste reducido; La facción american puede pedir crédito al Banco Estelar a un interés de tan solo el 5% en vez del 20% habitual. El jugador american tendrá siempre preferencia en caso de haber más demanda de recursos que reservas. El resto de condiciones deben de ser mantenidas igualmente.
+
+	-Intermediario; Un jugador american puede ofrecerse de intermediario entre el banco central y un jugador, ofreciéndole un interés entre el 10% y el 20%, o mayor y quedándose la diferencia de ese interés. El banco estelar pagará el total del beneficio del american en el momento en el que se haga el trato. Por ello el american tiene un interés mínimo por hacer de intermediario del 5%.
+	
+	-Información financiera privilegiada; El american puede acceder a la información crediticia del banco, lo que le permite ver el estado y la información de todos los créditos concedidos durante la partida.
+
+
+Heroes
+
+1	Dee Dee Jones	-Criptógrafo Financiero; Dee Dee puede ayudar a otras facciones a hacer transacciones financieras. Si una facción quiere enviar Recursos a otra podrá hacerlo a través de este héroe, que debe encontrarse en su base de facción o en una Sucursal. Sin embargo sus servicios son caros, por lo que el ordenante del envío de dinero además de indicar el destinatario deberá pagar a Dee Dee entre un 10% y un 40% según acuerdo entre ambas partes para realizar la entrega. El pago puede deducirse del envío o como una tasa que no reducirá la cantidad enviada.
+
+2	Harry Dayne		-Diplomático; La flota en la que se encuentre no entrará en combate aunque se encuentre con una flota enemiga excepto si la flota enemiga tiene una acción de preparación de guerra preparada contra tu facción.
+
+3	Sophie Delacroix	-Espía Financiero; Puede llevar a cabo la acción de “Interceptar Comunicaciones” que le permitirá conocer una acción de otra facción por cada 50R que invierta en su propia acción.
+
+
+-Condiciones de Victoria;
+
+	Compra de patentes; Cuando la Ciudadela sea conquistada los american invertirán en las patentes de la tecnología allí encontrada. Si consiguen pagar el registro de todas las patentes antes de que otro jugador gane, ellos serán los vencedores. El coste de todas las patentes será igual al 200 de recurso multiplicado por los turnos jugados en el turno en el que se abra la ciudadela. En caso de que la facción american posea la ciudadela en algún momento este precio se reducirá a la mitad por el fácil acceso a las tecnologías de la misma. (aunque luego pierdan su control).
+
+6.3. 	Asian 
+
+Se trata de la mayor cultura humana de la galaxia. Los territorios controlados por la burocracia Asian se sitúan en el corazón de la Vía Láctea y ocupan miles de planetas y razas diferentes protegidos por la flota de Acorazados Asian. Su tradición y la fuerza de voluntad de sus gentes mantienen a la Mancomunidad Unida en estos tiempos de caos. Los asian buscan crear espacios para su expansión espacial y proteger a sus gentes de los desastres de las guerras galácticas.
+
+Jugabilidad [Expansiva] [Fácil]
+
+	Gobierno Civil (45R);  la facción asian tiene el objetivo de pacificar y normalizar el cuadrante, crear zonas de control civil y construir una burocracia que traiga estabilidad y prosperidad. Por ello asume que no habrá una jerarquía dentro de los sectores que decidan unirse a su Mancomunidad. Todos los sistemas son igual de importantes para la Mancomunidad, por ello ninguno puede ser considerado la base de la facción asian como ente único, todos los gobiernos civiles hacen las funciones de base principal. Mientras quede un solo gobierno civil asian se considerará que la facción tiene una base. Los gobiernos civiles crean una burocracia en el planeta, dan estabilidad y administran las leyes y la economía, y además pagan impuestos para las fuerzas armadas y el ministerio de defensa. Cada turno cada gobierno civil da a la facción asian 15 R en concepto de impuestos para defensa de los planetas federados. Además los gobiernos civiles disponen de sus propios astilleros y de campos de entrenamiento de tropas.
+
+Regla Especial; Los edificios de este tipo construidos en el sector Violeta cuentan como si fuesen tres edificios a la hora de dar ventajas por sus habilidade
+
+Habilidad: El poder de la Burocracia; Controlar un alto número de estos edificios dará a la facción acciones adicionales. Para conseguir una acción adicional necesitarás incrementar tu número de edificios de control en diez más el número de acciones adicionales ya obtenidas. Por ejemplo: para obtener tu segunda acción extra, necesitas conseguir 10+1 edificios adicionales haciendo un total de 21.
+Habilidad; Plan de Infraestructuras y Defensa; En la misma acción de construir este edificio se podrá declarar la construcción de cualquier estructura terrestre en el sistema así como el reclutamiento de tropas con los máximos habituales de reclutamiento, pagando los precios adecuados para cada construcción.
+
+	Soldado Mancomunado; se trata de las fuerzas armadas que los sistemas de la Mancomunidad Asian aportan para la defensa conjunta de sus planetas. Se pueden reclutar desde cualquier gobierno local, cada soldado tiene un coste de contratación de 1R. 
+	Acorazado; Nave principal de la flota asian. Los acorazados son naves versátiles que pueden transportar gran cantidad de tropas, protegidas por gruesos cascos. Su capacidad ofensiva no es muy alta, ya que los asian no tiene grandes investigaciones en industria bélica. 
+	Habilidad: Doble Casco: Los acorazados Asian están protegidos por un segundo casco que orbita alrededor de sus naves, en cualquier batalla este doble casco evita la primera oleada de ataques enemigos quedando inservible hasta que es reparado. Por ello los acorazados asian no pueden ser destruidos en el primer turno en el que son atacados en una batalla.
+	Unidad de Defensa Orbital; Los satélites de defensa asian son muy sencillos, baratos y prácticos, están pensados para poder ser instalados rápidamente en cualquier sistema que los necesite. Sus capacidades de combate son bajas, pero construirlos en gran cantidad es una estrategia habitual, ya que cada uno de estos satélites defenderá los hogares de aquellos que los han construído.
+	Estación de Combate: Las estaciones espaciales son muy importantes para la defensa Asian, son normalmente instaladas en los planetas con mayor riesgo de sufrir un ataque. Las estaciones de combater destacan por su gran poder de ataque y su enorme estructura.
+	Habilidad: Construída en 2 secciones. Aplica la regla especial de Bloques con sus stats divididos en 2.
+Habilidad: Doble Casco: Las Estaciones de Combate  Asian están protegidos por un segundo casco que orbita alrededor de sus naves, en cualquier batalla este doble casco evita la primera oleada de ataques enemigos quedando inservible hasta que es reparado. Por ello las Estaciones de Combate Asian no pueden ser destruidas en el primer turno en el que son atacados en una batalla.
+
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste
+Tropa
+Acorazado
+Nave
+3
+3
+7
+1
+13
+26
+70
+Un.Defensa Orbital
+Satélite
+1
+1
+3
+
+
+
+
+8
+
+
+Estación de Combate
+Estación Espacial
+20
+10
+60
+
+
+
+
+130
+600
+
+
+	
+Habilidades Especiales;
+	-Burocracia Dispersa; La Mancomunidad Asian divide equitativamente sus centros de gestión y poder por todos sus gobiernos civiles, por lo que todos y cada uno de ellos será considerada como su base principal. Gracias a esto los enemigos no obtendrán beneficios de la destrucción de las bases Asian en forma de acciones.
+Habilidad; Reclutamiento Forzoso; La Mancomunidad Asian tiene la capacidad de hacer cumplir una orden de reclutamiento a lo largo de su dominio lo que le permitirá juntar en su base principal un gran contingente de tropas acorde a la extensión de sus territorios. La facción pagará 20 R por cada uno de sus sistemas para financiar la compra, y recibirá 10 Soldados Mancomunados por sistema controlado con una base, en el Gobierno Civil elegido listos para la guerra. Esta acción consumirá la capacidad de recolección de todos los sistemas que aportan tropas al reclutamiento.
+
+
+Heroes
+
+1	Jun Shu	-Ingeniero de Salto; La flota en la que se mueva tendrá +2 al Movimiento final.
+
+2	Hoo Pa	-Plan Urbanístico; Con una sola acción de Plan Urbanístico, por 100 R el héroe construirá un Gobierno Civil 20 Soldados Mancomunados, un Acorazado, 5 Un. Defensa Orbital y una Fortaleza Subterránea que entra en funcionamiento inmediatamente. Además investigará automáticamente el planeta obteniendo la tecnología en el acto.
+
+3	Mao Dat	Cuartel Móvil; La nave donde se encuentre este héroe será considerada como un gobierno civil a efectos de: contar como base ante cualquier batalla, poder construir y reclutar, efectuar un reclutamiento forzoso.
+
+
+
+Condiciones de Victoria;
+	-Hegemonía Asian; Los asian buscan crear una red estable de gobiernos civiles al resguardo de la ciudadela. Para obtener la victoria un asian debe controlar mediante gobiernos civiles al menos la mitad el sector violeta y controlar la ciudadela con su propio gobierno civil. Si se cumplen las dos condiciones a la vez en una fase de resolución el jugador asian se proclamará vencedor.
+
+
+6.4. 	Ocean
+
+Los Oceánicos son herederos de una prolongada tradición científica. Desde su capital en el planeta acuático Atlantis controlan una vasta red de laboratorios por toda la galaxia avanzando en todas las líneas de investigación científicas que la humanidad ha podido imaginar.
+
+Jugabilidad [Comerciante] [Media]
+
+	Atlantis; La base sumergida de los Ocean está fuera del nuevo cuadrante descubierto, pero dada la importancia de la misión todo el operativo en el cuadrante estará dirigido desde la  base de toda la flota Ocean en la galaxia. Esta base está actualmente fuera del alcance del resto de facciones, la avanzada tecnología hiperespacial Ocean les permite alcanzar rápidamente el cuadrante desde su propia base. Por lo que con una acción especial “Salto a Atlantis” cualquier nave Ocean que este en el sector blanco podrá salir del mapa y resguardarse en su base. Cualquier nave desde su base podrá con una acción de “Salto a Sector Blanco nºX” ponerse en cualquier sistema del sector blanco. Dispone de Astillero para la construcción de sus naves y se puede recolectar con normalidad. Sin embargo por las condiciones de seguridad de Atlantis no está permitida la instalación de un Portal Estelar.
+	Dron de Batalla; Los científicos de Atlantis no son buenos soldados, y han renunciado a entrenar soldados o contratar mercenarios. Por lo que, pese a las constantes críticas del resto de facciones han desarrollado drones de batalla  que usan en las escasas situaciones en las que es menester una intervención terrestre. Solo pueden fabricarlos en sus naves estelares a un coste de 5R no cuentan como tropas reclutadas por lo que no contarán para el máximo de tropas en un planeta ni será necesaria dominación terrestre, el límite vendrá dado por la capacidad de tropa de la flota en ese momento, pues no podrá fabricar más con una acción que la cantidad que pueda almacenar. 
+	Habilidad; Armas de Guerra; Los Drones de batalla son más poderosos y menos vulnerables que los soldados de otras facciones, también son mucho más caros de producir. Cada Dron de batalla tendrá el poder ofensivo, defensivo y capacidad de recolección de 3 tropas comunes. Por lo que serán necesarios tres soldados enemigos para destruir el dron, y este destruirá tres soldados enemigos por combate.
+	Crucero; Nave espacial de gran movilidad táctica. Se trata de naves pequeñas, muy bien armadas y con potentes escudos, pero sin preparación real para sufrir daños. Tienen una gran movilidad y son usadas para misiones de reconocimiento y pequeñas escaramuzas.
+	Habilidad; Reporte de Emergencia. Los cruceros Ocean tienen la capacidad de enviar informes de batalla pese a no obtener la victoria o ir en una misión de exploración.
+Habilidad; Informe táctico; Cuando un crucero Ocean se enfrenta a una flota enemiga utilizará sus potentes sensores para calcular las capacidades técnicas de sus enemigos y las incluirá en su informe de batalla.	
+	Nave de Batalla; Nave principal de combate de la flota Ocean. Se trata de naves de último diseño en armamento táctico. Su resistencia no es muy elevada y dependen de sus poderosos escudos para no sufrir daños. 
+	Habilidad; Logaritmo de Combate; La espina dorsal de la flota Ocean es capaz de seguir combatiendo pese a que su estructura sea abocada a un colapso total gracias a una preparación del núcleo y una sistema de control remoto. Por ello tanto los escudos como el armamento de una Nave de Batalla funcionarán durante una ronda de combate más tras ser “destruida” siempre que quede otra nave en pie de la facción.		
+	Nave Insignia; Nave de guerra total. Se trata de una versión mayor de las naves de batalla. Son difíciles de costear y mantener, por lo que su número es muy reducido y solo son usadas en situaciones de combate inminente.
+	Habilidad; Bombas de Colapso:  Las insignias Ocean están equipadas con la más poderosa de las tecnologías para colapsar los escudos enemigos. Por ello cada turno de batalla que la flota enemiga se vea sometida al fuego de una nave Insignia Ocean contará como dos turnos a la hora de calcular la cantidad de rondas que aguantan sus escudos en pie.
+	Habilidad; Dirigir Unidades de Combate: Las insignias Ocean tienen la capacidad de tomar el control de otras Naves Espaciales no diseñadas por su facción en combate y usarlas sin tripulación. Cada insignia permite a la facción controlar 5 naves.
+	Dron Orbital de Defensa; Se trata de satélites armados inteligentes que pueden ser creados desde cualquier nave de la flota ocean y puestos en la órbita de cualquier sistema que pasarán a defender.
+
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste
+Tropa
+Crucero
+Nave
+4
+4
+2
+5
+21
+42
+20
+Nave de Batalla
+Nave
+5
+5
+5
+4
+29
+58
+50
+Nave Insignia
+Nave
+7
+7
+7
+4
+29
+58
+70
+Dron Orbital de Defensa
+Satélite
+2
+4
+1
+
+
+
+
+17
+
+
+
+
+
+Habilidades Especiales;
+
+-Recursos Humanos Limitados; A causa del escaso número de tripulaciones realmente preparadas para manejar una nave Ocean, la facción tiene escasez de personas para dirigir sus naves y flotas. Por ello ven limitado el número de naves que la facción puede tener en servicio en el cuadrante al mismo tiempo. Limitándose a 15 Cruceros, 10 Naves de Batalla y 5 Naves Insignia.
+
+-Revolución Científica: Gracias a sus conocimientos científicos y al tamaño reducido de su flota, los ocean están en constante mejora de sus naves y tecnologías y tienen la capacidad de actualizar sus naves o defensas para implementar inmediatamente cualquier nueva mejora. Pueden subir permanentemente las puntuaciones básicas de cualquier modelo de nave o defensa a un coste de tantos R como número a alcanzar en el casco, el doble en ataque y el triple en el caso del escudo, deben pagar cada aumento individual con una acción. Además cuando consiguen un descubrimiento tecnológico que aumenta los valores de toda su flota duplican esos beneficios.
+
+-Comercializar Ciencia; Los Ocean pueden gastar una acción en mejorar una nave o una defensa de otra facción al igual que hacen con sus propias naves. Para ello el interesado deberá gastar una acción y pagar a la facción Ocean un mínimo de 100R y un máximo de 500R por el avance tecnológico. Además los Ocean se beneficiarán del aumento de coste de todas las naves que esa facción construya o hubiese construído hasta el momento. En el momento de hacer la mejora la facción Ocean recibirá un ingreso en R igual al producto de las naves fabricadas hasta el momento por la diferencia de coste resultante de la mejora. Si la facción contratista hace más naves de ahí en adelante la facción Ocean recibirá en tiempo real esa diferencia.
+
+-Retroingeniería Avanzada; Los científicos de Atlantis son los mejores de la galaxia. Tanto en búsqueda y análisis de tecnología, como en desarrollo, como en aprovechamiento de los recursos tecnológicos encontrados. Por ello sus investigaciones en busca de tecnología durarán solo tres turnos en lugar de cuatro en el sector violeta, y todas las tecnologías consumibles les darán el doble de usos de lo que venga indicado en la carta de investigación obtenida.
+
+-Taller de Desarrollo; Cada vez que descubren una tecnología, la facción recibirá un punto de ciencia que le permitirá desarrollar sus propias cartas de tecnología a partir de las ya descubiertas. Con un coste de 3 puntos de ciencia los Ocean podrán crear una nueva copia de cualquier tecnología que no haya sido recogida en el sector Violeta. Además como regla especial podrán compartir este desarrollo con otra facción, si así lo hacen el interesado podrá gastar una acción en pagar al Ocean entre 100R y 500R para obtener una copia igual a la tecnología desarrollada por el Ocean.
+
+
+Heroes
+
+1	Steven Graw; 	Doctorado en Investigación y Arqueología; Nave Héroe Clase Insignia; Una vez por partida crea un portal estelar conectado a la red de la ciudadela. De tal manera que ayudará para cumplir  el requisito de abrir 8 llaves para acceder a la ciudadela y puede ser usado para saltar a la misma. Este portal no puede ser instalado en Atlantis. Este portal no puede ser intervenido ni localizado por la Federación Naxor. La nave de Steve no cuenta para el máximo de naves de Clase Insignia de la facción.
+
+2	Amelia Walker; 	Doctorado en Hiperespacio, Nave Héroe Clase Nave de Batalla; permite el salto de las naves desde donde se encuentren al lugar donde se encuentra el héroe. La nave de Amelia no cuenta para el máximo de naves de Clase Batalla de la facción.
+
+3	Klaus Loyal; 	Doctorado en Tiempo y Espacio; Nave Héroe Clase Crucero; Cuando la nave de Klaus es la única interviniente en una acción esta no cuenta para el cómputo de acciones de ese turno. La nave de Klauss no cuenta para el máximo de naves de Clase crucero de la facción.
+
+
+
+Condiciones de Victoria;
+
+-Ocultar la Ciudadela; La facción Ocean considera que la ciudadela es demasiado peligrosa para que aquellas facciones beligerantes o una plaga galáctica puedan llegar a tener acceso a ella. Por lo que han mandado una misión al cuadrante para capturar la ciudadela antes que nadie y sacarla del espacio neutral para ponerla bajo la vigilancia de Atlantis y evitar de esa manera que sea utilizada para la guerra. Mover la ciudadela hasta el sector blanco y desde ahí efectuar la acción “Salto a Atlantis”. Esta acción será la última en ser ejecutada, incluso después de los enfrentamientos dados durante ese turno. Los Ocean instalarán en la ciudadela al conquistarla un hipermotor que le dará un valor de movimiento uno que se verá modificado por mejoras de movimiento temporales o puntuales.
+
+6.5.	 Imperio Dorado
+
+El rasgo cultural más importante para esta civilización gira en torno a la muerte y el legado de los difuntos. Toda la tecnología del imperio dorado funciona a través de los restos biológicos que en forma de exoesqueleto dejan los difuntos al morir. Este material dorado recibe el nombre de Legado, que ha dado nombre a toda la civilización tiene unas propiedades que con la tecnología adecuada pueden ser usados para gran multitud de tareas. Este material es usado principalmente para la construcción de enormes navíos de guerra espaciales, así como de sus principales monumentos y artefactos de alta tecnología.
+
+Jugabilidad [Expansiva] [Media]
+
+	Ciudadela Dorada; Base principal de la facción Dorada en el cuadrante. Se trata de una enorme ciudad construída en una estación espacial en la órbita de un planeta hecha completamente de Legado, el material más importante para la civilización denominada Imperio Dorado. 
+	Sectario; Los Reflejos, que así se llaman los miembros de la raza nunca jamás participan personalmente en refriegas terrestres, para ello reclutan en sus planetas protegidos a individuos de las razas sometidas que son fieles a su causa. El coste de reclutar un sectario es de 1R y podrán hacerlo en cualquier Alto Mando o en la base principal.
+	Fragata; Nave de Guerra utilizada por toda la flota del Imperio Dorado, es un modelo poderoso, construido completamente de Legado de gran tamaño. Su armamento y sistemas de combate están algo obsoletas pero lo compensan con su gran tamaño y con un número de naves sensiblemente mayor que el resto de facciones.
+	Monolitos Solares; El sistema de defensa elegido por el Imperio Dorado es también una obra de arte. Se trata de enormes monolitos hechos puramente de Legado que acumulan grandes cantidades de energía y la descargan en forma de rayos de energía contra cualquier nave hostil que entre en el sistema.
+	Estación Pacificadora; Se trata del mayor sistema de defensa creado en la galaxia. La estación pacificadora es una enorme esfera de varios kilómetros de diámetro con grandes cantidades de armamento. El coste de construcción es inimaginable pero pocas flotas han tenido la posibilidad de sobrevivir a un encuentro con una de estas armas.
+	Habilidad: Construída en 5 secciones. Aplica la regla especial de Bloques con sus stats divididos en 5.
+
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste*
+Tropa
+Fragata
+Nave
+4
+4
+4
+1
+14
+28
+40
+Monolito Solar
+Satélite
+2
+2
+1
+
+
+
+
+4
+
+
+Est. Pacificadora
+Estación Espacial
+20
+20
+110
+
+
+
+
+70
+1100
+
+*Costes en Legado
+
+Alto Mando (20L): La facción dorada domina planetas del resto de razas y los enmarca dentro de su estructura colonial. Para ello crean una ciudad amurallada en algún punto privilegiado del planeta donde se instala una pequeña colonia de Reflejos que controla el planeta y ayuda a hacerlo progresar y aporta recursos al imperio. Los Gobiernos Coloniales tienen su propio astillero y su propio cuartel de reclutamiento de sectarios, además cada turno dará 10 unidades del recurso Legado (L) que se mantengan en propiedad.
+Regla Especial; Los edificios de este tipo construidos en el sector Violeta cuentan como si fuesen tres edificios a la hora de dar ventajas por sus habilidades
+
+Habilidad: El poder de la Burocracia; Controlar un alto número de estos edificios dará a la facción acciones adicionales. Para conseguir una acción adicional necesitarás incrementar tu número de edificios de control en diez más el número de acciones adicionales ya obtenidas. Por ejemplo: para obtener tu segunda acción extra, necesitas conseguir 10+1 edificios adicionales haciendo un total de 21.
+Habilidad; Plan de Infraestructuras y Defensa; En la misma acción de construir este edificio se podrá declarar la construcción de cualquier estructura terrestre en el sistema así como el reclutamiento de tropas con los máximos habituales de reclutamiento, pagando los precios adecuados para cada construcción.
+
+
+Habilidades Especiales;
+ 
+	-Reciclaje; El Imperio Dorado valora cada una de las piezas de sus Fragatas de guerra, pues son el Legado de sus antepasados. Por eso una de las grandes capacidades del imperio es el de poder reconstruir aquellas naves que han caído en combate. Si la facción gana
+ un enfrentamiento en el que hayan perdido naves espaciales sumarán a su reserva de Legado la cantidad de este material que costase la totalidad de las naves perdidas.
+	-Mercado de Recursos; La facción Dorada puede hacer uso de una acción para intercambiar su recurso Legado por Recurso normal en proporción: 5R por 1 Legado o 1 Legado por 4R.
+-Habilidad; Reclutamiento Forzoso; El Imperio Dorado tiene la capacidad de hacer cumplir una orden de reclutamiento a lo largo de su dominio lo que le permitirá juntar en su base principal un gran contingente de tropas acorde a la extensión de sus territorios. La facción pagará 15 R o 3 Legado por cada uno de sus sistemas para financiar la compra,  recibirá 10 Sectarios por sistema controlado con un Alto Mando en su base listos para la guerra.  Esta acción consumirá la capacidad de recolección de todos los sistemas que aportan tropas al reclutamiento.
+
+Heroes
+
+1	Keop	-El poder de los Ancestros; La flota que dirija ganará el equivalente a una tecnología de ataque, escudo y movimiento, por cada 15 Altos Mandos que posea.         
+
+2	Sunt	-Colonización a ciegas; el heroe puede ordenar construir un Alto Mando sin disponer de presencia o dominación en cualquier sistema que se encuentre o esté adyacente, si hay unidades enemigas de cualquier tipo, perderá la inversión y el enemigo será alertado del intento. 
+
+3	Arkt	-Renegado, Guerra Sucia; Cuando se efectúa una batalla en la que se encuentre este héroe y cualquier número de Fragatas resultan destruidas, estas explotarán haciendo su daño una segunda vez esa ronda. Si gana la batalla el Legado seguirá siendo recuperable.
+
+
+
+Condiciones de Victoria;
+	-La Puerta de los Ancestros; El Imperio Dorado ansía poseer y proteger la ciudadela para gloria de su pueblo y como medio para bloquear la posibilidad de que enemigos se hagan con armamento que haga peligrar su hegemonía sobre una parte de la galaxia. Para ello han ordenado la creación de un portal interestelar a mediana escala, similar al que tienen en su sistema de origen y que dicen los rumores que les ha abierto la puerta a otra galaxia. Para ello deberán juntar un número de Fragatas igual a 10 multiplicado por el turno en el que se abrió la última llave en el sector de la ciudadela mientras domina tanto su sector terrestre como el orbital y terminar un turno con la acción de “Activar la Puerta de los Ancestros”. Las naves de guerra tienen la capacidad de ensamblarse para formar el famoso Portal y permitir de esa manera que el grueso de la flota pueda acudir a defender un territorio tan importante en muy poco tiempo.
+	
+
+6.6.	 República Raukiana
+
+En la actualidad la república Raukiana y sus protectorados son lugares tranquilos, pero poco productivos. Normalmente están por encima de cualquier otra civilización en el desarrollo bélico y cualquier intento de un enfrentamiento directo es duramente respondido sin miramientos. La paz y el equilibrio en la galaxia han dormido al gigante bélico Rauk, pero se trata de un titán dormido que golpeará con fuerza cuando suenen las sirenas de combate.
+
+Jugabilidad [Cazadora, Comerciante] [Alta]
+
+	Centro Estratégico de Respuesta Rápida (CERR); La misión Rauk en el nuevo cuadrante es una misión puramente militar, conseguir la tecnología de la ciudadela y eliminar a las potencias enemigas del cuadrante. El CERR es la base principal de toda operación y es necesaria para poder coordinar todas las acciones Rauk en el cuadrante. Dispone de su propio astillero y dispone de un enlace directo con la Base principal Rauk que le permite contratar soldados republicanos, al no reclutar los soldados del sistema no está atado al límite de población de este.
+
+	Soldado Republicano; La base Rauk es el único lugar en el universo donde un aspirante puede llegar a ser nombrado Soldado Republicano y poder luchar en las guerras de la República Rauk. Normalmente se trata solo de un trámite burocrático pero lo cierto es que es desde la Base Rauk desde donde se envían los refuerzos a todas las misiones de la República. Pagando los costes de formación el CERR o cualquier base enemiga controlada por Imperialismo Eficaz podrá solicitar el envío de soldados desde la Base Rauk a un coste de 1R cada soldado.
+
+	Nave Nodriza ; La nave nodriza Rauk es una de las mayores armas de guerra de la galaxia. Se trata de naves que cargan con cientos de cazas que son propulsados a grandes velocidades desde sus 4 lanzaderas principales. Estos cazas entran en combate antes de que el enemigo pueda prepararse para la batalla y cuentan con un gran poder destructivo pese a su pequeño tamaño. 
+
+	Satélite de Guerra; Armados con lo último en tecnología de plasma, los satélites Rauk son temidos por su gran poder de ataque, aunque no destacan por su resistencia pueden darle un apoyo decisivo a una flota Rauk defendiendo un sistema.
+
+	Estación de Armamento; Como si de un conglomerado de decenas de satélites de guerra se tratase, la estación de armamento es una plataforma dedicada  a la defensa de un sistema mediante una gran potencia de fuego y un alcance sin igual. 
+
+	Trianhalla; Nave personal del emperador de la República Raukiana. Se trata probablemente de la nave más poderosa de la galaxia. Si el comandante de la misión al cuadrante ávalon obtiene el suficiente nivel de gloria, el propio emperador vendrá con su nave a ayudarle en su misión. 
+		Habilidad; Implosionar Planetas. El Trinahlla utilizará el poder ilimitado de las Gemas Emperador que posee para eliminar todo el planeta principal de un sistema y recolectar buena parte de los recursos en el proceso. Con esta acción toda la zona terrestre del sistema será destruida junto con todo lo que esté allí asentado y el Trianhalla recolecta automáticamente diez veces la producción del sistema dejándolo inhabitable para el resto de la partida.
+		Habilidad; Potencia Doble; El Trianhalla podrá llevar a cabo dos acciones el mismo turno, aunque eso no te dará una acción adicional para llevarla a cabo, con la limitación de que no podrá hacer dos veces la misma acción.
+		Habilidad; Proteged al Emperador; Puesto que el dirigente de toda una facción galáctica comanda la nave el resto de la flota la protegerá y, esta huirá si corre el riesgo de ser destruída. Será el último objetivo en batalla y si recibe suficiente daño como para ser destruída se refugiará en la base Rauk más cercana, de no existir bases Rauk en el sistema abandonará el cuadrante.
+		
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste
+Tropa
+Nave Nodriza
+Nave Espacial
+6
+4
+4
+3
+20
+40
+40
+Satélite de Guerra
+Satélite
+3
+1
+1
+0
+0
+10
+0
+Est. Armamento
+Estación Espacial
+40
+20
+20
+
+
+
+
+160
+200
+Trianhalla
+Nave Héroe
+150
+150
+50
+10
+1000
+Esp*
+500
+
+*ver Sistema Republicano de Incentivos a la Guerra
+
+Habilidades Especiales;
+	-Previsión; Todas las naves de la flota Rauk tienen un grado de previsión gracias a su sistema de combate con cazas.
+	-Incentivos a la Burocracia; La red Burocrática Rauk tiene un gran potencial pese a su ineficiencia crónica, con la mezcla adecuada de incentivos y sobornos se pueden acelerar gran cantidad de trámites. Un Rauk puede gastar en un turno 10 puntos de R para obtener dos acciones adicionales en el turno siguiente. Esta habilidad consume una acción que puede ser usada hasta 2 veces por turno, límite que aumenta en 1 por cada 10 turnos que se resuelvan.
+	-Compartir Burocracia; La extensa burocracia Rauk puede ser compartida con otras facciones, de tal manera que podría dar acciones adicionales a otras facciones a cambio de 20R. Para ello el Rauk debe cederle uno de sus usos de Incentivos a la Burocracia a una facción indicandolo en una acción. Esta facción deberá gastar una acción en pagar los incentivos de 20R que se embolsará íntegramente la facción Rauk. Esto hará ganar dos acciones para el siguiente turno a la facción pagadora y otras dos acciones a la facción Rauk. 
+	­Imperialismo Eficaz; Cuando la facción Rauk entra en guerra busca bloquear al enemigo y controlarlo para eliminar la amenaza. La estrategia elegida para tal misión es el de intentar controlar los centros de poder enemigos mediante un mecanismo administrativo de corte colonial. Si la flota Rauk ataca una base enemiga y domina el sistema la base enemiga no será destruída, en su lugar la facción afectada podrá seguir usando la base con normalidad pero se darán una serie de condiciones.
+
+-La República Raukiana se llevará un estándar de un 20% de todos los ingresos de la facción en forma de tributo mientras esta esté siendo dominada. La facción Rauk y la facción afectada podrán pactar % diferentes de mutuo acuerdo con un mínimo del 10% y un máximo del 50%, en caso de no existir acuerdo se quedará en un 20%.
+Los Rauk y la facción afectada no pelearán en el sistema donde se encuentre la base aunque sus unidades coincidan en él, excepto por orden expresa en forma de acción realizada por soldados y/o naves, nunca por defensas por cualquiera de las dos partes. Si la facción afectada consigue limpiar su sistema de Rauk mediante esta acción de “Rebelión” será libre del control Imperialista.
+Además, los Rauk podrán usar los beneficios de la base enemiga, véase astilleros, cuarteles de reclutamiento y bonos de combate en base, el dueño de la base no obtendrá estos bonos en el combate por la liberación.
+­Una facción con su base principal dominada, no podrá entrar en el espacio de la ciudadela ni alcanzar la victoria.
+Cualquier base instalada en el sector de la ciudadela que sea atacada con éxito por los Rauk será destruída en lugar de dominada.
+En la casilla dominada por el Imperialismo el Rauk tendrá la dominación efectiva a la hora de recolectar y reclutar, pero en caso de existir un trato entre el dominado y la facción Rauk podrá permitir al dominado recolectar o reclutar.
+Por último, cada base enemiga controlada por la facción Rauk les reportará una acción por turno más tanto a la facción dominada como a la dominante mientras esta situación se mantenga.
+
+Reglas especiales del Imperialismo Eficaz;
+Burocracia Dispersa Asian; Controlar un Gobierno Civil reporta los 15R a la facción Rauk en lugar de la Asian en lugar de un % de los ingresos de la facción. Además la facción Rauk deberá controlar 10 Gobiernos Civiles si quiere beneficiarse de una acción extra, lo cual también le reportará una acción extra a la facción asian. Por otro lado, tener menos de 10 gobiernos civiles controlados no les bloqueará el acceso a la ciudadela o la posibilidad de victoria.
+­Bases Móviles; en caso de controlar una base móvil, esta perderá su capacidad de moverse hasta ser liberada, funcionará como una base fija terrestre y no entrará en combate en un intento de Rebelión, una vez liberada volverá a sus capacidades habituales. Si una flota Rauk lucha en órbita contra una flota enemiga, la base móvil ayudará en el combate, pero no será destruída en caso de que el Rauk no pierda la dominación terrestre.
+
+Sistema Republicano de Incentivos a la Guerra; Aquellos nobles de la república que defienden los intereses de los Rauk a lo largo de la galaxia mediante el arte de la guerra, son respetados y apoyados por la República. Por ello cuanta mayor sea la gloria del comandante de la misión, mayor será el apoyo desde la Base Rauk. Las victorias militares sobre otras facciones alimentarán la leyenda dorada del comandante y le harán ganar puntos de gloria:
+
+Tipo de Unidad Destruída			Puntos de Gloria Recibidos
+Nave Espacial					2
+Aeronave Pacífica				1
+Satélite					1
+Base Estelar					2 por bloque.
+Edificios de Control				3
+Dominar una Base de Facción		20 por turno dominada
+Dominar un Gobierno Civil Asian		2 por turno dominada
+Héroe Enemigo				150
+
+Obtener puntos de Gloria le dará al comandante Rauk en el sistema los siguientes beneficios en función de la cantidad acumulada.
+
+Objetivos y recompensas por los puntos de Gloria;
+
+100 Puntos de Gloria ; Apoyo Financiero, tendrás unos ingresos constantes de 25R por turno.
+200 Puntos de Gloria; Apoyo Militar, 25 Soldados Republicanos llegarán a tu base cada turno.
+300 Puntos de Gloria; Subvención Privada, tus Naves Nodrizas pasan a costar 30R
+400 Puntos de Gloria; Burocracia Motivada, Ganas 1 acción Extra.
+500 Puntos de Gloria; Gran Apoyo Financiero-Militar, tus ingresos constantes de tropas y recursos suben hasta 100 por turno.
+650 Puntos de Gloria;	Subvención Estatal, tus Naves Nodrizas pasan a costar 25R 
+800 Puntos de Gloria; Orden Republicana de Apoyo Estatal, Ganas otras 2 acciones Extra.	
+1000 Puntos de Gloria; Apoyo científico. Puedes obtener 5 cartas de tecnología no Violeta a tu elección
+1250 Puntos de Gloria; Segunda Misión. Puedes construir una segunda base                  invisible en cualquier sistema no dominado por un enemigo
+1500 Puntos de Gloria; Recibirás el apoyo del Trianhalla durante el resto de la misión.
+
+
+Heroes
+
+1	Duque;	 	Bombardeo Dinámico, permite sacrificar un grado de previsión en tu acción de preparar flota a cambio de efectuar un bombardeo especial tras la batalla sobre el planeta enemigo.	
+
+2	Marqués; 	Fabricar Bomba Nova. Puede hacer una acción con un coste de 100R que llevará 5 turnos para fabricar una Bomba Nova. El héroe debe estar sobre la superficie de un planeta con un Astillero, no lo puede hacer en la base de la facción. 
+
+3	Conde; 	Salto Orbital de Infantería Táctica (S.O.I.T.); al atacar una posición terrestre con tropas desde una flota, el Conde puede como acción suplementaria al desembarco teletransportar desde su base principal o cualquier base enemiga controlada todas las tropas que necesite para ayudarle en su salto.
+
+	Condiciones de Victoria; 
+-Burocracia Asentada: Para obtener la victoria, la facción Rauk tiene además de la misión de controlar la ciudadela, instalar en ella una burocracia que le permita controlar todo el sistema Avalon. PAra conseguirlo deberá consumir tantas acciones de “Instalar burocracia” a un precio de 20 R cada una como número de turnos hayan pasado hasta que se abrió la ciudadela.
+
+
+6.7. 	Mente Colmena
+
+Desde hace más de doscientos años una plaga asola la galaxia. Nacidas de algún recóndito planeta del borde exterior las plantas que conforman la mente colmena han puesto en jaque en varias ocasiones a las principales potencias. Se trata de seres denominados como “plantas” que tienen la capacidad de reproducirse rápidamente y poseer a cualquier ser vivo al cual lleguen sus esporas. Todos estos seres están conectados por una red de energía neuronal captada por la Mente Maestra más cercana que dirige sus acciones con el único objetivo de expandirse por la galaxia. Son capaces de imitar los artefactos bélicos de las razas más avanzadas, construyendo enormes naves colmena desde la que asolan los planetas y crecen alimentándose y poseyendo material biológico. Sus principales motivaciones son las de crecer, reproducirse y eliminar las posibles amenazas a su ciclo vital expansivo.
+
+Jugabilidad [Cazadora] [Alta]
+
+	Mente Maestra; La mente colmena necesita un nexo para gestionar a todas sus unidades en el cuadrante, para ello han desplazado hasta el mismo una Mente Maestra, es decir una base móvil de control de tropas y flotas. Actúa como base de la facción, si es destruída la Mente Colmena dejará de estar operativa en este cuadrante. Sirve como astillero y como centro de adaptación de unidades de combate terrestres. La mente maestra podrá reclutar tropas en cualquier sistema en el que se encuentre o podrá directamente consumir el recurso de soldado para reclutar tropas, en ambas opciones le costará 1R cada tropa.
+Habilidad: Construída en 10 secciones. Aplica la regla especial de Bloques con sus stats divididos en 10.
+	Monstruo Planta; Así denominan las razas civilizadas a las unidades de combate terrestre. Cogiendo la base de plantas o de las tropas de otras razas, la mente colmena transforma los cuerpos y los transforma en soldados a sus órdenes. Pueden ser creados en Forestas Espaciales, en la Mente Maestra, o en cualquier base de tropas, en cualquier caso con los límites de reclutamiento del propio sistema.
+	Foresta Espacial; Es el nombre que reciben las enormes estructuras biológicas que la mente colmena utiliza para viajar a través del espacio. No tienen un diseño uniforme, aunque sus características técnicas son similares, parecen formadas por millones de plantas, principalmente enredaderas y raíces. Crecen alimentándose de materia viva hasta poder cumplir los requisitos para poder viajar por las estrellas. 
+	Habilidad; Reproducción; Si hay dos colmenas en un sistema, y tienes suficiente recursos en tus reservas, puedes usar una acción para generar una tercera colmena.
+	Habilidad; Plagar Sistema; La mente colmena, necesita dominación orbital para poder hacer una acción de Plagar Sistema sobre un planeta. Para ello una serie de Forestas asignadas comenzarán a lanzar esporas desde la órbita. Esto plagará el sistema de plantas destructoras, que pasados dos turnos transformará a todos los soldados en el planeta en Biomasa según los estándares habituales. Para poder completar el proceso, todas las forestas asignadas deberán mantenerse en órbita hasta obtener la biomasa. Cada foresta podrá infectar con su presencia hasta a 90 soldados en el planeta y obtener su biomasa. Estas forestas serán las últimas en caer en caso de combate en órbita, si alguna de las asignadas es destruída se anulará el proceso. Ninguna construcción terrestre te defenderá de la plaga.
+
+	Cinturón de Esporas; La mente colmena no puede generar satélites de defensa en sistemas sin una Mente Maestra, pero ha desarrollado la capacidad de generar vida alrededor de su base móvil que potencian sus capacidades ofensivas y protegen su estructura. El cinturón de esporas añade sus stats a los de la mente maestra y funciona como parte de esta. Si la Mente Maestra sufre daño el primero en ser afectado será el cinturón de esporas que a medida que desaparece dejará de dar sus bonificaciones.
+
+	Protuberancia; La mente maestra puede desarrollar, consumiendo una gran cantidad de recurso hasta 4 protuberancias instaladas a lo largo de su casco armadas con poderoso armamento. 
+
+
+
+Habilidades Especiales:
+	-Aturdidores, Reciclar a los caídos: Cuando la mente colmena lucha en combate de tropas, sus armas no matan al enemigo, lo dejan inconsciente. Si gana la batalla podrá recoger a los enemigos aún vivos y almacenarlos. En cualquier momento pueden consumir una unidad de “soldado” como si hubiese consumido 10R. El material sobrante se pierde. Si la Mente Colmena pierde la batalla de tropas, la facción enemiga podrá recuperar a sus soldados sin bajas.
+	-Plaga Espacial; Cuando sucede una batalla espacial entre la Mente Colmena y otra facción, si la Mente Colmena vence la batalla espacial, y la flota enemiga transportaba soldados, el armamento de "Plaga" permitirá evitar que se pierda el material biológico pudiendo recogerlo tras vencer la batalla. Los soldados transportados en vez de ser destruidos serán recogidos por la Mente colmena y almacenados.  En cualquier momento pueden consumir una unidad de “soldado” como si hubiese consumido 10R. El material sobrante se pierde.
+	-Reproducir Foresta; Allí donde haya dos Forestas Espaciales o cualquier número de pares de estas, con una acción pueden ordenar reproducir Forestas, y por cada dos de estas que haya en el sistema podrá generarse una más siempre y cuando haya reserva de Recursos suficientes.
+Reaprovechar la Biomasa; La Mente Colmena tiene la habilidad de transformar los cuerpos de los soldados enemigos caídos en peligrosos monstruos plantiformes. Por cada soldado enemigo que destruya y consuma la Mente Colmena podrá crear utilizando su recurso Biomasa 4 Monstruo Plantas en cualquiera de sus colmenas, o 5 Monstruo Plantas si hace el proceso en su Mente Maestra.
+	-Biocombustible; Como acción suplementaria de una acción la mente colmena podrá consumir parte de su Biomasa para llevar a cabo una sola de las siguientes opciones por turno:
+		-Potenciar Hiperpropulsor; Aumenta en 1 el movimiento de una flota durante un turno. Coste de 25 de Biomasa (Acción suplementaria de un movimiento)
+		-Alimentar Escudos; Los escudos de una flota no se perderán durante todo el turno por desgaste en un combate. Coste 30 de Biomasa (Acción suplementaria de preparar flota)
+		-Alimentar Bioarmamento; Tu flota aumentará su ataque base en 1 por cada 50 puntos de Biomasa consumidos. (Acción suplementaria de preparar flota)
+		-Dilatar el Tiempo; Tu facción obtendrá un turno de acciones extra como si de un uso del Dilatador Temporal se tratase, excepto que cada acción consumirá 100 puntos de biomasa.
+
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste
+Tropa
+Mente Maestra
+Base Móvil
+50
+30
+150
+1
+60
+
+
+1500
+Foresta Espacial
+Nave
+3
+2
+10
+1
+10
+20
+90
+Cinturón de Esporas
+Satélite
+1
+0
+1
+
+
+
+
+3
+
+
+Protuberancia
+Estación Espacial
+15
+0
+1
+
+
+
+
+46
+
+
+
+
+
+Heroes
+
+1	Ignis Contentionem	-Bioarma; mientras esta cepa siga viva toda la flota de la Mente colmena en el cuadrante verá aumentado el ataque base de sus naves en 1. Cada vez que participe en una batalla en la que gane y se elimine un heroe enemigo este aumento subirá en un punto.
+
+2	Obesus Contentionem	-Biomasa Descontrolada; mientras esta cepa siga viva toda la flota de la Mente colmena en el cuadrante verá aumentado su tamaño y la densidad de su materia haciendo que el casco base de sus naves aumente en 3. Cada vez que participe en una batalla en la que gane y se elimine un heroe enemigo este aumento subirá en un otros 3 puntos.
+
+3	Contentionem Jejunatis	-Biocatalizador; mientras esta cepa siga viva toda la flota de la Mente colmena en el cuadrante verá aumentado el movimiento final de sus naves en 1. Cada vez que participe en una batalla en la que gane y se elimine un heroe enemigo este aumento subirá en un punto.
+
+
+Condiciones de Victoria:
+
+	-Plagar la Supermente Battariu; El plan de la Mente Maestra es simple, plagar el centro de conocimiento Batariu y convertirlo en una nueva Supermente Maestra para ello deberá conseguir terminar con éxito una acción de plagar sistema sobre la ciudadela.
+
+6.8.	 Fantasmas
+
+Existen múltiples historias sobre el origen de los llamados Fantasmas, en el imaginario colectivo encarnan los miedos de las criaturas mortales. Muchos supersticiosos creen que los Fantasmas nacieron de las miserias de los mortales que con su avaricia estaban consumiendo las riquezas de la galaxia.
+
+Oficialmente se trata de una raza Alienígena, proveniente de sectores exteriores y poco explorados de la galaxia, con la capacidad tecnológica de utilizar el poder de las Gemas del Alma. Los escritos militares hablan de seres inmortales, con la capacidad de reencarnarse, lo que los convierte en criaturas cuyas experiencias evolucionan cada vez que mueren para volver a nacer. 
+
+Jugabilidad [Cazadora] [Media]
+
+	Valle de las Gemas; Una expedición fantasma ha encontrado en un sistema del cuadrante un lugar con alta concentración de gemas del alma, lo que les ha permitido establecer allí una base que les permita expandirse y seguir buscando más gemas por todo el cuadrante. Cuanto más tiempo pasan en este Valle más fuerte y poderosa se irá haciendo la colonia de estos seres.
+	Habilidad; Progreso Continuo; el valle generará una cantidad de recursos cada turno que se irá incrementando constantemente. El primer turno generará 100 unidades de recursos, cada turno siguiente aumentará un 7% esta cantidad con respecto al turno anterior. Por ejemplo el turno 2 generarán 107, el turno 5 131R, el turno 10 184R….
+
+	Poseído; Las fuerzas de choque de los Fantasmas se hacen llamar poseídos, son cuerpos artificiales o incluso cuerpos biológicos robados que son modificados y preparados para el combate, solo pueden ser creados en el Valle de las Gemas sin ningún tipo de límite. El coste de reclutar un poseído será de 1 unidad de R.
+
+	Corbeta; Creadas con extraña tecnología que permite crear aleaciones y moldearlas a su antojo y alimentadas por los propios fantasmas que las pilotan. Se trata de naves de poco poder, pero fáciles de fabricar. 
+
+	Habilidad; Capturar Naves Enemigas: Si se sucede una batalla en la que una o más Corbetas estén involucradas, y sobreviven a la batalla, habiendo destruido naves enemigas, por cada dos corbetas que hayan sobrevivido transformarán una nave enemiga destruida en una nueva corbeta.	
+
+	Interceptor; Nave de guerra principal de la flota fantasma, son más poderosas que las Corbetas aunque distan mucho de las naves más poderosas de otras facciones. Siguen siendo sencillas de producir. Aunque también poseen la capacidad de capturar naves enemigas su equipamiento para tal fin es menor.
+
+	Habilidad; Capturar Naves Enemigas: Si se sucede una batalla en la que una o más Interceptores estén involucrados, y sobreviven a la batalla, habiendo destruido naves enemigas, cada cuatro Interceptores que sobrevivan transformarán una nave enemiga en un nuevo Interceptor que se sumará a la flota.
+
+	Avatar; Se trata de criaturas formadas por un núcleo de cristal y un cuerpo de energía pura, dotadas de conciencia y de poderes sobrenaturales. Son venerados por todos los fantasmas y alimentados con almas para aumentar su poder. Se trata de unidades que tienen a la vez la capacidad de luchar en tierra y en la órbita del planeta pero que carecen de la capacidad de moverse solos a través del espacio. A efectos de acciones y espacio ocupado cuentan como tropas, pero pueden permanecer en órbita o en tierra a voluntad. Pueden moverse en naves espaciales y disponen de atributos de combate que apoyan en batallas estelares y terrestres. Su valor de escudo protege además el planeta de posibles bombardeos orbitales reduciendo tanto daño como valor de escudo.
+	Habilidad; Apoyo a la Guerra; Cada avatar dará mientras siga vivo un bono de guerra a naves y defensas de +1 a todos los stats como si de una carta de tecnología se tratase.
+	Habilidad; Combate en tierra; Para vencer a un avatar harán falta tantos soldados como la suma de su escudo y su puntuación de “casco” y destruirá tantas tropas como su valor de ataque. Si las tropas restantes enemigas no son suficientes para vencer al Avatar morirán también.
+	Habilidad; Consumir Almas; Cada vez que un avatar destruye dos tropas en combate directo todos los avatares incrementan su valor de ataque y escudo en un punto permanentemente.
+	Habilidad; Transmutar Conocimiento; Los avatares se benefician de las mejoras de atributos como si se tratasen de naves espaciales.
+	Habilidad; Trífuerza; El poder de tres Avatares aumenta la eficacia de toda la raza, por cada tres avatares existan, la facción gana una acción adicional.
+	
+	Poltergeist Orbital; Los Fantasmas utilizan poderosos campos de energía que flotan en la órbita de sus sistemas como método de defensa. Estos campos de energía atacan a cualquier unidad hostil que se les acerque como si de una tormenta de energía cósmica se tratara.
+
+	Cenotafio; Templos dedicados a la muerte y la reencarnación, enormes mausoleos en órbita recordando la muerte y reencarnación gloriosa de héroes de la facción. Pese a parecer simples templos flotando en órbita estos Cenotafios tienen la misión de defender el sistema en el que son construidos y su armamento a base de campos de energía no tiene nada que envidiar a los armamentos más avanzados de la galaxia.
+
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste
+Tropa
+Corbeta
+Nave
+3
+3
+2
+2
+13
+26
+30
+Interceptor
+Nave
+4
+3
+5
+2
+15
+30
+50
+Avatar
+Unidad Especial
+100
+100
+1
+-
+-
+-
+-
+Poltergeist Orbital
+Satélite
+1
+1
+1
+
+
+
+
+6
+
+
+Cenotafio
+Estación Espacial
+20
+25
+30
+
+
+
+
+145
+300
+
+
+Habilidades Especiales;
+
+-Conjurar el Valle de las Gemas; La facción tiene la tecnología necesaria para mover al completo el llamado Valle de las Gemas para situarlo en un nuevo sistema sea cual fuere. Para ello deberá gastar tres acciones llamadas “Conjurar Valle de las Gemas” indicando el sistema hacia dónde se dirige. En ese nuevo sistema debe existir en todo momento presencia fantasma y ningún turno de este proceso debe terminar con presencia de una facción hostil o el movimiento de base se anulará inmediatamente. En caso de haber poseídos en la base, se moverán con ella a no ser que se indique lo contrario.
+Dependencia de las Gemas; Si los fantasmas pierden su Valle de las Gemas toda la facción en el cuadrante Avalon desaparecerá  y quedarán eliminados de la partida.
+
+-Alimentar al Avatar;  Cuando los Fantasmas capturan naves enemigas se adueñan de su poder y de las almas de su tripulación y con ella alimentan el Valle de las Gemas. Por cada 100 naves enemigas transformadas en Corbetas o Interceptores un “Avatar” se podrá materializar en el valle de las gemas.
+
+Heroes
+
+1	-Avatar de la Ira; Permite consumir cualquier tecnología obtenida de manera permanente para transformarla en un bono de ataque de +1 a naves y defensas atado a la supervivencia de este avatar. Comparte las habilidades y características tradicionales de los Avatares.
+2	-Avatar de la Avaricia; Duplica la capacidad de recolección del sistema en el que se encuentre, aumentos fijos o temporales incluidos. Comparte las habilidades y características tradicionales de los Avatares.
+3	-Avatar de la Envidia; Todas tus naves ven duplicada su capacidad de capturar naves enemigas. El avatar no es necesario que esté presente en dichas batallas. Comparte las habilidades y características tradicionales de los Avatares.
+ 
+
+
+Condiciones de Victoria;
+	-Conjurar el Valle en la Ciudadela; Los fantasmas quieren tomar la fortaleza y transformarla en su propia base. Si consiguen Conjurar el Valle de las Gemas en la ciudadela habrán ganado la partida.
+	
+
+6.9.	 Liga Pirata
+
+Nacidos tras el pacto del Parlamento sin Hogar  la Liga Pirata es una agrupación de comandantes de naves que viven independientes de cualquier gobierno o imperio y que se dedican al robo, expolio y al secuestro de naves con el fin de obtener beneficios  que les permitan mantener su independencia y libertad. Todos los piratas de la liga aceptan los acuerdos tomados en el Parlamento sin Hogar, que es una reunión de todos los capitanes de naves que se produce en un lugar distinto cada diez años y en la que se aceptan oficialmente nuevos miembros y se establecen acuerdos de obligado cumplimiento en la liga. Aunque es una organización milenaria, ha cobrado especial importancia tras la caída del foro galáctico y la pérdida de control territorial por parte de los imperios.
+
+Jugabilidad [Cazadora] [Alta]
+
+		-Acorazado del Rey de los Piratas (Base móvil); Aquel reconocido por la Liga como el comandante más fiero y con la mejor nave puede llegar a ser elegido como rey de los piratas. En este caso un acorazado con un poderosísimo armamento al mando del Comandante Rogers monopoliza ese puesto desde hace más de 35 años. Rogers se ha propuesto establecer en la Ciudadela su nueva base permanente, un lugar en el que su palabra sea la ley. El resto de naves de la Liga pirata en el sector siguen su iniciativa y lucharán junto a él por ese objetivo que a todos puede llegar a beneficiar. El Acorazado del Rey dispone de un Astillero en su propio hangar donde construir Corsarios así como la capacidad de reclutar Piratas en cualquier sistema donde se sitúe.
+	Habilidad; Reparable. Si la nave del Rey es abatida en una batalla que gana finalmente la Liga Pirata, y se tienen 50 R almacenados esta se reparará automáticamente gastando esos recursos, si la batalla es perdida la Liga Pirata es finalmente expulsada del Cuadrante.
+	Habilidad: Construída en 10 secciones. Aplica la regla especial de Bloques con sus stats divididos en 10.
+	Habilidad: Reactivar Sistemas; El Acorazado del Rey no está a pleno funcionamiento, una parte de sus sistemas están desactivados y solo la inversión de grandes cantidades de recursos permitirá volverlas funcionales de nuevo. El Acorazado puede hacer una acción y pagar el coste de cualquier sistema de los siguientes para reactivarlo para el resto de la misión.	
+		-Hipermotor a dos Tiempos (300R); El acorazado del Rey puede hacer dos acciones de movimiento por turno, aunque solo resolverá el turno en el último lugar a donde se mueva, es decir no participa en batallas ni interactúa con otras facciones en las casillas en las que no termine el último movimiento.
+		-Escudo Imperial (250R); Como acción suplementaria de “Preparar Flota” el Acorazado Levantará un escudo de 250 que no se regenera entre rondas de combate, durante el resto del turno en la casilla elegida contra la facción seleccionada.
+		-Astillero Avanzado (100R); Reduce el coste de todo lo que fabrique en 1R.
+		-Dársenas (250R); Permite al Acorazado del Rey portar en su interior hasta un máximo de 300 puntos de casco base repartidos en naves. Las cuales se moverán a su velocidad de movimiento sin gastar acción propia. La inclusión o salida de naves de la Dársena será una acción gratuíta y suplementaria (atada a movimiento o una posible acción de Preparar Flota), las naves no participan en batalla si están guardadas en la dársena.
+		-Activar Camuflaje (400R); Los sistemas de camuflaje hacen al acorazado y a todo lo que está en su interior invisible. Actuará igual que la carta de tecnología de invisibilidad, teniendo que volver a pagar el precio en caso de desactivarse el sistema.
+	Habilidad; El Filo de Damocles; El Acorazado del Rey puede activar esta habilidad, lo que hará que la nave se transforme permanentemente en una base fija y terrestre pasando a llamarse “Enclave Pirata” lo que supondrá una amenaza constante para el resto de facciones. Solamente la facción “Liga Pirata” puede ganar la partida si existe un Enclave Pirata en juego.
+
+Pirata; La Liga Pirata está formada por personas en búsqueda de fortuna, libertad y gloria, un Corsario no tendrá problemas en reclutar en cualquier sistema a individuos ansiosos de emociones por un pequeño pago y grandes promesas. Cualquier nave o grupo de naves Corsarios podrá reclutar en un sistema piratas a coste de 1R el individuo hasta alcanzar el máximo de su capacidad de transporte o el máximo de personas que el planeta puede generar por turno.
+
+
+Corsario; Así denominan los gobiernos a las naves de los piratas, como si cada una de ellas fuese un individuo ansioso de saquear sus naves. No todas las naves de la Liga son iguales ni mucho menos, pero sus capacidades bélicas están limitadas por sus saqueos y son incapaces de generar tecnologías superiores. Los corsarios que siguen al rey son armados y preparados para poder mantener cierta similitud en sus capacidades de combate y poder hacer estrategias como si de una flota de guerra se tratasen.
+
+Trampas Orbitales; Aun careciendo de bases fijas, La Liga Pirata ha desarrollado poderosas armas orbitales que les permiten hacer auténticas emboscadas. Estas armas además pueden desmantelarse y recuperar parte de sus recursos cuando abandonan el sistema.
+	Habilidad: Desmantelable completa;  se recuperan el 100% de los R invertidos.
+
+Estación Compuesta; Las naves que forman la flota de la Liga pirata están equipadas con partes de una gran estación de combate. Por ello en cualquier sistema en el que estén pueden unir esas partes para formar la llamada estación compuesta, hecha de partes de todas las naves de la flota. 
+	Habilidad; Desmantelable completa, se recuperan el 100% de los R invertidos.
+	Limitación; Estación Única; Sólo puede existir una Estación Compuesta construída en el cuadrante.
+	Habilidad: Construída en 5 secciones. Aplica la regla especial de Bloques con sus stats divididos en 5
+
+
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste
+Tropa
+Acorazado del Rey
+Base Móvil
+100
+80
+150
+3
+306
+
+
+1600
+Corsario
+Nave
+4
+4
+4
+3
+18
+36
+40
+Trampas Orbitales
+Satélite
+5
+1
+1
+
+
+
+
+14
+
+
+Estación Compuesta
+Estación Espacial
+75
+50
+100
+
+
+
+
+400
+1000
+
+
+
+
+Habilidades Especiales
+	
+Patente de Corso; Cuando los piratas destrozan naves enemigas de cualquier forma imaginable, tienen la preparación, la tecnología y la orden de saquear las naves enemigas aprovechando todo aquello de lo que puedan sacar beneficio. Si los piratas destrozan naves enemigas podrán saquear los restos de estas obteniendo tantos beneficios en R como tres veces la suma del atributo de casco base de cada una de las naves destrozadas.
+
+	La ley pirata o la vida; Cuando la Liga Pirata vence en una batalla espacial ofrece un trato a la dotación de las naves que destruye según el cual en vez de ser ejecutados firmarán la ley de la piratería y se unirán a la Liga como unidades Pirata. Los nuevos reclutamientos formarán parte de la dotación de las naves y solo podrán ser reclutados tantos como espacio libre para tropas tuvieran al final de esa batalla.  Las tropas de la mente colmena, los ocean y ASTANO son inmunes a esta habilidad.
+
+Heroes
+
+
+1	Timmi Do		-Reciclador; Cualquier nave enemiga destruida en una batalla será robada por el pirata en su lugar si este héroe se encuentra en la batalla y esta es ganada. Las naves se unirán a tu flota tras terminar la batalla, aplicarán tus bonos de tecnología y el valor base de su usuario original. No podrás capturar más naves que número de Corsarios poseas y sobrevivan a la batalla.
+
+2	Esperanza Aguirre 	-Cazatalentos; Si ganas una batalla en la que heroes y/o tropas enemigos sean destruidos en una batalla orbital estos pasarán a formar parte de tu ejército. De esta manera podrás apropiarte incluso de héroes neutrales. Por cada uno de tus piratas en el sistema en el momento de la victoria una tropa enemiga podrá ser transformada en un pirata y puesta a tu disposición hasta un máximo por otro lado de tu capacidad de transporte de tropas en esa flota. Los héroes capturados podrán ser vendidos de vuelta a su facción de origen por un precio pactado y gastando ambas facciones una acción en el intercambio. Si las habilidades son aprovechables por la Liga Pirata podrá quedarse el héroe indefinidamente.
+
+3	Jonny Chapas 		-Chatarrero; Duplica los beneficios de la ventaja Patente de Corso en cualquier batalla en la que participe y obtenga la victoria.
+
+
+Condiciones de Victoria:
+
+	-Usurpar la ciudadela; Los piratas son demasiado cobardes para conquistar la ciudadela por ellos mismos, sin embargo el Rey de los Piratas ha dado la orden de conquistarla para poder, por primera vez, establecer un enclave fijo para la Liga. Por ello el Rey ha dado la orden de esperar pacientemente hasta que alguien gaste sus energías en acabar con las defensas de la ciudadela para luego arrebatarsela de sus manos y establecer allí su base permanente. Si la Liga Pirata conquista la ciudadela estando esta en posesión de otro jugador se alzará con la victoria.
+
+
+6.10	Enjambre Aeshnid
+
+Los Aeshnid (o Shir'ek, como ellos se denominan) fueron durante muchas eras una raza inteligente de la periferia de la Galaxia. Aunque su cultura estaba muy avanzada, su vasto y anciano planeta tenía una superficie extensa y capas subterráneas habitables, lo que permitía una fuerte expansión demográfica. La vida monótona de los Aeshnid no les provocaba ningún tipo de inquietud por los viajes espaciales. Su tecnología avanzaba más acorde a los principios de la bio-química, geología, arquitectura y matemática. No fue hasta la invasión de la Mente Colmena cuando comenzó esa necesidad de los viajes espaciales. Durante muchos ciclos el planeta fue infestado, y muchos Aeshnid dedicaron sus vidas y sus conocimientos a ralentizar la invasión. En un desesperado intento por salvar la especie, comenzaron a estudiar los principios que impulsaban las fuerzas de la Mente Colmena, consiguiendo adaptarlos para sí antes de la total destrucción del planeta.
+
+El alto consejo de la raza ha decidido enviar una de sus escasas y valiosas naves Génesis al cuadrante en busca de tecnología y recursos que les permitan obtener una ventaja táctica que asegure su permanencia en el escenario espacial.
+
+Jugabilidad [Expansiva] [Media]
+
+Panal Génesis (Base) Cuando el Enjambre se expande por el espacio necesita un punto central desde el que organizar sus efectivos, para ello construyen mediante una nave colonia traída de su capital un Panal Génesis, esta construcción será su base en el cuadrante y funcionará como astillero y centro de reclutamiento. 
+
+Habilidad, Zona Central de Reproducción: El panal genesis genera cada turno de forma automática 25 unidades de recurso “Tropas”, cuenta además como un lugar de almacenamiento de tropas, las protege como si de un bunker se tratase y dispone de su propio astillero. También permite contratar directamente tropas Cresa a coste de 1R. Las tropas que provee automáticamente no cuentan para el límite de reclutamiento del sistema.
+
+
+Cresa; Tropas de choque de los Aeshnid, temidas en batalla por su versatilidad están compuestas por tropas voladoras y terrestres, todas armadas con potentes armas biológicas adaptables.  Crecen y se forman automáticamente en los panales aunque también se pueden invertir recursos adicionales en estos para acelerar el proceso.
+	
+Transporte Crysa; Esta nave orgánica es una enorme forma de vida que funciona como incubadora y transporte de huevos y cuerpos en letargo de los soldados Aeshnid. Es muy difícil entrenar a una de estas criaturas para viajar por el espacio, y no son demasiado fiables para el transporte espacial, pero constituyen la forma más segura de desplazamiento para los organismos del Enjambre.
+	Habilidad; Desembarco Dinámico; Con una acción de preparar tropa el enjambre puede preparar sus transportes para lanzar sus tropas al planeta pese a ser destruido en combate. Si al preparar flota se indica que se prepara un desembarco dinámico, las tropas descenderán sobre el planeta del sistema en el mismo momento en el que se resuelva la acción de movimiento pese a la existencia de defensas orbitales.
+Habilidad; Aeronave Pacífica: Estas naves no están equipados con armamento de batalla ni de escudos protectores, lo que les supone además no poder aprovechar las mejoras tecnologías de ataque y escudos en estas naves.
+
+Aguijón; Nave de guerra del Enjambre, se trata de una denominación general de todos los modelos insectoides que los Aeshnid utilizan para guerrear en el espacio. Su tecnología es bastante sencilla y son usados principalmente para proteger la órbita de panales especialmente vulnerables.
+
+Nube de Ácido;  Sistema de defensa orbital del enjambre. Se trata de generadores de Nubes de Ácido que en ocasiones resulta difícil de percibir hasta que empiezan a corroer la estructura de tu flota.
+Panal Orbital; Pese al alto coste de recursos que ello supone en ocasiones el enjambre opta por construir sus panales en órbita. Estos panales están muy bien defendidos por la mejor tecnología militar del enjambre.
+	Habilidad: Construída en 5 secciones. Aplica la regla especial de Bloques con sus stats divididos en 5.
+
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste
+Tropa
+Transporte Crysa
+Nave
+0
+0
+10
+2
+
+7
+14
+100
+Aguijón
+Nave
+3
+2
+6
+2
+13
+26
+60
+Nube de Ácido
+Satélite
+3
+0
+1
+
+
+
+
+7
+
+
+Panal Orbital
+Estación Espacial
+15
+10
+100
+
+
+
+
+160
+1000
+
+
+
+Panal (30R): El panal es una enorme estructura compuesta por una mezcla de aleaciones y material biológico. La mayor parte de él está oculta bajo tierra asomando solo una enorme cúpula que parece compuesta por hexágonos de color ámbar. El panal es un lugar protegido donde los Aeshid preparan sus tropas, construyen naves y gestionan sus fuerzas en el sistema.
+
+Regla Especial; Los edificios de este tipo construidos en el sector Violeta cuentan como si fuesen tres edificios a la hora de dar ventajas por sus habilidades
+
+Habilidad, Zona de Reproducción: El panal genera cada turno de forma automática 10 unidades de recurso tropas. También permite contratar directamente tropas Cresa a coste de 1R. Las tropas que provee automáticamente no cuentan para el límite de reclutamiento del sistema.
+Habilidad, Inversión en Biomasa; El panal genera unos recursos constantes al final de cada turno equivalentes a 5R.
+Habilidad; Plan de Infraestructuras y Defensa; En la misma acción de construir este edificio se podrá declarar la construcción de cualquier estructura terrestre en el sistema así como el reclutamiento de tropas con los máximos habituales de reclutamiento, pagando los precios adecuados para cada construcción.
+Habilidad: El poder de la Burocracia; Controlar un alto número de estos edificios dará a la facción acciones adicionales. Para conseguir una acción adicional necesitarás incrementar tu número de edificios de control en diez más el número de acciones adicionales ya obtenidas. Por ejemplo: para obtener tu segunda acción extra, necesitas conseguir 10+1 edificios adicionales haciendo un total de 21.
+Habilidad; Biodársena; Los panales Aeshnid están equipados con una Dársena donde pueden refugiar Transportes Crysa y Aguijones. Estos estarán a salvo de los ataques orbitales, en caso de un bombardeo orbital su puntuación de escudo reducirá el daño del bombardeo en caso de sufrir daños por este serán las primeras en caer sufriendo daños a su casco al igual que en una batalla espacial, protegiendo de esta manera a las tropas. Entrar y salir de la dársena ocupa un punto de movimiento de cualquier acción de movimiento. Las naves pueden salir y entrar en su dársena ignorando cualquier bloqueo por existencia de flotas en la órbita. La biodársena es parte del panal. Si este es destruído a consecuencia de un ataque con tropas, todo lo que haya en ella sera destruído también. Las naves en la biodársena no participan en ningún combate terrestre.
+
+Habilidades Especiales
+	
+	Tropas de Despliegue Rápido; El Enjambre tiene la capacidad de acumular guerreros en éxtasis dentro de sus huevos en un estado semi larvario, esto será considerado un recurso tropas que le permitirá usando una acción de “Despliegue Rápido” gastar este recurso en reclutar tantos Cresa como recurso Tropas se quiera consumir en cualquier panal del enjambre.
+	Venta Dinámica; El Enjambre tiene un gran excedente de tropas y una gran demanda de recursos, por ello en ocasiones vende los servicios de sus tropas como mercenarios a otras facciones. En vez de un desembarco dinámico, el enjambre puede declarar una acción de Venta Dinámica, que funcionará similar, pero una vez realizada el usuario perderá el control de las tropas desembarcadas en favor de un comprador indicado en la acción y a un precio también indicado en la acción. El enjambre puede de esta manera colocar tropas en planetas de otras facciones de manera rápida a cambio de una cantidad de R que debe ser como mínimo el doble del número de tropas vendidas. Desde ese momento la nueva facción se hará cargo de las nuevas tropas que pasarán a llamarse Mercenarios Cresa (Facción que los controla). El receptor deberá también gastar una acción en indicar la conformidad con la transacción y el pago acordado que debe coincidir. Si no se dan todos los supuestos el Desembarco se hará igualmente pero las tropas Cresa lucharán como si siguieran perteneciendo al Enjambre.
+
+
+Heroes
+
+1	Sakt’h		-Salto Dinámico; Puede preparar la flota en la que se encuentre para encadenar un desembarco dinámico con una huída de esa a una nueva casilla antes de entrar en combate. El movimiento debe ser suficiente para llegar hasta la casilla del desembarco y seguirse moviendo.
+
+2	Nave Génesis	-Panal Móvil; Nave Héroe con un panal en órbita que cuenta como segunda base.
+
+3	Tak’Roh	-Canibalismo; Tras ganar una batalla en la que participe, ya sea orbital o terrestre, recoge los cuerpos de los caídos y los usa de alimento para su sistema de panales. Transforma las tropas enemigas muertas en recurso de “tropas” para la facción en una proporción de cinco puntos de recurso por cada tropa muerta de esta manera.
+
+ 
+Condiciones de Victoria
+
+Asegurar la Supervivencia ; El enjambre tiene la misión de evitar que las grandes potencias se hagan con la ciudadela a la vez que asegura su presencia en el sector. La facción debe tomar la ciudadela y acumular un contingente de tropas suficiente para asegurar su control duradero. Para ello el Enjambre deberá terminar la fase de resolución de un turno controlando la ciudadela y teniendo acuartelados en un panal construído en ella a tantos soldados como el turno en el que se descubre la ciudadela multiplicado por cien.
+
+
+6.11 Los “Asimiladores”
+
+Los asimiladores es una de las razas más jóvenes de la galaxia y poco se sabe de ellos más allá de sus principales rasgos: una gran y rápida evolución adaptándose a las circunstancias, una base totalmente biológica para sus naves y demás estructuras y lo que parece ser una mente colectiva sin renunciar al individuo independiente. Pese a que su conducta no sea agresiva tras las primeras tomas de contacto si responden con gran agresividad a la presencia de elementos hostiles enemigos. 
+Por lo que se puede saber de ellos su objetivo es asimilar toda forma de vida para que pase a formar parte de su sociedad y buscar un camino de prosperidad para todos, todo elemento que se considere nocivo será purgado. Se cree que su presencia se debe a su interés por asimilar la ciudadela.
+
+Jugabilidad [Cazadora] [Media]
+
+- Nave Nexo (Base Móvil): Estas enormes naves permiten mantener a los individuos comunicados entre sí a grandes distancias para que los enlaces con la mente colectiva no se rompa y también permiten la creación de guerreros y naves si tienen un buen suministro de materias. Se desconoce el número exacto de ellas pero sí se sabe que una de estas tiene capacidad suficiente para “engendrar” a otras naves nexo. Estas naves funcionan como base de facción y si son eliminadas el resto de unidades abandonará el sector automáticamente hasta el nexo más cercano perdiendo toda posibilidad de optar a la ciudadela. Pueden tenerse tantas como número de acciones por turno.
+	Habilidad; Último Objetivo: En una batalla estelar la Nave Nexo será protegida por la flota siendo siempre la última nave en caer.
+	Habilidad: Mejoras eficaces; Esta unidad tiene una gran capacidad de adaptarse a las mejoras obtenidas por descubrimientos o investigaciones, por ello duplican cualquier bono fijo por cartas de tecnología que se aplique a la flota exceptuando las mejoras de movimiento.
+	Habilidad; Acoplarse a un Sistema; Teniendo dominación terrestre y orbital de un sistema, una nave nexo puede recibir la orden de acoplarse al sistema. En ese momento la nave se instalará sobre la superficie del planeta y explotará automáticamente sus recursos todos los turnos. La nave nexo tendrá una capacidad de recolección igual a la cantidad de tropas que tenga a bordo y al final de cada turno recolectarán tanto como tropas tenga o hasta el máximo de explotación del planeta, lo que sea menor. Como opción adicional, en el momento de dar la orden acoplarse la nave nexo podrá recibir como parte de la orden reclutar tropas en vez de recursos, lo que le supondrá un coste de tantos recursos por turno como tropas se recluten.
+La nave nexo acoplada es vulnerable a un bombardeo orbital o a un ataque con tropas enemigas. Las propias tropas deberán defenderla de ataques por tierra y necesitará de unidades en órbita para evitar un ataque desde esa posición.
+En cualquier momento podrá hacer la acción de desacoplarse como parte de una acción de movimiento. El desacople reducirá en 2 su capacidad de movimiento para el resto de la acción, si su movimiento no es superior a 2 no podrá moverse después de desacoplarse.
+	Habilidad; Control de Pérdidas; Al ser destruída una nave nexo el enemigo no obtendrá ninguna acción adicional para el resto de la partida.
+
+- Decomisador: Estas naves son la espina dorsal de la flota “asimiladora”. Son las encargadas de la defensa y ataque “por el bien de la raza” y son capaces de asimilar a las naves enemigas para extraer su tecnología y replicarla de manera orgánica, pasando esto a toda la flota debido a la mente colectiva.
+	Lectura Genética: Cada vez que una flota de decomisadores gane una batalla copiará una carta de tecnología del objetivo rival (sin posiblidad de copiar la misma carta 2 veces).
+	Habilidad; Asimilar Y Evolucionar: Cada vez que una flota de decomisadores gane una batalla la facción 10 gana puntos de evolución por cada nave enemiga destruída.
+
+- Confiscadores: Son las tropas por excelencia de los asimiladores. Su función básica, y casi la única, es recolectar información sobre los enemigos y asimilar lo máximo posible para mejorar como raza, pueden ser formados en cualquier Nave Nexo por 1R.
+Habilidad; Asimilar Y Evolucionar: Cada vez que los confiscadores ganen una batalla la facción gana puntos de evolución. Por cada tropa enemiga abatida ganan un punto de evolución.
+
+- Simbionte Orbital: Debido a la importancia de algunas zonas estratégicas los Asimiladores se vieron forzados a desarrollar (y copiar) algún tipo de defensa para esos lugares.
+
+- Biogranja Espacial: Es lo más parecido a una base fija que tienen los Asimiladores en su reciente expansión por el universo. Son utilizadas como puntos de control y expansión en las zonas importantes.
+	Habilidad: Construída en 2 secciones. Aplica la regla especial de Bloques con sus stats divididos en 2.
+
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste
+Tropa
+Nave Nexo
+Nave
+10
+10
+10
+2
+34
+68
+100
+Decomisador
+Nave
+3
+3
+3
+2
+13
+26
+30
+Simbionte Orbital
+Simbionte Orbital
+2
+1
+1
+
+
+
+
+8
+
+
+Asimiladores
+Biogranja Espacial
+20
+30
+50
+
+
+
+
+180
+500
+
+
+
+Habilidades especiales
+
+Puntos de evolución (p.e.): Cada vez que se gane una batalla o destruyan unidades enemigas siempre que los asimiladores mantengan presencia en el sistema, los asimiladores ganan +10 puntos de evolución por nave  y +1 por tropa. Estos puntos pueden gastarse para mejorar los atributos básicos de sus naves o defensas. Dando una orden podrá aumentar el atributo básico de sus naves o de sus defensas. El cambio afectará a todas sus naves de fabricación propia, o a todas sus defensas de fabricación propia.
+Para aumentar el poder de las naves el coste será el siguiente: Casco 100 puntos, Ataque 200 puntos, Escudo 300 puntos, Movimiento 400 puntos.
+Para aumentar el poder de las defensas el coste será el siguiente: Casco 50, Ataque 150, Escudo 250.
+La modificación de los atributos básicos modificará el coste de construcción de todas las nuevas naves así como el poder de recolección y el transporte de tropas de todas las naves. No pueden subir más de un punto el mismo atributo ya sea para naves o defensas en un mismo turno.
+
+Lectura genética: Cada vez que una flota de decomisadores gane una batalla contra al menos una nave de guerra copiará una carta de tecnología del objetivo rival. Esto hace posible conseguir copias de tecnología en manos de otro jugador, incluidas las de un solo uso, pero sin poder copiar dos veces la misma carta, exceptuando las mejoras de tecnología de naves y defensas, y siendo aleatoria la tecnología copiada entre las disponibles. En el caso de haberlas copiado todas o carecer de tecnología el rival no se ganará nada.
+
+
+Heroes
+
+1	Genthar		-Evolución Apurada; Roba dos cartas de tecnología, una de ellas prioriza tecnologías violetas.
+
+2	Krivah		-Evolución Selectiva, En el momento de asimilar una tecnología resultante de una batalla en la que participe evitará las tecnologías de mejoras de guerra para naves y defensas. Además recibirá una tecnología de ese tipo por cada tecnología copiada por una flota o ejército en el que se encuentre.
+
+3	Celrrus 		-Construcción Apurada; las naves construidas en la nave nexo en la que se encuentre este héroe pueden moverse el mismo turno.
+
+
+Condiciones de Victoria;
+
+	Asimilar y Evolucionar; Los asimiladores quieren conquistar la Ciudadela para poder asimilar toda su tecnología y mezclarla con todo lo que tienen desarrollado hasta el momento para alcanzar niveles de tecnología suficientes para enfrentarse a cualquier potencia. Los asimiladores deben poseer la ciudadela e invertir en ella tantos puntos de Evolución como 10 veces el turno en el que se abra la última llave de la ciudadela y terminando un turno poseyendo la ciudadela evolucionada.
+
+6.12. Consorcio Minero
+
+El consorcio es una asociación de empresarios y aventureros galácticos que desde hace cientos de años se dedican a la obtención de recursos para la construcción de todo tipo de unidades espaciales. El consorcio es famoso por su capacidad de obtener de forma rápida y limpia los mejores materiales de la galaxia. El consorcio se ha desplazado al nuevo sector ávalon para aprovecharse de todas las fuentes de recursos mineros del sistema, y además para poder recoger y analizar las aleaciones y los materiales usados por la extraña raza que habitaba en el sistema.
+
+Jugabilidad [Comerciante] [Baja]
+
+-Almacén Central (Base) El consorcio ha instalado en el cuadrante un Almacén que le servirá de nexo entre todos sus puestos de minería que está proyectando para esta nueva misión. El Almacén dispone de Astillero, y puede reclutar tropas con normalidad cumpliendo los límites del planeta. 
+
+-Habilidad; Automatizar la Producción; Al final de cada turno, si están en posesión de un Almacén Central se realizará de manera automática una acción de recolectar con el máximo de capacidad de recolección y producción que permita el planeta, para esta acción gratuíta no se requiere de unidades para hacer la recolección.
+-Habilidad; Gestión de Recursos; Construir en los astilleros del almacén central permitirá al Consorcio ahorrarse 1R en cada una de sus construcciones (mínimo 1 R). 
+
+-Minero (Tropa); Unidades de recolección y obtención de materiales perfectamente armadas para una defensa de sus intereses comerciales allí donde surja el conflicto.
+	Habilidad; Trabajar Cantando; La alegría y los cánticos de trabajo de los mineros al trabajar en las duras condiciones de las minas aumenta su productividad permitiéndoles recolectar tres unidades de R por persona en lugar de una sola unidad.
+
+-Unidad de Astro Minería; Naves espaciales sin capacidades bélicas. Fueron concebidas como máquinas de minería autopropulsadas que pueden viajar por el espacio e instalarse en aquellos planetas donde el consorcio desee comenzar una prospección minera, y terminada su misión volver a la órbita para poder moverse a un nuevo enclave.
+
+Habilidad; Aeronave Pacífica: Estas naves no están equipados con armamento de batalla ni de escudos protectores, lo que les supone además no poder aprovechar las mejoras tecnologías de ataque y escudos en estas naves.
+
+Habilidad: Enclave Minero; Pueden hacer una acción para transformarse en Enclaves Mineros que potenciarán la capacidad minera de un planeta en 2R/turno. El límite para la cantidad de Unidades de Astro Minería que pueden estar en un planeta es de 100, y podrán hacer una acción para retirarse del planeta y volver a ser Unidades de Astro Minería. Los Enclaves Mineros contarán como unidades neutrales y podrán ser utilizados por facciones que invadan sistema que los tenga instalados, pero no podrán utilizar acciones para transformarlos de nuevo en Unidades de Astro Minería. Como regla especial, la ciudadela no tendrá límite de Unidades de Astro Minería instalables a la vez en su superficie, pero solo dispone de 500 unidades de R recolectable.
+
+-Capataz; Nave de guerra para la autodefensa de los intereses del Consorcio, es además una nave desde la cual los oficiales y gente de confianza de los principales accionistas del Consorcio ejercen su labor de vigilancia e intervención para proteger los intereses en toda la galaxia.
+
+-Habilidad; Oficina de Recursos Humanos; Por cada capataz en un sistema aumenta en 5 la población disponible por turno en ese planeta para ser reclutada.
+
+Centinela; Unidad de defensa orbital del Consorcio. Aún siendo débiles y bastante caras se antojan como una buena alternativa para la defensa de los principales enclaves mineros del consorcio. 
+
+Base de Operaciones; El Consorcio ha diseñado un sistema de gestión de la minería espacial que les permite crear auténticas explotaciones en los cinturones de asteroides del sistema. Además de servir como una potente unidad de defensa, la base de operaciones permitirá al Consorcio instalar en ella Unidades de Astro Minería que les permitan aumentar la capacidad de recolección a nivel orbital.
+
+
+Nombre
+Unidad
+
+Ataque
+Escudo
+Casco
+Mov
+Carga
+
+Coste
+Tropa
+Unidad de Astro Minería
+Nave
+0
+0
+2
+2
+12
+12
+20
+Capataz
+Nave
+3
+2
+4
+2
+12
+24
+40
+Centinela
+Satelite
+1
+1
+2
+0
+0
+7
+0
+Base de Operaciones
+Estación Espacial
+20
+20
+40
+0
+
+
+140
+400
+
+
+
+
+Edificio Especial: Departamento de Subcontratas; El Consorcio Minero puede construir una Oficina de Subcontratas por 20 R en cualquier sistema que tenga presencia. Este edificio le permitirá subcontratar la explotación de la mina a cualquier otra facción.
+
+La subcontrata permitirá a los mineros ceder la explotación de la mina a otra facción a cambio de una cuota sobre la explotación, esto permitirá a la facción contratante invertir una acción por turno en recolectar en el sistema pese a no tener unidades de recolección en él, y además aumentará la efectividad de los Enclaves Mineros instalados en un 50%. Las condiciones establecer el número de turnos que se cede la explotación y el porcentaje de recurso que se lleva cada uno de los implicados del total explotado cada turno (El sindicato minero no permitirá un porcentaje menor del 30% para la Cooperativa Minera). 
+
+El pago por el usufructo de la mina deberá hacerse todos los turnos por la cantidad acordada, sea usada la mina o no. Mientras la mina está subcontratada la Cooperativa Minera no podrá aumentar ni reducir el número de enclaves mineros, ni podrá hacer sus propias recolecciones en el sistema. Además la facción contratante y la Cooperativa considerarán, durante la duración del contrato, el sistema como enclave neutral y no combatirán entre ellos en ese lugar. 
+
+En cualquier momento la facción contratante podrá romper el contrato pagando en el momento todos los beneficios prometidos a la Cooperativa Minera. Si el contratante no paga una cuota, sus posesiones en el cuadrante serán embargadas y tendrá que abandonar la misión en el cuadrante. Si una tercera facción ataca y arrebata el sistema a la Cooperativa Minera el contrato se romperá inmediatamente sin reparaciones por ninguna de las partes.
+
+
+Habilidades Especiales: 
+
+Astro Plotación; El consorcio tiene la tecnología y la infraestructura para extraer recurso de los campos de asteroides que hay en el espacio. Pueden dar la orden recolectar en órbita si dominan este espacio y pese a existir unidades enemigas en tierra. La capacidad de recolección en órbita es similar a la del planeta, pero por razones técnicas sólo podrá invertir una acción por sistema y deberá elegir entre recolección tradicional o Astro Plotación. En el espacio es necesaria la construcción de una base de operaciones para poder instalar unidades de astro plotación.
+
+
+Heroes
+
+1	Pepe el Bombas	-Acelerar Prospección, Una vez por turno, en el planeta en el que se encuentre puede como acción suplementaria multiplicar por cinco la capacidad máxima de un sistema, mejoras puntuales y permanentes incluídas. Esto provocará graves daños a la infraestructura productiva del sistema lo que impedirá recolectar en él durante cinco turnos.
+
+2	Carlos Márximo		-Sindicalista; Aumenta el poder ofensivo de todas las unidades de mineros en la flota en la que se encuentre contra una facción determinada, todas las naves (incluidas las Un.Astro Mineras) ganan 2 de ataque base mientras se encuentren en su flotas como parte de los bonos de Preparar Flota contra la facción seleccionada.
+
+3	Atorao Montalvez	-Protector del Proletario; Montalvez puede dar la orden de construir una Cúpula de Protección Avanzada gastando una acción en el sistema, construirla le llevará tres turnos en los que Atorao debe estar presente en el sistema. Se trata de una construcción especial que protege a la superficie del planeta de cualquier Bombardeo Orbital, esta no es penetrable mediante “Misiles de Penetración”, los desembarcos dinámicos fallan automáticamente y en caso de una explosión de clase nova permitirá a los mineros refugiarse en las Und de Astro minería instaladas en tierra y sobrevivir a la explosión quedando los mineros subidos a las naves en forma de flota. Deberán abandonar el sistema en el turno siguiente o serán finalmente barridos. Esta habilidad no puede ser usada en la ciudadela. 
+
+
+Condiciones de Victoria;
+
+ Desmantelar la ciudadela; Deben ser capaces de recolectar un total de 500 R en la ciudadela, la Astro Plotación no es posible en la órbita de la Ciudadela. Los mineros son los únicos que pueden recolectar con normalidad en la Ciudadela. Esta recolección se acumula con el ingreso automático que esta genera.
+
+
+6.13	ASTANO 
+Astilleros y Talleres de Navíos Orbitales:
+
+Teniendo sus orígenes en la Tierra, ASTANO es quizás la empresa terrestre con mayor recorrido y duración de las que se tienen constancia hoy en día. Durante siglos ha sabido adaptarse y evolucionar con el devenir de los tiempos y las eras. Actualmente ASTANO es la mayor corporación independiente de la galaxia y su mano de obra ha alimentado la máquina de guerra de varios imperios durante siglos. Aún siendo originaria de la Tierra, en la actualidad esta compuesta por multitud de clanes de diversas razas, aunque predominan entre los mayores accionistas humanos y Raukianos todas las grandes potencias tienen representación en una pieza clave de la industria bélica galáctica.
+
+-Base; Taller Orbital. Los ingenieros de ASTANO han diseñado el sistema de Taller Orbital móvil, estos talleres escasos y valiosos son la joya de la corona de la empresa y a la vez sirven tanto de Astilleros como de bases de operaciones. El Consejo Directivo ha decidido enviar uno de estos talleres al sector Ávalon. Este taller tiene la capacidad de fabricar como si de un astillero normal se tratase desde cualquier órbita y puede moverse libremente por los sistemas de Ávalon como si tuviese movimiento 5.
+
+Habilidad: Inmunidad Diplomática: Por un acuerdo galáctico entre los gobiernos y la cúpula directiva, este astillero desarmado completamente no entrará en ningún tipo de combate, pero pese a ser una base de facción tampoco proporcionará bonos de guerra a su propia flota. Además retendrá la capacidad de producir naves pese a no cumplir el prerrequisito de dominación.
+
+Habilidad: Orden de Construcción en Paralelo; El taller Orbital es tremendamente versátil, por ello puede llevar a cabo la construcción de hasta tres tipos de unidades diferentes consumiendo una sola acción.
+
+-Cyborg (Tropa): Los empleados de ASTANO son ingenieros cualificados, pero no están entrenados en el arte de la guerra, por ello han diseñado una línea de Cyborgs de combate. Estos Cyborgs nacen de la mezcla de soldados reclutados en cualquier planeta y una serie de mejoras y programación de guerra que les permite luchar casi sin entrenamiento como auténticos soldados profesionales. Los Cyborg se fabrican en cualquier Astillero de ASTANO en bloques de 10 a un coste de 12 R, este coste puede verse reducido por cualquier mejora en el astillero que los fabrique.
+
+Oferta de Guerra de ASTANO
+
+La compañía, famosa por su labor como constructores de naves para cualquiera que pueda pagarlas. Para ello ASTANO dispone de una variada oferta de naves especializadas en diferentes aspectos del combate. 
+
+-Lanza; Nave de ataque, dispone de las últimas mejoras en armamento de las que dispone la compañía, es una nave ligera y frágil pero con gran poder destructivo.
+
+-Égida; Mecanismo principal de defensa de la flota de ASTANO, son naves con la capacidad de generar grandes escudos para proteger al resto de la flota, tienen un bajo poder de ataque y si el escudo cae no podrán soportar gran cantidad de daño.
+
+-Coraza; Se trata de las naves más grandes de la compañía, son usadas para el transporte de tropas y suministros y en combate están diseñadas para cubrir al resto de la flota en caso de que los escudos caigan.
+	Habilidad; Formación defensiva. Las Corazas tienen la habilidad especial de ser siempre las primeras en sufrir daño en una batalla espacial sean o no las naves con mayor casco.
+
+-Bólido;  Se trata de una de las naves más rápidas de la galaxia, es una nave pequeña, con escaso poder de combate pero con propulsores de última generación que le aseguran una velocidad sin parangón.
+
+-Guardian; Los satélites defensivos de ASTANO son grandes y bien armados, su objetivo clásico es el de proteger los astilleros orbitales de cualquier amenaza.
+
+-Astillero Orbital;  ASTANO construye enormes Astilleros en Órbita que le permiten fabricar cualquier tipo de unidad sin necesidad de controlar la superficie de los planetas. Estos astilleros están fuertemente armados y protegidos por poderosos escudos. 
+	Habilidad; Astillero Integrado. Los Astilleros Orbitales permiten funcionar como Astilleros a todos los efectos.
+
+
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+
+Mov
+Carga
+Coste
+Tropa
+Lanza
+Nave
+5
+1
+1
+3
+13
+26
+10
+Égida
+Nave
+1
+5
+1
+3
+15
+30
+10
+Coraza
+Nave
+1
+1
+5
+3
+11
+22
+50
+Bólido
+Nave
+1
+1
+1
+5
+13
+26
+10
+Guardian Orbital
+Satélite
+3
+3
+3
+
+
+
+
+18
+
+
+Astillero Orbital
+Estación Espacial
+25
+20
+50
+
+
+
+
+160
+500
+
+
+
+Habilidades Especiales: 
+	-Comercio de naves y defensas; ASTANO nació y creció con el objetivo de vender sus modelos a todo aquel que estuviera dispuesto a pagarlos. Esta facción puede producir sus modelos de unidades de naves y defensas a cualquier facción. Para ello deberá formular una orden de producción en la que se indique el o los modelos de nave producidos, su destinatario y su precio. Las naves producidas tendrán inmunidad diplomática durante la resolución del turno en el que fueron producidas, al ser creadas se pondrá el nombre de la facción al lado del nombre de la unidad para indicar su propietario, el precio de venta será acordado por ambas partes pero no podrá ser menor al precio de producción final +1. Como beneficio para ASTANO por cada 10 R que gaste en la construcción de naves para la venta ganará 3R. Esto solo se aplica al pago del coste material de la nave y no al margen de beneficio acordado.
+	-Nuevos Materiales; ASTANO tiene la tecnología y la infraestructura que le permiten ser capaz de reducir los costes de producción a la mínima expresión, por ello el límite de reducción de costes será de dos tercios menos del valor real en lugar de ser el límite general de la mitad de su coste.
+	-Mejorar Astilleros; ASTANO es puntero en técnicas de construcción y reducción de costes. Por ello podrá hacer una inversión de recursos en cualquier de sus astilleros para reducir el coste de cualquier unidad construída en ellos. Invirtiendo 100 R reducirá en 1 el coste, invirtiendo 200 más reducirá en 2 el costo, 400 lo reduce en 3 y 1000 a mayores lo reduce en 4. Cada una de las cuatro mejoras debe ser pagada para poder alcanzar el siguiente nivel, y cada una de estas mejoras consume una acción. Se pueden llevar a cabo varias acciones de mejora en el mismo turno.
+	-Construcción en masa; Si se ordena un gran número de unidades con una sola acción, aun siendo de distinto tipo, en el mismo astillero esto reducirá los costes. Por cada 100 unidades reducirá el coste de la unidad en 1R acumulativo con cualquier otro descuento por astillero o habilidad especial o tecnología.
+	-Robar Tecnología de Construcción; Si ASTANO descubre un astillero con reducción de costes de producción podrá hacer una acción para robar esa tecnología, quitándole la habilidad especial al astillero (pero sin destruirlo) y ganando la capacidad de otorgarle ese bonificador a uno de sus propios astilleros. Mediante este método ningún Astillero podrá superar con habilidad propia una reducción de -5R.
+	
+	Heroes
+
+1	Kry Jaff		-Retroingeniería- Si participa en una batalla en la que son destruidas naves de otra facción podrá elegir una de esas naves y copiar su diseño, añadiendo a su lista de naves fabricables el modelo copiado. A causa de la legalidad galáctica los diseños propios de facción no podrán ser vendidos a terceras facciones.
+
+2	Peter Shansez	-Maestro Publicista;  La casilla donde se encuentre Peter Shansez será visible para el resto de facciones que estén en el cuadrante. A cambio ASTANO ganará automáticamente 150 R por turno que permanezca vivo.
+
+3	Petroff Esvaf	-Cyborg; Cuando participe en una batalla en la que salga vencedor y mueran tropas propias y/o rescatará a las tropas caídas y las recompondra sus cuerpos creando más Cyborgs para la causa, de esta manera todas las tropas caídas de ambos bandos se unirán a Petroff en forma de Cyborgs. 
+
+	
+	Condición de Victoria;
+
+Construir otra Ciudadela; Para demostrar su capacidad de innovación y construcción, el consejo directivo de ASTANO ha decretado que no hay mejor forma de hacerlo que reproduciendo la ciudadela y mostrando su operatividad. Para ello deberán gastar tres acciones de construcción con su Taller Orbital en tres turnos diferentes y gastar 500 R cada una de ellas. Para hacer estas acciones es necesario dominar la órbita de la Ciudadela como si de una construcción normal se tratara.
+
+6.14	Federación Naxor
+
+Durante siglos las tribus Naxor fueron protegidas por la gloria del Imperio Dorado, y también por su doctrina restrictiva. A causa de esta situación la paz y la prosperidad triunfaron en Naxaria durante todo este tiempo, pero también un atraso importante en tecnología espacial y militar. La tribu los los Xanat dirigió durante todo este tiempo el protectorado de la mano del Imperio Dorado y uno de sus triunfos fue el de conseguir que los Reflejos usarán Naxaria como base del proyecto “Puerta de los Ancestros”. Toda la economía y la investigación más puntera del sistema se volcó en este proyecto durante siglos poniendo a los Naxor a la cabeza de esta tecnología. Con la era de la Hechicería y la caída del foro galáctico, los naxor consiguieron su libertad mediante una rebelión armada, formando las tribus lo que pasó a denominarse Federación de Tribus Naxor unidas, o simplemente Federación Naxor. Ahora utilizan todo lo aprendido de la tecnología de viaje por el Universo para expandirse y caminar por las estrellas.
+
+
+-Puesto Avanzado Dimensional; En teoría los portales de salto permiten unir dos puntos del espacio para un movimiento casi instantáneo, pero no es del todo así. El mayor logro de la Federación Naxor ha sido conseguir mantener pequeñas bases en la llamada Dimensión Umbría (en ocasiones llamada también Hiperespacio), son muy caras de mantener y crear pero solo se puede llegar a ellas mediante portales de salto y una llave de cifrado muy específica. La Federación ha invertido en la creación de una de estas bases que se denomina como PAD, para llevar a cabo la misión encomendada. El PAD  solo puede ser alcanzado desde un portal. Las unidades enemigas no pueden entrar en él. Dispone de Astillero y puede reclutar tropas y recolectar como cualquier otra base.
+	Habilidad; Trajes Hiperespaciales: Los trajes de los soldados Naxor requieren de gran energía y conexiones con el hiperespacio para ser creados, por ello cuanto mayor es la red de portales del cuadrante mayor es su capacidad de producción. El PAD comienza con una capacidad de reclutamiento de 100 unidades que aumenta en 50 por cada portal intervenido a lo largo del cuadrante.
+
+-Nax W (tropa); Los Naxor no están acostumbrados a la guerra, pero han adaptado su sistema de combate a su conocimiento superior sobre el espacio interdimensional. Los trajes de combate de los Naxor les permiten moverse entre naves espaciales, posiciones en tierra y viajar a través de portales hacia posiciones terrestres o viceversa.
+	
+-Estrellas de Combate; La Federación Naxor ha diseñado unas potentes naves de combate fuertemente armadas y con escudos de último diseño. La estrategia de guerra Naxor, basada en el uso de portales ha afectado al diseño de esta naves privandoles de motores de Salto lo que las hace totalmente dependientes de los portales de la Federación. No pueden moverse por espacio abierto pero si atravesar portales.
+
+-Lanzadera Nax; Gigantescas naves preparadas para ser la base de portales estelares móviles. Son la joya de la corona de la federación pues son capaces de funcionar como punto de salto del resto de la flota.
+Habilidad: Portal Móvil;  Una lanzadera Nax puede gastar su acción en anclarse durante un turno para funcionar como un portal tradicional. Esta acción podrá ser una acción suplementaria a una acción de movimiento de una flota que atraviese ese portal ese mismo turno.
+Habilidad: Portal Nax; Esta habilidad permite a la lanzadera consumirse para crear permanentemente un Portal estelar Nax. Estos portales aplicarán la regla de intervenido desde el momento de construirse. La nave desaparece en el proceso.
+Dársena; Las enormes lanzaderas Nax tienen la capacidad de portar Estrellas de Combate u otras naves en dársenas especiales creadas mediante la tecnología de plegar el espacio. De esta manera cada Lanzadera puede portar en su interior una cantidad de naves cuyo valor básico de casco no supere en suma un total de 80 puntos. Esto le permitirá a las naves moverse con la Lanzadera y participar en las batallas junto a ella.
+Habilidad; Último Objetivo: En una batalla estelar la Lanzadera Nax será protegida por la flota siendo siempre la última nave en caer.
+
+Nombre
+Unidad
+Ataque
+Escudo
+Casco
+Movimiento
+Carga
+Coste
+Tropa
+Estrella de Combate
+Nave Espacial
+4
+4
+4
+0
+12
+24
+40
+Lanzadera Nax
+Nave Espacial
+10
+10
+40
+3
+50
+100
+400
+
+
+
+Habilidades Especiales
+
+	Red de Portales; Tanto los portales creados por los Naxor como los descubiertos por colores en el cuadrante, como los creados por otros funcionan como una red interconectada que puede ser usada por los Naxor. 
+	Intervenir Portal; La federación Naxor tiene la capacidad de bloquear el funcionamiento de un portal para que solo funcione a cambio del pago de un peaje establecido para toda la red que puede oscilar entre 50R y 300R. Si un Naxor domina una órbita en la que exista un portal estelar podrá gastar una acción para Intervenir el portal para el resto de la partida. Esto le dará visión en esa casilla e instalará el peaje. El portal adquirirá el trato “intervenido”. Cualquier flota enemiga que atraviese un portal intervenido pagará automáticamente la cantidad determinada por la facción en concepto de peaje, de no tener esos recursos la acción se perderá y no atravesará el portal.
+	Movimiento Expandido; Atravesar un portal solo le cuesta un punto de movimiento, si una nave Naxor tiene una puntuación en este valor superior a 1 puede continuar su movimiento con normalidad una vez atraviese el portal o atravesarlo tras moverse.
+	Localizar Portal: Si una llave es descubierta los Naxor podrán gastar una acción y 100R para conocer el sistema donde está instalado indicando el color que se quiere descubrir.
+	Asalto Relámpago; Si hay un portal en un sistema los soldados en cualquier portal nax armado pueden hacer una acción de asalto relámpago que les permitirá atravesar el portal y saltar a tierra directamente desde este ignorando posibles defensas o naves enemigas en órbita.
+Troyano Hiperespacial; Por cada dos portales que sean llaves a la ciudadela que los Naxor interven	gan ganarán permanentemente una acción más cada turno.
+
+Heroes
+
+1	Neil Ironkey		-Hacker; Puede hacer una acción de “Hackear”  el portal en un sistema en el que se encuentre para que desvíe las flotas que pretendan entrar en ese portal durante el turno siguiente a otro portal diferente indicado en la propia acción de Hackear Portal. Esta acción no es realizable para impedir a cualquier flota saltar hacia la ciudadela.
+
+2	Lagger Strong		-Hiperlag; El heroe puede hacer una acción de “Hiperlag” sobre un portal en el que se encuentre. Durante la fase de resolución de acciones del turno siguiente, todas las flotas que lleguen al sistema a través de ese portal quedarán varadas en el hiperespacio durante un turno, llegando a la casilla al turno siguiente. Si el portal está intervenido la Federación Naxor será informada de la composición de la flota.
+3	Romerío Farld		-Evacuar sistema; Si este héroe se encuentra en un sistema con un portal estelar de cualquier tipo enfrentado a otra flota, en lugar de combatir evacuará todas las tropas y naves de ese sistema a través del portal hacia su base. El enemigo nunca sabrá que estaban allí y además recibirá un informe con la composición de la fuerza invasora.
+
+
+Condición de Victoria;	
+
+	Autopista Galáctica: Crear una red de portales que sirva de base de un poder de la Federación sobre el cuadrante requiere tener un portal de fabricación propia o un portal intervenido instalado en cada uno de los sectores, incluido el de la Ciudadela.
+
